@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="jupiter.csit.rmit.edu.au">
+    <serverData>
+      <paths name="jupiter.csit.rmit.edu.au">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sl7/S3603437/public_html/wp/a2" local="$PROJECT_DIR$" web="/wp/a2" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a34eb6b4-57a4-405d-b17e-0eecfbc776bc" name="jupiter.csit.rmit.edu.au" url="http://jupiter.csit.rmit.edu.au/~s3603437/">
+        <fileTransfer host="jupiter.csit.rmit.edu.au" port="22" accessType="SFTP" password="dfe8dfc3dfcddfe8dfc6dfdfdfcfdff8dfc5dfc9dfc1dfcfdfdedfd9dfc2dfc3dfdadfd9df9bdf98df99" username="s3603437">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

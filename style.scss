@@ -1,0 +1,63 @@
+$main-background: white;
+$body-background: #ff6f00;
+$header-background: slategrey;
+$header-hover: lightslategrey;
+$text-color:white;
+
+$nav-hover-color: white;
+
+//Main body
+body {
+  background-color: $body-background;
+}
+
+#content-wrapper {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $main-background;
+  height: 100%;
+  padding: 5% 5% 5% 5%;
+}
+
+//Footer Content
+footer {
+
+}
+
+//Header Content
+header {
+  nav {
+    display: block;
+    height: 30px;
+    background-color: $header-background;
+    color: $text-color;
+    padding-left: 5%;
+    padding-right: 5%;
+    ul li {
+      margin-top: auto;
+      margin-bottom: auto;
+      border-left: 2px;
+      border-right: 2px;
+      display: inline;
+      padding-left: 2px;
+      padding-right: 2px;
+      list-style-type: none;
+      height: auto;
+      span {
+
+        height: 100px;
+      }
+      :hover {
+        height: 100px;
+        color: $text-color;
+        background-color: $header-background;
+      }
+      .active{
+        background-color: $nav-hover-color;
+      }
+    }
+
+  }
+
+}
