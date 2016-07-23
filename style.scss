@@ -2,27 +2,78 @@ $main-background: white;
 $body-background: #ff6f00;
 $header-background: slategrey;
 $header-hover: lightslategrey;
-$text-color:white;
-
+$text-color: white;
 $nav-hover-color: white;
 
 //Main body
 body {
   background-color: $body-background;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 #content-wrapper {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: $main-background;
   height: 100%;
-  padding: 5% 5% 5% 5%;
+  float: left;
+  width: auto;
 }
 
-//Footer Content
-footer {
+//Generic stuff for columns
+[class*="column-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid yellow;
+}
 
+.h-panel::after {
+  clear: both;
+  display: block;
+  content: "";
+
+}
+
+//Desktop
+@media only screen and (min-width: 768px) {
+
+  .column-1 {
+    width: 12.5%;
+  }
+
+  .column-2 {
+    width: 25%
+  }
+
+  .column-3 {
+    width: 37.5%;
+  }
+
+  .column-4 {
+    width: 50%;
+  }
+
+  .column-5 {
+    width: 62.5%
+  }
+
+  .column-6 {
+    width: 75%
+  }
+
+  .column-7 {
+    width: 87.5%;
+  }
+
+  .column-8 {
+    width: 100%;
+  }
+
+  .border-wrapper {
+    height: 100%;
+  }
 }
 
 //Header Content
@@ -35,13 +86,8 @@ header {
     padding-left: 5%;
     padding-right: 5%;
     ul li {
-      margin-top: auto;
-      margin-bottom: auto;
-      border-left: 2px;
-      border-right: 2px;
+      padding: 10px;
       display: inline;
-      padding-left: 2px;
-      padding-right: 2px;
       list-style-type: none;
       height: auto;
       span {
@@ -53,10 +99,15 @@ header {
         color: $text-color;
         background-color: $header-background;
       }
-      .active{
+      .active {
         background-color: $nav-hover-color;
       }
     }
+
+  }
+
+  //Footer Content
+  footer {
 
   }
 
