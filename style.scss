@@ -1,5 +1,5 @@
 $main-background: white;
-$body-background: #ff6f00;
+$body-background: #cccccc;
 $header-background: slategrey;
 $header-hover: lightslategrey;
 $text-color: white;
@@ -19,7 +19,6 @@ body {
   background-color: $main-background;
   height: 100%;
   float: left;
-  width: auto;
 }
 
 //Generic stuff for columns
@@ -79,36 +78,36 @@ body {
 //Header Content
 header {
   nav {
-    display: block;
-    height: 30px;
     background-color: $header-background;
     color: $text-color;
     padding-left: 5%;
     padding-right: 5%;
-    ul li {
+    ul {
       padding: 10px;
-      display: inline;
-      list-style-type: none;
-      height: auto;
-      span {
+      li {
+        display: inline;
+        list-style-type: none;
+        height: auto;
+        margin: 5px 0 5px 0;
+        span {
 
-        height: 100px;
-      }
-      :hover {
-        height: 100px;
-        color: $text-color;
-        background-color: $header-background;
-      }
-      .active {
-        background-color: $nav-hover-color;
+          height: 100px;
+        }
+        :hover {
+          height: 100px;
+          color: $text-color;
+          background-color: $header-background;
+        }
+        .active {
+          background-color: $nav-hover-color;
+        }
       }
     }
-
   }
 
   //Footer Content
   footer {
-
+background-color: $main-background;
   }
 
 }

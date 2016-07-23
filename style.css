@@ -1,5 +1,5 @@
 body {
-  background-color: #ff6f00;
+  background-color: #cccccc;
   font-family: 'Roboto', sans-serif; }
 
 * {
@@ -8,8 +8,7 @@ body {
 #content-wrapper {
   background-color: white;
   height: 100%;
-  float: left;
-  width: auto; }
+  float: left; }
 
 [class*="column-"] {
   float: left;
@@ -49,24 +48,26 @@ body {
   .border-wrapper {
     height: 100%; } }
 header nav {
-  display: block;
-  height: 30px;
   background-color: slategrey;
   color: white;
   padding-left: 5%;
   padding-right: 5%; }
-  header nav ul li {
-    padding: 10px;
-    display: inline;
-    list-style-type: none;
-    height: auto; }
-    header nav ul li span {
-      height: 100px; }
-    header nav ul li :hover {
-      height: 100px;
-      color: white;
-      background-color: slategrey; }
-    header nav ul li .active {
-      background-color: white; }
+  header nav ul {
+    padding: 10px; }
+    header nav ul li {
+      display: inline;
+      list-style-type: none;
+      height: auto;
+      margin: 5px 0 5px 0; }
+      header nav ul li span {
+        height: 100px; }
+      header nav ul li :hover {
+        height: 100px;
+        color: white;
+        background-color: slategrey; }
+      header nav ul li .active {
+        background-color: white; }
+header footer {
+  background-color: white; }
 
 /*# sourceMappingURL=style.css.map */
