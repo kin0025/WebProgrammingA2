@@ -2,14 +2,15 @@ $main-background: white;
 $body-background: #cccccc;
 $header-background: slategrey;
 $header-hover: lightslategrey;
-$text-color: white;
-$nav-hover-color: white;
-$nav-item-color: #47bfff;
-$nav-margin: 10px;
+$nav-text-color: white;
+$nav-item-color: $header-background;
+$nav-hover-color: #121212;
+$nav-margin: 5px;
 //Main body
 body {
   background-color: $body-background;
   font-family: 'Roboto', sans-serif;
+  margin:0;
 }
 
 * {
@@ -63,7 +64,7 @@ body {
     width: 75%
   }
 
-  .column-7 {
+    .column-7 {
     width: 87.5%;
   }
 
@@ -71,45 +72,62 @@ body {
     width: 100%;
   }
 
-  .border-wrapper {
-    height: 100%;
-  }
+ .side-padding{
+   margin-left: 12.5%;
+   margin-right:12.5%
+ }
 }
 
 //Header Content
 header {
+  background-color: $header-background;
+  padding-left: 5%;
+  padding-right: 5%;
+
   nav {
-    background-color: $header-background;
-    color: $text-color;
-    padding-left: 5%;
-    padding-right: 5%;
+    color: $nav-text-color;
+    float:right;
     ul {
-      padding: 10px;
       list-style-type: none;
+      float:right;
       li {
         display: inline;
         list-style-type: none;
         height: auto;
         margin-left: $nav-margin;
-background-color: $nav-item-color;
         :hover {
-          color: $text-color;
-          background-color: $header-background;
-        }
-        .active {
+          color: $nav-text-color;
           background-color: $nav-hover-color;
         }
+        a {
+          background-color: $nav-item-color;
+          padding: 20px 18px;
+          color: $nav-text-color;
+          :hover {
+            color: $nav-text-color;
+            background-color: $nav-hover-color;
+          }
+        }
+
       }
     }
   }
-
-  //Footer Content
-  footer {
-    background-color: $main-background;
-  }
-
-
-  .drop-shadow{
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  #header-logo{
+    max-height:200px;
+    max-width:600px;
+    float:left;
   }
 }
+
+//Footer Content
+footer {
+  clear: both;
+  display: block;
+  content: "";
+  background-color: $main-background;
+}
+
+.drop-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
