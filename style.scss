@@ -5,7 +5,7 @@ $header-hover: lightslategrey;
 $nav-text-color: white;
 $nav-item-color: $header-background;
 $nav-hover-color: #121212;
-$nav-margin: 5px;
+$nav-margin: -1px;
 $link-color: #767676;
 //Main body
 body {
@@ -104,7 +104,9 @@ header {
           color: $nav-text-color;
           background-color: $nav-hover-color;
           animation-name: navigation-colour;
-          animation-duration: 4s;
+          animation-duration: 1s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease;
         }
         a {
           background-color: $nav-item-color;
@@ -112,7 +114,6 @@ header {
           color: $nav-text-color;
           text-decoration: none;
           }
-        }
 
       }
     }
@@ -120,7 +121,7 @@ header {
   
   @keyframes navigation-colour {
     from {background-color: $header-background;}
-    to {background-color: $header-hover;}
+    to {background-color: $nav-hover-color;}
   }
   
   #header-logo{
