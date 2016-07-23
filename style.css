@@ -11,6 +11,9 @@ body {
   height: 100%;
   float: left; }
 
+a {
+  color: #767676; }
+
 [class*="column-"] {
   float: left;
   padding: 15px;

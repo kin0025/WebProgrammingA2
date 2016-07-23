@@ -6,6 +6,7 @@ $nav-text-color: white;
 $nav-item-color: $header-background;
 $nav-hover-color: #121212;
 $nav-margin: 5px;
+$link-color: #767676;
 //Main body
 body {
   background-color: $body-background;
@@ -23,6 +24,9 @@ body {
   float: left;
 }
 
+a{
+  color: $link-color;
+}
 //Generic stuff for columns
 [class*="column-"] {
   float: left;
