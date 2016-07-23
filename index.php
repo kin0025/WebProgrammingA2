@@ -21,7 +21,7 @@
 <body>
 <div class="column-1 border-wrapper"></div>
 <header>
-    <nav>
+    <nav class="drop-shadow">
         <ul>
             <li>
                 <a href="index.php"><span> Home</span></a>
