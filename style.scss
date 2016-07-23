@@ -27,6 +27,7 @@ body {
 a{
   color: $link-color;
 }
+
 //Generic stuff for columns
 [class*="column-"] {
   float: left;
@@ -107,15 +108,22 @@ header {
           background-color: $nav-item-color;
           padding: 20px 18px;
           color: $nav-text-color;
+          text-decoration: none;
           :hover {
-            color: $nav-text-color;
-            background-color: $nav-hover-color;
+            animation-name: navigation-colour;
+            animation-duration: 4s;
           }
         }
 
       }
     }
   }
+  
+  @keyframes navigation-colour {
+    from {background-color: $header-background;}
+    to {background-color: $header-hover;}
+  }
+  
   #header-logo{
     max-height:200px;
     max-width:600px;

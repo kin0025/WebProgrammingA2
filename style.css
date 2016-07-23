@@ -73,10 +73,16 @@ header {
         header nav ul li a {
           background-color: slategrey;
           padding: 20px 18px;
-          color: white; }
+          color: white;
+          text-decoration: none; }
           header nav ul li a :hover {
-            color: white;
-            background-color: #121212; }
+            animation-name: navigation-colour;
+            animation-duration: 4s; }
+@keyframes navigation-colour {
+  from {
+    background-color: slategrey; }
+  to {
+    background-color: lightslategrey; } }
   header #header-logo {
     max-height: 200px;
     max-width: 600px;
