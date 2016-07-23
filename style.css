@@ -69,7 +69,9 @@ header {
         margin-left: 5px; }
         header nav ul li :hover {
           color: white;
-          background-color: #121212; }
+          background-color: #121212;
+          animation-name: navigation-colour;
+          animation-duration: 4s; }
         header nav ul li a {
           background-color: slategrey;
           padding: 20px 18px;

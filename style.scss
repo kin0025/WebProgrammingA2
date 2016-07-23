@@ -103,15 +103,14 @@ header {
         :hover {
           color: $nav-text-color;
           background-color: $nav-hover-color;
+          animation-name: navigation-colour;
+          animation-duration: 4s;
         }
         a {
           background-color: $nav-item-color;
           padding: 20px 18px;
           color: $nav-text-color;
           text-decoration: none;
-          :hover {
-            animation-name: navigation-colour;
-            animation-duration: 4s;
           }
         }
 
