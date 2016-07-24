@@ -19,7 +19,6 @@
     .column-#{$i} {
       float: left;
       padding: $block-padding;
-      border: 1px solid yellow;
       width: $i / $num-columns * 100%;
     }
   }
@@ -37,4 +36,5 @@
   float: left;
   max-width: 1200px;
   z-index:1;
+  position: relative;
 }

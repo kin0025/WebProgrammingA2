@@ -1,8 +1,8 @@
 $main-background: white;
 $body-background: #cccccc;
-$header-background: slategrey;
-$header-hover: lightslategrey;
-$nav-text-color: white;
+$header-background: #327eb0;
+$header-hover: #47bfff;
+$nav-text-color: #ffdd1d;
 $nav-item-color: $header-background;
 $nav-hover-color: #121212;
 $nav-margin: 0;
@@ -13,8 +13,12 @@ $block-padding: 15px;
 $body-width: 8/12 *100%;
 
 $drop-shadowopacity: 0.75;
-$drop-shadow-offset: 5px;
-$drop-shadow-size:2px;
+$drop-shadow-offset: 1px;
+$drop-shadow-size:0px;
+
+//Things I used
+//https://robots.thoughtbot.com/controlling-color-with-sass-color-functions
+
 @import "mixins";
 @import 'nav';
 @import 'responsive';
@@ -43,12 +47,14 @@ a {
 }
 
 .drop-shadow-top {
-  @include dropshadow(0px, $drop-shadow-offset, 5px, $drop-shadow-size, #000000, $drop-shadowopacity)
+  @include dropshadow(0px, -$drop-shadow-offset, 5px, $drop-shadow-size, #000000, $drop-shadowopacity)
+}
+.drop-shadow-top-inset {
+  @include dropshadow(inset 0px, -$drop-shadow-offset, 5px, $drop-shadow-size, #000000, $drop-shadowopacity)
 }
 
 .drop-shadow-bottom {
-  @include dropshadow(0px, -$drop-shadow-offset, 5px, $drop-shadow-size, #000000, $drop-shadowopacity)
-
+  @include dropshadow(0px, $drop-shadow-offset, 5px, $drop-shadow-size, #000000, $drop-shadowopacity)
 }
 
 .drop-shadow-left {
@@ -61,7 +67,7 @@ a {
 
 }
 .drop-shadow-left-right{
-  box-shadow: 6px 0px 5px -5px rgba(#000000,0.75), -6px 0px 5px -5px rgba(#000000,0.75);
+  box-shadow: $drop-shadow-offset 0px 5px $drop-shadow-size rgba(#000000,0.75), -$drop-shadow-offset 0px 5px $drop-shadow-size rgba(#000000,0.75);
 
 
 }

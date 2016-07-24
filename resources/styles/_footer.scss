@@ -4,7 +4,11 @@ footer {
   background-color: $main-background;
   z-index:2;
   content: "";
-  display: table;
+  display: block;
   clear: both;
+  position: relative;
 
+}
+#footer-links li a{
+  list-style: none;
 }

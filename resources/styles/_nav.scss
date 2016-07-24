@@ -3,6 +3,8 @@
 header {
   background-color: $header-background;
   z-index:2;
+  position: relative;
+
   nav {
     color: $nav-text-color;
     float: right;
@@ -47,5 +49,9 @@ header {
     max-height: 200px;
     max-width: 600px;
     float: left;
+  }
+
+  .nav-active{
+    color: lighten($nav-text-color,10%);
   }
 }
