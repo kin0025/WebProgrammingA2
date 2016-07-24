@@ -1,0 +1,52 @@
+
+//Header Content
+header {
+  background-color: $header-background;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  nav {
+    color: $nav-text-color;
+    float: right;
+    ul {
+      list-style-type: none;
+      float: right;
+      li {
+        display: inline;
+        list-style-type: none;
+        height: auto;
+        margin-left: $nav-margin;
+        :hover {
+          color: $nav-text-color;
+          background-color: $nav-hover-color;
+          animation-name: navigation-colour;
+          animation-duration: 1s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease;
+        }
+        a {
+          background-color: $nav-item-color;
+          padding: 20px 18px;
+          color: $nav-text-color;
+          text-decoration: none;
+        }
+
+      }
+    }
+  }
+
+  @keyframes navigation-colour {
+    from {
+      background-color: $header-background;
+    }
+    to {
+      background-color: $nav-hover-color;
+    }
+  }
+
+  #header-logo {
+    max-height: 200px;
+    max-width: 600px;
+    float: left;
+  }
+}
