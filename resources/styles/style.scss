@@ -2,7 +2,7 @@ $main-background: white;
 $body-background: #cccccc;
 $header-background: #327eb0;
 $sidebar-background-color: #47bfff;
-$footer-background: darken($header-background);
+$footer-background: darken($body-background,5%);
 
 $header-hover: #47bfff;
 $nav-text-color: #ffdd1d;
