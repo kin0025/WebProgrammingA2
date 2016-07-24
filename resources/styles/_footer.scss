@@ -1,7 +1,5 @@
 //Footer Content
 footer {
-  clear: both;
-  display: block;
-  content: "";
+  @extend %clearfix;
   background-color: $main-background;
 }
