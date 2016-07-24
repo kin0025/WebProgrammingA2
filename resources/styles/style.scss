@@ -11,6 +11,10 @@ $link-color: #767676;
 $num-columns: 12;
 $block-padding: 15px;
 $body-width: 8/12 *100%;
+
+$drop-shadowopacity: 0.75;
+$drop-shadow-offset: 5px;
+$drop-shadow-size:2px;
 @import "mixins";
 @import 'nav';
 @import 'responsive';
@@ -38,4 +42,30 @@ a {
   color: $link-color;
 }
 
+.drop-shadow-top {
+  @include dropshadow(0px, $drop-shadow-offset, 5px, $drop-shadow-size, #000000, $drop-shadowopacity)
+}
 
+.drop-shadow-bottom {
+  @include dropshadow(0px, -$drop-shadow-offset, 5px, $drop-shadow-size, #000000, $drop-shadowopacity)
+
+}
+
+.drop-shadow-left {
+  @include dropshadow(-$drop-shadow-offset, 0px, 5px, $drop-shadow-size, #000000, $drop-shadowopacity)
+
+}
+
+.drop-shadow-right {
+  @include dropshadow($drop-shadow-offset, 0px, 5px, $drop-shadow-size, #000000, $drop-shadowopacity)
+
+}
+.drop-shadow-left-right{
+  box-shadow: 6px 0px 5px -5px rgba(#000000,0.75), -6px 0px 5px -5px rgba(#000000,0.75);
+
+
+}
+.drop-shadow-bottom-right {
+  @include dropshadow($drop-shadow-offset, $drop-shadow-offset, 5px, $drop-shadow-size, #000000, $drop-shadowopacity)
+
+}

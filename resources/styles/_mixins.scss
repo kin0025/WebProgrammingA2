@@ -1,4 +1,3 @@
-
 //See http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
 %clearfix {
   *zoom: 1;
@@ -46,15 +45,16 @@
   animation: #{$str};
 }
 
-@mixin dropshadow($h-offset,$v-offset,$blur,$spread,$hex-colour,$opacity){
-//Just a fallback
+//http://sass-lang.com/documentation/Sass/Script/Functions.html#rgba-instance_method
+@mixin dropshadow($h-offset,$v-offset,$blur,$spread,$hex-colour,$opacity) {
+  //Just a fallback
   -webkit-box-shadow: $h-offset $v-offset $blur $spread $hex-colour;
   -moz-box-shadow: $h-offset $v-offset $blur $spread $hex-colour;
   box-shadow: $h-offset $v-offset $blur $spread $hex-colour;
 
   //Proper opacity support
-  -webkit-box-shadow: $h-offset $v-offset $blur $spread rgba($hex-colour,$opacity);
-  -moz-box-shadow: $h-offset $v-offset $blur $spread rgba($hex-colour,$opacity);
-  box-shadow: $h-offset $v-offset $blur $spread rgba($hex-colour,$opacity);
+  -webkit-box-shadow: $h-offset $v-offset $blur $spread rgba($hex-colour, $opacity);
+  -moz-box-shadow: $h-offset $v-offset $blur $spread rgba($hex-colour, $opacity);
+  box-shadow: $h-offset $v-offset $blur $spread rgba($hex-colour, $opacity);
 
 }

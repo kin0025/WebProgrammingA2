@@ -2,4 +2,5 @@
 footer {
   @extend %clearfix;
   background-color: $main-background;
+  z-index:2;
 }

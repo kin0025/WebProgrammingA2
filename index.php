@@ -19,8 +19,8 @@
 </head>
 
 <body>
-<header class="h-panel">
-    <div class="container side-padding">
+<header class="h-panel drop-shadow-bottom">
+    <div class="container side-padding ">
     <img id="header-logo" class="column-3" src="resources/images/header.png"/>
     <nav class="column-5">
         <ul>
@@ -35,14 +35,14 @@
     </div>
 </header>
 
-<div id="content-wrapper" class="column-8 side-padding h-panel">
+<div id="content-wrapper" class="column-8 side-padding h-panel drop-shadow-left-right">
     <div id="main-body" class="h-panel">
         <div class="column-12">Look! Something something something something look over there --></div>
         <div class="column-6">Content</div>
         <div class="column-6">Content Column 2</div>
     </div>
 </div>
-<footer id="footer-content" class="h-panel">
+<footer id="footer-content" class="h-panel drop-shadow-top">
     <div class="side-padding">
     <div id="footer-links" class="column-4">
         <ul>

@@ -2,6 +2,7 @@
 //Header Content
 header {
   background-color: $header-background;
+  z-index:2;
   nav {
     color: $nav-text-color;
     float: right;
