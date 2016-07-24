@@ -46,7 +46,7 @@
 }
 
 //http://sass-lang.com/documentation/Sass/Script/Functions.html#rgba-instance_method
-@mixin dropshadow($h-offset,$v-offset,$blur,$spread,$hex-colour,$opacity) {
+@mixin drop-shadow($h-offset,$v-offset,$blur,$spread,$hex-colour,$opacity) {
   //Just a fallback
   -webkit-box-shadow: $h-offset $v-offset $blur $spread $hex-colour;
   -moz-box-shadow: $h-offset $v-offset $blur $spread $hex-colour;

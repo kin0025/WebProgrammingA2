@@ -6,6 +6,7 @@ header {
   position: relative;
 
   nav {
+    margin-top: 2%;
     color: $nav-text-color;
     float: right;
     ul {
@@ -46,8 +47,8 @@ header {
   }
 
   #header-logo {
-    max-height: 200px;
-    max-width: 600px;
+    max-height: 100px;
+    max-width: 300px;
     float: left;
   }
 

@@ -34,9 +34,16 @@
 
 <div id="content-wrapper" class="column-8 side-padding h-panel drop-shadow-left-right">
     <div id="main-body" class="h-panel">
-        <div class="column-10">Info</div><div class = "column-2"> WOO SIDEBAR WOO CONTENT WOO</div>
-        <div class="column-5">Content</div>
-        <div class="column-5">Content Column 2</div>
+        <div id="main-body-wrapper" class="column-10">
+            <div class="column-12">Info</div>
+
+            <div class="column-6">Content</div>
+            <div class="column-6">Content Column 2</div>
+        </div>
+        <div id="sidebar-content" class="column-2"> WOO SIDEBAR WOO CONTENT WOO <br> More stuff Wooo <br> Best stuff
+            ever, such content much
+
+        </div>
     </div>
 </div>
 <footer id="footer-content" class="h-panel drop-shadow-top-inset">

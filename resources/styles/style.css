@@ -6,11 +6,80 @@
   .h-panel:after, footer:after {
     clear: both; }
 
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #cccccc;
+  font-family: 'Roboto', sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  color: #767676; }
+
+.drop-shadow-top {
+  -webkit-box-shadow: 0px -1px 5px 0px #000000;
+  -moz-box-shadow: 0px -1px 5px 0px #000000;
+  box-shadow: 0px -1px 5px 0px #000000;
+  -webkit-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.drop-shadow-top-inset {
+  -webkit-box-shadow: inset 0px -1px 5px 0px #000000;
+  -moz-box-shadow: inset 0px -1px 5px 0px #000000;
+  box-shadow: inset 0px -1px 5px 0px #000000;
+  -webkit-box-shadow: inset 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px -1px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.drop-shadow-bottom {
+  -webkit-box-shadow: 0px 1px 5px 0px #000000;
+  -moz-box-shadow: 0px 1px 5px 0px #000000;
+  box-shadow: 0px 1px 5px 0px #000000;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.drop-shadow-left {
+  -webkit-box-shadow: -1px 0px 5px 0px #000000;
+  -moz-box-shadow: -1px 0px 5px 0px #000000;
+  box-shadow: -1px 0px 5px 0px #000000;
+  -webkit-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.drop-shadow-right {
+  -webkit-box-shadow: 1px 0px 5px 0px #000000;
+  -moz-box-shadow: 1px 0px 5px 0px #000000;
+  box-shadow: 1px 0px 5px 0px #000000;
+  -webkit-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.drop-shadow-left-right {
+  box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75), -1px 0px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.drop-shadow-bottom-right {
+  -webkit-box-shadow: 1px 1px 5px 0px #000000;
+  -moz-box-shadow: 1px 1px 5px 0px #000000;
+  box-shadow: 1px 1px 5px 0px #000000;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
+
 header {
   background-color: #327eb0;
   z-index: 2;
   position: relative; }
   header nav {
+    margin-top: 2%;
     color: #ffdd1d;
     float: right; }
     header nav ul {
@@ -23,7 +92,7 @@ header {
         margin-left: 0; }
         header nav ul li :hover {
           color: #ffdd1d;
-          background-color: #121212;
+          background-color: #1f1f1f;
           -webkit-animation: navigation-color 1s ease;
           -moz-animation: navigation-color 1s ease;
           -o-animation: navigation-color 1s ease;
@@ -41,25 +110,25 @@ header {
   from {
     background-color: #327eb0; }
   to {
-    background-color: #121212; } }
+    background-color: #1f1f1f; } }
 @-moz-keyframes navigation-colour {
   from {
     background-color: #327eb0; }
   to {
-    background-color: #121212; } }
+    background-color: #1f1f1f; } }
 @-o-keyframes navigation-colour {
   from {
     background-color: #327eb0; }
   to {
-    background-color: #121212; } }
+    background-color: #1f1f1f; } }
 @keyframes navigation-colour {
   from {
     background-color: #327eb0; }
   to {
-    background-color: #121212; } }
+    background-color: #1f1f1f; } }
   header #header-logo {
-    max-height: 200px;
-    max-width: 600px;
+    max-height: 100px;
+    max-width: 300px;
     float: left; }
   header .nav-active {
     color: #ffe550; }
@@ -131,7 +200,7 @@ header {
 
   .side-padding {
     margin-left: 16.66667%;
-    margin-right: 16.66667;
+    margin-right: 16.66667%;
     max-width: 1200px; } }
 #content-wrapper {
   background-color: white;
@@ -152,72 +221,8 @@ footer {
 #footer-links li a {
   list-style: none; }
 
-html,
-body,
-ul,
-ol {
-  margin: 0;
-  padding: 0; }
-
-body {
-  background-color: #cccccc;
-  font-family: 'Roboto', sans-serif; }
-
-* {
-  box-sizing: border-box; }
-
-a {
-  color: #767676; }
-
-.drop-shadow-top {
-  -webkit-box-shadow: 0px -1px 5px 0px #000000;
-  -moz-box-shadow: 0px -1px 5px 0px #000000;
-  box-shadow: 0px -1px 5px 0px #000000;
-  -webkit-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75); }
-
-.drop-shadow-top-inset {
-  -webkit-box-shadow: inset 0px -1px 5px 0px #000000;
-  -moz-box-shadow: inset 0px -1px 5px 0px #000000;
-  box-shadow: inset 0px -1px 5px 0px #000000;
-  -webkit-box-shadow: inset 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: inset 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0px -1px 5px 0px rgba(0, 0, 0, 0.75); }
-
-.drop-shadow-bottom {
-  -webkit-box-shadow: 0px 1px 5px 0px #000000;
-  -moz-box-shadow: 0px 1px 5px 0px #000000;
-  box-shadow: 0px 1px 5px 0px #000000;
-  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75); }
-
-.drop-shadow-left {
-  -webkit-box-shadow: -1px 0px 5px 0px #000000;
-  -moz-box-shadow: -1px 0px 5px 0px #000000;
-  box-shadow: -1px 0px 5px 0px #000000;
-  -webkit-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75); }
-
-.drop-shadow-right {
-  -webkit-box-shadow: 1px 0px 5px 0px #000000;
-  -moz-box-shadow: 1px 0px 5px 0px #000000;
-  box-shadow: 1px 0px 5px 0px #000000;
-  -webkit-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75); }
-
-.drop-shadow-left-right {
-  box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75), -1px 0px 5px 0px rgba(0, 0, 0, 0.75); }
-
-.drop-shadow-bottom-right {
-  -webkit-box-shadow: 1px 1px 5px 0px #000000;
-  -moz-box-shadow: 1px 1px 5px 0px #000000;
-  box-shadow: 1px 1px 5px 0px #000000;
-  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
+#sidebar-content {
+  background-color: #47bfff;
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
