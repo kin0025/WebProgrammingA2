@@ -151,7 +151,10 @@ header {
 
 footer {
   background-color: white;
-  z-index: 2; }
+  z-index: 2;
+  content: "";
+  display: table;
+  clear: both; }
 
 html,
 body,

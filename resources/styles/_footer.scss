@@ -3,4 +3,8 @@ footer {
   @extend %clearfix;
   background-color: $main-background;
   z-index:2;
+  content: "";
+  display: table;
+  clear: both;
+
 }
