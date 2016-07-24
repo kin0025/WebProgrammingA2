@@ -1,15 +1,17 @@
 $main-background: white;
 $body-background: #cccccc;
 $header-background: #327eb0;
+$sidebar-background-color: #47bfff;
+$footer-background: darken($header-background);
+
 $header-hover: #47bfff;
 $nav-text-color: #ffdd1d;
 $nav-item-color: $header-background;
 $nav-hover-color: #1f1f1f;
-$nav-margin: 0;
 $link-color: #767676;
 $sidebar-text-color: #fff;
-$sidebar-background-color: #47bfff;
 
+$nav-margin: 0;
 $num-columns: 12;
 $block-padding: 15px;
 $body-width: 8/12 *100%;

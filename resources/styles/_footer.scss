@@ -1,7 +1,7 @@
 //Footer Content
 footer {
   @extend %clearfix;
-  background-color: $main-background;
+  background-color: $footer-background;
   z-index:2;
   content: "";
   display: block;
