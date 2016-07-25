@@ -70,7 +70,6 @@ a {
 
 .drop-shadow-left-right {
   @include drop-shadow-single( $drop-shadow-offset 0px 5px $drop-shadow-size rgba(#000000, 0.75), -$drop-shadow-offset 0px 5px $drop-shadow-size rgba(#000000, 0.75));
-
 }
 
 .drop-shadow-bottom-right {
