@@ -64,6 +64,8 @@ a {
   box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75); }
 
 .drop-shadow-left-right {
+  -webkit-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75), -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75), -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75), -1px 0px 5px 0px rgba(0, 0, 0, 0.75); }
 
 .drop-shadow-bottom-right {
@@ -81,7 +83,8 @@ header {
   header nav {
     margin-top: 2%;
     color: #ffdd1d;
-    float: right; }
+    float: right;
+    padding-right: 2%; }
     header nav ul {
       list-style-type: none;
       float: right; }
@@ -202,6 +205,9 @@ header {
     margin-left: 16.66667%;
     margin-right: 16.66667%;
     max-width: 1200px; } }
+@media only screen and (min-width: 1200px) {
+  nav {
+    margin-left: 100px; } }
 #content-wrapper {
   background-color: white;
   height: 100%;
@@ -211,7 +217,7 @@ header {
   position: relative; }
 
 footer {
-  background-color: #bfbfbf;
+  background-color: #999999;
   z-index: 2;
   content: "";
   display: block;

@@ -1,14 +1,14 @@
-
 //Header Content
 header {
   background-color: $header-background;
-  z-index:2;
+  z-index: 2;
   position: relative;
 
   nav {
     margin-top: 2%;
     color: $nav-text-color;
     float: right;
+    padding-right: 2%;
     ul {
       list-style-type: none;
       float: right;
@@ -52,7 +52,7 @@ header {
     float: left;
   }
 
-  .nav-active{
-    color: lighten($nav-text-color,10%);
+  .nav-active {
+    color: lighten($nav-text-color, 10%);
   }
 }

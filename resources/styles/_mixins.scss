@@ -58,3 +58,10 @@
   box-shadow: $h-offset $v-offset $blur $spread rgba($hex-colour, $opacity);
 
 }
+
+@mixin drop-shadow-single($args...) {
+  -webkit-box-shadow: $args;
+  -moz-box-shadow: $args;
+  box-shadow: $args;
+
+}
