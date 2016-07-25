@@ -10,14 +10,9 @@
     <div class="container side-padding ">
         <img id="header-logo" class="column-4" src="resources/images/header.png"/>
         <nav class="column-8">
-            <ul>
-                <li class="nav-active">
-                    <a href="index.php">Home</a>
-                </li>
-                <li>
-                    <a href="about.php">About</a>
-                </li>
-            </ul>
+            <?php
+            include 'menu-items.php';
+            ?>
         </nav>
     </div>
 </header>

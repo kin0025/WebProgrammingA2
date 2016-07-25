@@ -9,14 +9,10 @@
     <div class="side-padding">
         <div class="column-1"></div>
         <div id="footer-links" class="column-3">
-            <ul>
-                <li>
-                    <a href="index.php">Home</a>
-                </li>
-                <li>
-                    <a href="about.php">About</a>
-                </li>
-            </ul>
+            <?php
+            include 'menu-items.php';
+            ?>
+
         </div>
         <div class="column-7">
             IDK Some content
