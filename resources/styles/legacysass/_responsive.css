@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$num-columns".
-        on line 14 of /home/ubuntu/workspace/resources/styles/_responsive.scss
+        on line 14 of /home/ubuntu/workspace/resources/styles/legacysass/_responsive.scss
 
 9: 
 10: //Desktop
@@ -15,7 +15,7 @@ Error: Undefined variable: "$num-columns".
 19:     }
 
 Backtrace:
-/home/ubuntu/workspace/resources/styles/_responsive.scss:14
+/home/ubuntu/workspace/resources/styles/legacysass/_responsive.scss:14
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:259:in `visit_for'
@@ -68,4 +68,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$num-columns\".\A         on line 14 of /home/ubuntu/workspace/resources/styles/_responsive.scss\A \A 9: \A 10: //Desktop\A 11: @media only screen and (min-width: 768px) {\A 12: \A 13:   //See http://thesassway.com/intermediate/if-for-each-while for for loop stuff\A 14:   @for $i from 1 through $num-columns {\A 15:     .column-#{$i} {\A 16:       float: left;\A 17:       padding: $block-padding;\A 18:       width: $i / $num-columns * 100%;\A 19:     }"; }
+  content: "Error: Undefined variable: \"$num-columns\".\A         on line 14 of /home/ubuntu/workspace/resources/styles/legacysass/_responsive.scss\A \A 9: \A 10: //Desktop\A 11: @media only screen and (min-width: 768px) {\A 12: \A 13:   //See http://thesassway.com/intermediate/if-for-each-while for for loop stuff\A 14:   @for $i from 1 through $num-columns {\A 15:     .column-#{$i} {\A 16:       float: left;\A 17:       padding: $block-padding;\A 18:       width: $i / $num-columns * 100%;\A 19:     }"; }

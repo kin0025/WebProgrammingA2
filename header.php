@@ -6,14 +6,18 @@
  * Time: 10:22 PM
  */
 ?>
-<header class="h-panel drop-shadow-bottom">
+<div id="header" class="h-panel drop-shadow-bottom">
     <div class="container side-padding ">
-        <img id="header-logo" class="column-4" src="resources/images/header.png"/>
-        <nav class="column-8">
+        
+        <header>
+            <img id="header-logo" src="resources/images/header.png"/>
+            <h1>Some Name Here</h1>
+        </header>
+
+        <nav>
             <?php
             include 'menu-items.php';
             ?>
         </nav>
     </div>
-</header>
-
+</div>
