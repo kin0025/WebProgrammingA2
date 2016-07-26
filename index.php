@@ -23,15 +23,15 @@
 <?php
 include 'header.php';
 ?>
-
-<div id="content-wrapper" class="column-8 side-padding h-panel drop-shadow-left-right">
+<div class=" h-panel relative side-padding">
+<div id="content-wrapper" class="column-12 drop-shadow-left-right">
     <div id="main-body" class="h-panel">
         <div class="column-12">Look! Something something something something look over there --></div>
         <div class="column-6">Content</div>
         <div class="column-6">Content Column 2</div>
     </div>
 </div>
-
+</div>
 <?php
 include 'footer.php';
 ?>

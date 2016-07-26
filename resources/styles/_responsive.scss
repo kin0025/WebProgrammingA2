@@ -18,15 +18,24 @@
       width: $i / $num-columns * 100%;
     }
   }
-
+.side-padding:before{
+    position: relative;
+}
   .side-padding {
-    margin-left: (100 - $body-width) /2;
-    margin-right: (100 - $body-width) /2;
+   // margin-left: (100 - $body-width) /2;
+  //  margin-right: (100 - $body-width) /2;
+        margin: 0 auto;
+
     max-width: 1200px;
+  }
+  
+  nav {
+    margin-left: 0px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1600px) {
+
 
   nav {
     margin-left: 100px;
@@ -39,5 +48,11 @@
   float: left;
   max-width: 1200px;
   z-index: 1;
-  position: relative;
+          margin: 0 auto;
+
+
+}
+.relative{
+    position: relative;
+
 }
