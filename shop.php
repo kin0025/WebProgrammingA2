@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Shop</title>
     <link rel="stylesheet" type=text/css href="resources/styles/style.css">
     <!--Google font file -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -12,7 +12,7 @@
 <body id="shop">
 
     <?php
-include 'header.php';
+include 'resources/header.php';
 ?>
         <div class=" h-panel relative side-padding">
             <div id="content-wrapper" class="column-12 drop-shadow-left-right">
@@ -32,8 +32,8 @@ include 'header.php';
 
                 </div>
             </div>
-        </div>
+        </div></div>
         <?php
-include 'footer.php';
+include 'resources/footer.php';
 ?>
 </body>

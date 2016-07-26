@@ -1,3 +1,13 @@
+/*Colour reference
+https://coolors.co/50514f-8ea604-ffc53a-d2cca1-79B473
+Page Background: #50514F;
+Links and Header-Hover: #AA5042;
+Header and Sidebar: #FFC53A
+Body Background: #D2CCA1
+Honestly IDK: #5B8C5A
+
+*/
+
 .h-panel,
 footer {
   *zoom: 1;
@@ -24,9 +34,17 @@ ol {
   padding: 0;
 }
 
+
+/* http://lea.verou.me/css3patterns/#weave (Note- modified to make more dense)*/
+
 body {
-  background-color: #cccccc;
+  background-color: #50514F;
   font-family: 'Roboto', sans-serif;
+background:
+linear-gradient(135deg, #50514F 11px, #FFC53A 11px, #FFC53A 12px, transparent 12px, transparent 33.5px, #FFC53A 33.5px, #FFC53A 34px, transparent 34px),
+linear-gradient(225deg, #50514F 11px, #FFC53A 11px, #FFC53A 12px, transparent 12px, transparent 33.5px, #FFC53A 33.5px, #FFC53A 34px, transparent 34px)0 32px;
+background-color:#50514F;
+background-size: 32px 64px
 }
 
 * {
@@ -34,7 +52,7 @@ body {
 }
 
 a {
-  color: #767676;
+  color: #AA5042;
 }
 
 .drop-shadow-top {
@@ -47,12 +65,12 @@ a {
 }
 
 .drop-shadow-top-inset {
-  -webkit-box-shadow: inset 0px -1px 5px 1px #000000;
-  -moz-box-shadow: inset 0px -1px 5px 1px #000000;
-  box-shadow: inset 0px -1px 5px 1px #000000;
-  -webkit-box-shadow: inset 0px -1px 5px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: inset 0px -1px 5px 1px rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0px -1px 5px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: inset 0px 1px 5px 0px #000000;
+  -moz-box-shadow: inset 0px 1px 5px 0px #000000;
+  box-shadow: inset 0px 1px 5px 0px #000000;
+  -webkit-box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .drop-shadow-bottom {
@@ -101,7 +119,7 @@ a {
 /* Nav Stuff Here */
 
 #header {
-  background-color: #327eb0;
+  background-color: #FFC53A;
   z-index: 2;
   position: relative;
 }
@@ -112,7 +130,7 @@ a {
 
 #header nav {
   margin-top: 2%;
-  color: #ffdd1d;
+  color: #AA5042;
   float: right;
   padding-right: 2%;
 }
@@ -128,9 +146,9 @@ a {
   margin-left: 0;
 }
 
-#header nav ul li:hover {
-  color: #ffdd1d;
-  background-color: #1f1f1f;
+#header nav ul li a:hover {
+      background-color: #AA5042;
+      color: #FFC53A;
   -webkit-animation: navigation-color 1s ease;
   -moz-animation: navigation-color 1s ease;
   -o-animation: navigation-color 1s ease;
@@ -142,45 +160,56 @@ a {
 }
 
 #header nav ul li a {
-  background-color: #327eb0;
+  background-color: #FFC53A;
   padding: 20px 18px;
-  color: #ffdd1d;
   text-decoration: none;
 }
 
 @-webkit-keyframes navigation-colour {
   from {
-    background-color: #327eb0;
+      color: #AA5042;
+    background-color: #FFC53A;
   }
   to {
-    background-color: #1f1f1f;
+    background-color: #AA5042;
+      color: #FFC53A;
+
   }
 }
 
 @-moz-keyframes navigation-colour {
-  from {
-    background-color: #327eb0;
+     from {
+      color: #AA5042;
+    background-color: #FFC53A;
   }
   to {
-    background-color: #1f1f1f;
+    background-color: #AA5042;
+      color: #FFC53A;
+
   }
 }
 
 @-o-keyframes navigation-colour {
-  from {
-    background-color: #327eb0;
+    from {
+      color: #AA5042;
+    background-color: #FFC53A;
   }
   to {
-    background-color: #1f1f1f;
+    background-color: #AA5042;
+      color: #FFC53A;
+
   }
 }
 
 @keyframes navigation-colour {
-  from {
-    background-color: #327eb0;
+     from {
+      color: #AA5042;
+    background-color: #FFC53A;
   }
   to {
-    background-color: #1f1f1f;
+    background-color: #AA5042;
+      color: #FFC53A;
+
   }
 }
 
@@ -198,15 +227,35 @@ header #header-logo {
 /* Per Page Highlighting */
 
 #home nav .menu-home a {
-  background-color: #1f1f1f;
+  background-color: #AA5042;
+      color: #FFC53A;
+
 }
 
 #contact nav .menu-contact a {
-  background-color: #1f1f1f;
+  background-color: #AA5042;
+      color: #FFC53A;
+
 }
 
 #shop nav .menu-shop a {
-  background-color: #1f1f1f;
+  background-color: #AA5042;
+      color: #FFC53A;
+}
+#home nav .menu-home a:hover {
+animation:none;
+
+}
+
+#contact nav .menu-contact a:hover {
+animation:none;
+
+
+}
+
+#shop nav .menu-shop a:hover {
+animation:none;
+
 }
 
 
@@ -216,8 +265,6 @@ header #header-logo {
   margin-left: 15px;
   margin-right: 15px;
 }
-
-
 
 @media only screen and (min-width: 768px) {
   .column-1 {
@@ -298,14 +345,14 @@ header #header-logo {
   }
 }
 
-@media only screen and (max-width: 500px){
-  .shop-entry{
-    width:100%;
+@media only screen and (max-width: 500px) {
+  .shop-entry {
+    width: 100%;
   }
 }
 
 #content-wrapper {
-  background-color: white;
+  background-color: #D2CCA1;
   height: 100%;
   float: left;
   max-width: 1200px;
@@ -318,7 +365,7 @@ header #header-logo {
 }
 
 footer {
-  background-color: #999999;
+  background-color: #50514F;
   z-index: 2;
   content: "";
   display: block;
@@ -331,10 +378,9 @@ footer {
 }
 
 #sidebar-content {
-  background-color: #47bfff;
-  color: #fff;
+  background-color: #FFC53A;
 }
 
-.layout-border{
-  border:2px solid red;
+.layout-border {
+  border: 2px solid red;
 }

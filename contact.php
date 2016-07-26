@@ -12,7 +12,7 @@
 <body id="contact">
 
     <?php
-include 'header.php';
+include 'resources/header.php';
 ?>
         <main>
             <div class=" h-panel relative side-padding">
@@ -32,7 +32,7 @@ include 'header.php';
             </div>
         </main>
         <?php
-include 'footer.php';
+include 'resources/footer.php';
 ?>
 </body>
 

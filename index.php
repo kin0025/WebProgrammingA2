@@ -12,7 +12,7 @@
 <body id="home">
 
     <?php
-include 'header.php';
+include 'resources/header.php';
 ?>
         <main>
             <div class=" h-panel relative side-padding">
@@ -39,7 +39,7 @@ MAKE THIS PRETTY
             </div>
         </main>
         <?php
-include 'footer.php';
+include 'resources/footer.php';
 ?>
 </body>
 
