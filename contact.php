@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,29 +11,29 @@
 
 <body id="contact">
 
-<?php
+    <?php
 include 'header.php';
 ?>
-<main>
-<div class=" h-panel relative side-padding">
-<div id="content-wrapper" class="column-12 drop-shadow-left-right">
-    <div id="main-body" class="h-panel">
-                <div id="main-body-wrapper" class="column-10">
-A form and stuff goes here
-        <form>
-        
-    </form>
-    </div>
-    <div id="sidebar-content" class="column-2"> WOO SIDEBAR WOO CONTENT WOO <br> More stuff Wooo <br> Best stuff
-            ever, such content much
+        <main>
+            <div class=" h-panel relative side-padding">
+                <div id="content-wrapper" class="column-12 drop-shadow-left-right">
+                    <div id="main-body" class="h-panel">
+                        <div id="main-body-wrapper" class="column-10">
+                            A form and stuff goes here
+                            <form>
 
-        </div>
-    </div>
-</div>
-</div>
-</main>
-<?php
+                            </form>
+                        </div>
+                        <div id="sidebar-content" class="column-2"> WOO SIDEBAR WOO CONTENT WOO <br> More stuff Wooo <br> Best stuff ever, such content much
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <?php
 include 'footer.php';
 ?>
 </body>
+
 </html>
