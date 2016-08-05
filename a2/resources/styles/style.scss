@@ -7,6 +7,8 @@ Body Background: #B4B8AB
 Highlights: #0B0A07
 
 */
+
+
 /*
 $colour1 : #50514F;
 $colour2 : #AA5042;
@@ -16,6 +18,8 @@ $colour5: #0B0A07;
 
 https://coolors.co/b9d6f2-061a40-0353a4-006daa-003559
 */
+
+
 /*
 $colour1 : #0C0C0C; //TextColour
 $colour2 : #BA5A31; //Links
@@ -34,6 +38,7 @@ $color4: hsla(105%, 35%, 68%, 1);
 $color5: hsla(48%, 73%, 55%, 1);
 */
 
+
 /* Coolors Exported Palette - coolors.co/eaebed-006989-a3bac3-007090-01a7c2 
 
 $color1: hsla(220%, 8%, 92%, 1);
@@ -42,6 +47,7 @@ $color3: hsla(197%, 21%, 70%, 1);
 $color4: hsla(193%, 100%, 28%, 1);
 $color5: hsla(188%, 99%, 38%, 1);
 */
+
 
 /* Coolors Exported Palette - coolors.co/4b4237-d68420-ede4da-a39b92-72695f 
 
@@ -52,6 +58,7 @@ $color4: hsla(32%, 8%, 61%, 1);
 $color5: hsla(32%, 9%, 41%, 1);
 */
 
+
 /* Coolors Exported Palette - coolors.co/353535-3c6e71-ffffff-d9d9d9-284b63 
 $color1: hsla(0%, 0%, 21%, 1);
 $color2: hsla(183%, 31%, 34%, 1);
@@ -59,29 +66,59 @@ $color3: hsla(0%, 0%, 100%, 1);
 $color4: hsla(0%, 0%, 85%, 1);
 $color5: hsla(204%, 42%, 27%, 1);
 */
-/* Coolors Exported Palette - coolors.co/2d3142-4f5d75-bfc0c0-ffffff-ef8354 */
 
-/* HSL */
+
+/* Coolors Exported Palette - coolors.co/2d3142-4f5d75-bfc0c0-ffffff-ef8354 Good one 
 $color1: hsla(229%, 19%, 22%, 1);
 $color2: hsla(218%, 19%, 38%, 1);
 $color3: hsla(180%, 1%, 75%, 1);
 $color4: hsla(0%, 0%, 100%, 1);
-$color5: hsla(18%, 83%, 63%, 1);
+
+$color5$footersides: darken($colour2,10%);
+$footermiddle:lighten($colour2,10%);: hsla(18%, 83%, 63%, 1);
+
+*/
 
 
+/* Coolors Exported Palette - coolors.co/1d1a05-fffbbd-ca3c25-e6aa68-7fb069 
+
+$color1: hsla(53%, 71%, 7%, 1);
+$color2: hsla(56%, 100%, 87%, 1);
+$color3: hsla(8%, 69%, 47%, 1);
+$color4: hsla(31%, 72%, 65%, 1);
+$color5: hsla(101%, 31%, 55%, 1);
+
+$footersides: darken($color2,20%);
+$footermiddle:desaturate($color2,30%);
+
+*/
+
+
+/* Coolors Exported Palette - coolors.co/33658a-4BB2EA-2f4858-f6ae2d-f26419 */
+
+
+/* HSL */
+
+$color1: hsla(206%, 46%, 37%, 1);
+$color2: #4BB2EA;
+$color3: hsla(203%, 30%, 26%, 1);
+$color4: hsla(39%, 92%, 57%, 1);
+$color5: hsla(21%, 89%, 52%, 1);
+$footersides: darken($color2, 10%);
+$footermiddle:darken($color2, 20%);
 $colour1:$color1;
 $colour2:$color2;
 $colour3:$color3;
 $colour4:$color4;
 $colour5:$color5;
+$footer-text:lighten($color2, 10%);
+$background:lighten($colour2, 20%);
+$backgroundlighten:lighten($colour2, 70%);
 
-$background:lighten($colour2,20%);
-$backgroundlighten:lighten($colour2,70%);
-
-
-$footersides: desaturate($colour2,60%);
-$footermiddle:lighten($colour2,30%);
-
+/*For reference
+$footersides: darken($colour2,10%);
+$footermiddle:lighten($colour2,10%);
+*/
 
 .h-panel,
 footer {
@@ -101,8 +138,9 @@ footer:after {
   clear: both;
 }
 
-html,body{
-      height:100%;
+html,
+body {
+  height: 100%;
 }
 
 html,
@@ -114,12 +152,11 @@ ol {
 }
 
 
-/* http://lea.verou.me/css3patterns/#weave (Note- modified to make more dense)*/
+/* Original css below sourced for educational purposes: http://lea.verou.me/css3patterns/#weave (Note- modified to make more dense) */
 
 body {
   color: $colour1;
   font-family: 'Open Sans', sans-serif;
-
   background: linear-gradient(135deg, $background 11px, $backgroundlighten 11px, $backgroundlighten 12px, transparent 12px, transparent 33.5px, $backgroundlighten 33.5px, $backgroundlighten 34px, transparent 34px), linear-gradient(225deg, $background 11px, $backgroundlighten 11px, $backgroundlighten 12px, transparent 12px, transparent 33.5px, $backgroundlighten 33.5px, $backgroundlighten 34px, transparent 34px)0 32px;
   background: -moz-linear-gradient(135deg, $background 11px, $backgroundlighten 11px, $backgroundlighten 12px, transparent 12px, transparent 33.5px, $backgroundlighten 33.5px, $backgroundlighten 34px, transparent 34px), -moz-linear-gradient(225deg, $background 11px, $backgroundlighten 11px, $backgroundlighten 12px, transparent 12px, transparent 33.5px, $backgroundlighten 33.5px, $backgroundlighten 34px, transparent 34px)0 32px;
   background: -webkit-linear-gradient(135deg, $background 11px, $backgroundlighten 11px, $backgroundlighten 12px, transparent 12px, transparent 33.5px, $backgroundlighten 33.5px, $backgroundlighten 34px, transparent 34px), -webkit-linear-gradient(225deg, $background 11px, $backgroundlighten 11px, $backgroundlighten 12px, transparent 12px, transparent 33.5px, $backgroundlighten 33.5px, $backgroundlighten 34px, transparent 34px)0 32px;
@@ -127,8 +164,7 @@ body {
   background: -o-linear-gradient(135deg, $background 11px, $backgroundlighten 11px, $backgroundlighten 12px, transparent 12px, transparent 33.5px, $backgroundlighten 33.5px, $backgroundlighten 34px, transparent 34px), -o-linear-gradient(225deg, $background 11px, $backgroundlighten 11px, $backgroundlighten 12px, transparent 12px, transparent 33.5px, $backgroundlighten 33.5px, $backgroundlighten 34px, transparent 34px)0 32px;
   background-color: $background;
   background-size: 32px 64px;
-  background-position: 16px 16px; 
-
+  background-position: 16px 16px;
 }
 
 * {
@@ -178,8 +214,8 @@ a {
 }
 
 #header h1 {
-    font-family: 'Roboto', sans-serif;
-
+  font-family: 'Roboto', sans-serif;
+  color: $colour2;
   float: left;
 }
 
@@ -264,7 +300,8 @@ a {
     color: $colour3;
   }
 }
-header{
+
+header {
   margin-left: 10%;
 }
 
@@ -316,14 +353,17 @@ header #header-logo {
   margin-right: 15px;
 }
 
-/*http://stackoverflow.com/questions/3338680/is-there-a-css-selector-by-class-prefix*/
-@media only screen and (max-width: 768px) {
 
-div[class^="column-"], div[class*=" column-"]{
-      padding: 15px;
-      width:100%;
+/* Original css below sourced for educational purposes: http://stackoverflow.com/questions/3338680/is-there-a-css-selector-by-class-prefix */
+
+@media only screen and (max-width: 768px) {
+  div[class^="column-"],
+  div[class*=" column-"] {
+    padding: 15px;
+    width: 100%;
+  }
 }
-}
+
 @media only screen and (min-width: 768px) {
   .column-1 {
     float: left;
@@ -423,7 +463,7 @@ div[class^="column-"], div[class*=" column-"]{
 }
 
 footer {
-  background-color: $footermiddle;
+  background-color: $footersides;
   z-index: 2;
   content: "";
   display: block;
@@ -434,58 +474,59 @@ footer {
 
 #footer-wrapper {
   background-color: $footermiddle;
-  min-height:10%;
-}
-#footer-links ul {
-    list-style-position: inside;
+  min-height: 10%;
+  color: $footer-text;
 }
 
-footer ul{
+#footer-links ul {
+  list-style-position: inside;
+}
+
+footer ul {
   margin-left: 5px;
 }
-
 
 #sidebar-content {
   background-color: $colour3;
   -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 10px;
 }
 
 .layout-border {
   border: 2px solid red;
 }
 
-#promo-shot{
-  float:left;
-  width:100%;
+#promo-shot {
+  float: left;
+  width: 100%;
 }
 
-#main-body-wrapper h2{
-  float:left;
-  padding:15px;
+#main-body-wrapper h2 {
+  float: left;
+  padding: 15px;
 }
 
-.profile-image{
-  max-height:160px;
+.profile-image {
+  max-height: 160px;
   border-radius: 10px;
-  float:left;
-
+  float: left;
 }
 
-.inner-highlight-box{
-  background-color:  $colour5;
+.inner-highlight-box {
+  background-color: $colour5;
   -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  padding:10px;
-  margin:5px;
+  padding: 10px;
+  margin: 10px 0;
 }
 
-.border-left{
+.border-left {
   border-left: 1px solid $colour1;
-  }
-  .border-right{
-    border-right: 1px solid $colour1;
+}
 
-  }
+.border-right {
+  border-right: 1px solid $colour1;
+}

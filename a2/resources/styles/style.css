@@ -54,8 +54,34 @@ $color3: hsla(0%, 0%, 100%, 1);
 $color4: hsla(0%, 0%, 85%, 1);
 $color5: hsla(204%, 42%, 27%, 1);
 */
-/* Coolors Exported Palette - coolors.co/2d3142-4f5d75-bfc0c0-ffffff-ef8354 */
+/* Coolors Exported Palette - coolors.co/2d3142-4f5d75-bfc0c0-ffffff-ef8354 Good one 
+$color1: hsla(229%, 19%, 22%, 1);
+$color2: hsla(218%, 19%, 38%, 1);
+$color3: hsla(180%, 1%, 75%, 1);
+$color4: hsla(0%, 0%, 100%, 1);
+
+$color5$footersides: darken($colour2,10%);
+$footermiddle:lighten($colour2,10%);: hsla(18%, 83%, 63%, 1);
+
+*/
+/* Coolors Exported Palette - coolors.co/1d1a05-fffbbd-ca3c25-e6aa68-7fb069 
+
+$color1: hsla(53%, 71%, 7%, 1);
+$color2: hsla(56%, 100%, 87%, 1);
+$color3: hsla(8%, 69%, 47%, 1);
+$color4: hsla(31%, 72%, 65%, 1);
+$color5: hsla(101%, 31%, 55%, 1);
+
+$footersides: darken($color2,20%);
+$footermiddle:desaturate($color2,30%);
+
+*/
+/* Coolors Exported Palette - coolors.co/33658a-4BB2EA-2f4858-f6ae2d-f26419 */
 /* HSL */
+/*For reference
+$footersides: darken($colour2,10%);
+$footermiddle:lighten($colour2,10%);
+*/
 .h-panel,
 footer {
   *zoom: 1; }
@@ -71,7 +97,8 @@ footer:after {
 footer:after {
   clear: both; }
 
-html, body {
+html,
+body {
   height: 100%; }
 
 html,
@@ -81,16 +108,16 @@ ol {
   margin: 0;
   padding: 0; }
 
-/* http://lea.verou.me/css3patterns/#weave (Note- modified to make more dense)*/
+/* Original css below sourced for educational purposes: http://lea.verou.me/css3patterns/#weave (Note- modified to make more dense) */
 body {
-  color: #2d3143;
+  color: #33648a;
   font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(135deg, #808ea8 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px), linear-gradient(225deg, #808ea8 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px) 0 32px;
-  background: -moz-linear-gradient(135deg, #808ea8 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px), -moz-linear-gradient(225deg, #808ea8 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px) 0 32px;
-  background: -webkit-linear-gradient(135deg, #808ea8 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px), -webkit-linear-gradient(225deg, #808ea8 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px) 0 32px;
-  background: -ms-linear-gradient(135deg, #808ea8 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px), -ms-linear-gradient(225deg, #808ea8 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px) 0 32px;
-  background: -o-linear-gradient(135deg, #808ea8 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px), -o-linear-gradient(225deg, #808ea8 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px) 0 32px;
-  background-color: #808ea8;
+  background: linear-gradient(135deg, #a6d9f5 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px), linear-gradient(225deg, #a6d9f5 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px) 0 32px;
+  background: -moz-linear-gradient(135deg, #a6d9f5 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px), -moz-linear-gradient(225deg, #a6d9f5 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px) 0 32px;
+  background: -webkit-linear-gradient(135deg, #a6d9f5 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px), -webkit-linear-gradient(225deg, #a6d9f5 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px) 0 32px;
+  background: -ms-linear-gradient(135deg, #a6d9f5 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px), -ms-linear-gradient(225deg, #a6d9f5 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px) 0 32px;
+  background: -o-linear-gradient(135deg, #a6d9f5 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px), -o-linear-gradient(225deg, #a6d9f5 11px, white 11px, white 12px, transparent 12px, transparent 33.5px, white 33.5px, white 34px, transparent 34px) 0 32px;
+  background-color: #a6d9f5;
   background-size: 32px 64px;
   background-position: 16px 16px; }
 
@@ -98,7 +125,7 @@ body {
   box-sizing: border-box; }
 
 a {
-  color: #4e5c73; }
+  color: #4BB2EA; }
 
 .drop-shadow-top {
   box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75); }
@@ -123,18 +150,19 @@ a {
 
 /* Nav Stuff Here */
 #header {
-  background-color: #bfc0c0;
+  background-color: #2e4756;
   z-index: 2;
   position: relative;
   min-height: 10%; }
 
 #header h1 {
   font-family: 'Roboto', sans-serif;
+  color: #4BB2EA;
   float: left; }
 
 #header nav {
   margin: 20px 0px;
-  color: #4e5c73;
+  color: #4BB2EA;
   float: right;
   padding-right: 2%; }
 
@@ -148,8 +176,8 @@ a {
   margin-left: 0; }
 
 #header nav ul li a:hover {
-  background-color: #4e5c73;
-  color: #bfc0c0;
+  background-color: #4BB2EA;
+  color: #2e4756;
   -webkit-animation: navigation-color 1s ease;
   -moz-animation: navigation-color 1s ease;
   -o-animation: navigation-color 1s ease;
@@ -161,38 +189,38 @@ a {
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
 
 #header nav ul li a {
-  background-color: #bfc0c0;
+  background-color: #2e4756;
   padding: 20px 18px;
   text-decoration: none; }
 
 @-webkit-keyframes navigation-colour {
   from {
-    color: #4e5c73;
-    background-color: #bfc0c0; }
+    color: #4BB2EA;
+    background-color: #2e4756; }
   to {
-    background-color: #4e5c73;
-    color: #bfc0c0; } }
+    background-color: #4BB2EA;
+    color: #2e4756; } }
 @-moz-keyframes navigation-colour {
   from {
-    color: #4e5c73;
-    background-color: #bfc0c0; }
+    color: #4BB2EA;
+    background-color: #2e4756; }
   to {
-    background-color: #4e5c73;
-    color: #bfc0c0; } }
+    background-color: #4BB2EA;
+    color: #2e4756; } }
 @-o-keyframes navigation-colour {
   from {
-    color: #4e5c73;
-    background-color: #bfc0c0; }
+    color: #4BB2EA;
+    background-color: #2e4756; }
   to {
-    background-color: #4e5c73;
-    color: #bfc0c0; } }
+    background-color: #4BB2EA;
+    color: #2e4756; } }
 @keyframes navigation-colour {
   from {
-    color: #4e5c73;
-    background-color: #bfc0c0; }
+    color: #4BB2EA;
+    background-color: #2e4756; }
   to {
-    background-color: #4e5c73;
-    color: #bfc0c0; } }
+    background-color: #4BB2EA;
+    color: #2e4756; } }
 header {
   margin-left: 10%; }
 
@@ -206,16 +234,16 @@ header #header-logo {
 
 /* Per Page Highlighting */
 #home nav .menu-home a {
-  background-color: #4e5c73;
-  color: #bfc0c0; }
+  background-color: #4BB2EA;
+  color: #2e4756; }
 
 #contact nav .menu-contact a {
-  background-color: #4e5c73;
-  color: #bfc0c0; }
+  background-color: #4BB2EA;
+  color: #2e4756; }
 
 #shop nav .menu-shop a {
-  background-color: #4e5c73;
-  color: #bfc0c0; }
+  background-color: #4BB2EA;
+  color: #2e4756; }
 
 #home nav .menu-home a:hover {
   animation: dropshadow; }
@@ -231,9 +259,10 @@ header #header-logo {
   margin-left: 15px;
   margin-right: 15px; }
 
-/*http://stackoverflow.com/questions/3338680/is-there-a-css-selector-by-class-prefix*/
+/* Original css below sourced for educational purposes: http://stackoverflow.com/questions/3338680/is-there-a-css-selector-by-class-prefix */
 @media only screen and (max-width: 768px) {
-  div[class^="column-"], div[class*=" column-"] {
+  div[class^="column-"],
+  div[class*=" column-"] {
     padding: 15px;
     width: 100%; } }
 @media only screen and (min-width: 768px) {
@@ -313,7 +342,7 @@ header #header-logo {
   .shop-entry {
     width: 100%; } }
 #content-wrapper {
-  background-color: white;
+  background-color: #f6b02c;
   min-height: 80%;
   float: left;
   max-width: 1200px;
@@ -324,7 +353,7 @@ header #header-logo {
   position: relative; }
 
 footer {
-  background-color: #9ea9bd;
+  background-color: #1d9ee5;
   z-index: 2;
   content: "";
   display: block;
@@ -333,8 +362,9 @@ footer {
   min-height: 10%; }
 
 #footer-wrapper {
-  background-color: #9ea9bd;
-  min-height: 10%; }
+  background-color: #1680b9;
+  min-height: 10%;
+  color: #79c6ef; }
 
 #footer-links ul {
   list-style-position: inside; }
@@ -343,10 +373,11 @@ footer ul {
   margin-left: 5px; }
 
 #sidebar-content {
-  background-color: #bfc0c0;
+  background-color: #2e4756;
   -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 10px; }
 
 .layout-border {
   border: 2px solid red; }
@@ -365,17 +396,17 @@ footer ul {
   float: left; }
 
 .inner-highlight-box {
-  background-color: #ef8152;
+  background-color: #f26418;
   -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 10px;
-  margin: 5px; }
+  margin: 10px 0; }
 
 .border-left {
-  border-left: 1px solid #2d3143; }
+  border-left: 1px solid #33648a; }
 
 .border-right {
-  border-right: 1px solid #2d3143; }
+  border-right: 1px solid #33648a; }
 
 /*# sourceMappingURL=style.css.map */

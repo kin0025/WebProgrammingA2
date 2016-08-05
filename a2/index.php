@@ -19,7 +19,7 @@ include 'resources/header.php';
                             <div id="main-body" class="h-panel">
                                 <div id="main-body-wrapper" class="column-10">
 
-                                    <div class="column-12">
+                                    <div class="column-12 h-panel">
                                         <img class="profile-image" alt="Profile Photo" src="resources/images/ProfileShot.png" />
                                         <h2>Hi, I'm Josh</h2>
 
