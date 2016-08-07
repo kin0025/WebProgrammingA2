@@ -29,7 +29,7 @@ $colour5: #69DC9E;  //Highlight
 */
 
 
-/* Coolors Exported Palette - coolors.co/998650-75b09c-d8f793-a0ca92-e0be36 
+/* Coolors Exported Palette - coolors.co/998650-75b09c-d8f793-a0ca92-e0be36
 
 $color1: hsla(44%, 31%, 46%, 1);
 $color2: hsla(160%, 27%, 57%, 1);
@@ -39,7 +39,7 @@ $color5: hsla(48%, 73%, 55%, 1);
 */
 
 
-/* Coolors Exported Palette - coolors.co/eaebed-006989-a3bac3-007090-01a7c2 
+/* Coolors Exported Palette - coolors.co/eaebed-006989-a3bac3-007090-01a7c2
 
 $color1: hsla(220%, 8%, 92%, 1);
 $color2: hsla(194%, 100%, 27%, 1);
@@ -49,7 +49,7 @@ $color5: hsla(188%, 99%, 38%, 1);
 */
 
 
-/* Coolors Exported Palette - coolors.co/4b4237-d68420-ede4da-a39b92-72695f 
+/* Coolors Exported Palette - coolors.co/4b4237-d68420-ede4da-a39b92-72695f
 
 $color1: hsla(33%, 15%, 25%, 1);
 $color2: hsla(33%, 74%, 48%, 1);
@@ -59,7 +59,7 @@ $color5: hsla(32%, 9%, 41%, 1);
 */
 
 
-/* Coolors Exported Palette - coolors.co/353535-3c6e71-ffffff-d9d9d9-284b63 
+/* Coolors Exported Palette - coolors.co/353535-3c6e71-ffffff-d9d9d9-284b63
 $color1: hsla(0%, 0%, 21%, 1);
 $color2: hsla(183%, 31%, 34%, 1);
 $color3: hsla(0%, 0%, 100%, 1);
@@ -68,7 +68,7 @@ $color5: hsla(204%, 42%, 27%, 1);
 */
 
 
-/* Coolors Exported Palette - coolors.co/2d3142-4f5d75-bfc0c0-ffffff-ef8354 Good one 
+/* Coolors Exported Palette - coolors.co/2d3142-4f5d75-bfc0c0-ffffff-ef8354 Good one
 $color1: hsla(229%, 19%, 22%, 1);
 $color2: hsla(218%, 19%, 38%, 1);
 $color3: hsla(180%, 1%, 75%, 1);
@@ -80,7 +80,7 @@ $footermiddle:lighten($colour2,10%);: hsla(18%, 83%, 63%, 1);
 */
 
 
-/* Coolors Exported Palette - coolors.co/1d1a05-fffbbd-ca3c25-e6aa68-7fb069 
+/* Coolors Exported Palette - coolors.co/1d1a05-fffbbd-ca3c25-e6aa68-7fb069
 
 $color1: hsla(53%, 71%, 7%, 1);
 $color2: hsla(56%, 100%, 87%, 1);
@@ -94,7 +94,7 @@ $footermiddle:desaturate($color2,30%);
 */
 
 
-/* Coolors Exported Palette - coolors.co/33658a-4BB2EA-2f4858-f6ae2d-f26419 */
+/* Coolors Exported Palette - coolors.co/33658a-4BB2EA-2f4858-f6ae2d-F27532 */
 
 
 /* HSL */
@@ -103,9 +103,10 @@ $color1: hsla(206%, 46%, 37%, 1);
 $color2: #4BB2EA;
 $color3: hsla(203%, 30%, 26%, 1);
 $color4: hsla(39%, 92%, 57%, 1);
-$color5: hsla(21%, 89%, 52%, 1);
+$color5: #F27532;
 $footersides: darken($color2, 10%);
 $footermiddle:darken($color2, 20%);
+
 $colour1:$color1;
 $colour2:$color2;
 $colour3:$color3;
@@ -114,6 +115,8 @@ $colour5:$color5;
 $footer-text:lighten($color2, 10%);
 $background:lighten($colour2, 20%);
 $backgroundlighten:lighten($colour2, 70%);
+$link-colour:$colour3;
+
 
 /*For reference
 $footersides: darken($colour2,10%);
@@ -172,7 +175,7 @@ body {
 }
 
 a {
-  color: $colour2;
+  color: $link-colour;
 }
 
 .drop-shadow-top {
@@ -221,7 +224,6 @@ a {
 
 #header nav {
   margin: 20px 0px;
-  color: $colour2;
   float: right;
   padding-right: 2%;
 }
@@ -236,27 +238,30 @@ a {
   list-style-type: none;
   margin-left: 0;
 }
-
+#header nav ul li a {
+   color: $colour2;
+    background-color: $colour3;
+  padding: 20px 18px;
+  text-decoration: none;
+   -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
 #header nav ul li a:hover {
   background-color: $colour2;
   color: $colour3;
-  -webkit-animation: navigation-color 1s ease;
+  /*-webkit-animation: navigation-color 1s ease;
   -moz-animation: navigation-color 1s ease;
   -o-animation: navigation-color 1s ease;
   animation: navigation-color 1s ease;
   animation-name: navigation-colour;
   animation-duration: 1s;
   animation-iteration-count: 1;
-  animation-timing-function: ease;
+  animation-timing-function: ease;*/
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-#header nav ul li a {
-  background-color: $colour3;
-  padding: 20px 18px;
-  text-decoration: none;
-}
 
+/*
 @-webkit-keyframes navigation-colour {
   from {
     color: $colour2;
@@ -300,7 +305,7 @@ a {
     color: $colour3;
   }
 }
-
+*/
 header {
   margin-left: 10%;
 }
@@ -472,7 +477,7 @@ footer {
   min-height: 10%;
 }
 
-#footer-wrapper {
+#footer-wrapper , #footer-wrapper a{
   background-color: $footermiddle;
   min-height: 10%;
   color: $footer-text;
@@ -503,7 +508,7 @@ footer ul {
   width: 100%;
 }
 
-#main-body-wrapper h2 {
+#main-body-wrapper h2 .pagetitle{
   float: left;
   padding: 15px;
 }
@@ -521,8 +526,11 @@ footer ul {
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 10px;
   margin: 10px 0;
+  color:$colour3;
 }
-
+.inner-highlight-box a {
+    color:$colour3;
+}
 .border-left {
   border-left: 1px solid $colour1;
 }
@@ -530,3 +538,25 @@ footer ul {
 .border-right {
   border-right: 1px solid $colour1;
 }
+
+#text-404{
+font-size: 330px;
+margin:0;
+
+}
+
+#insideimage{
+  background-image : url("../images/stacksofpapers.png");
+  background-repeat:no-repeat;
+  background-position: center;
+}
+.button {
+  background-color: $colour5;
+  padding-left: 10px;
+  border-radius: 5px;
+  border:1px solid $link-colour;
+  color:$link-colour;
+  margin:5px;
+  cursor:pointer;
+}
+@import "swap";

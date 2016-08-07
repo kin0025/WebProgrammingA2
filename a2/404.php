@@ -2,12 +2,12 @@
 
 <head>
 
-    <title>Home</title>
+    <title>404</title>
     <?php
 include 'resources/head.php';
 ?>
 
-        <body id="home">
+        <body>
 
             <?php
 include 'resources/header.php';
@@ -20,35 +20,12 @@ include 'resources/header.php';
                                 <div id="main-body-wrapper" class="column-10">
 
                                     <div class="column-12 h-panel">
-                                        <img class="profile-image" alt="Profile Photo" src="resources/images/ProfileShot.png" />
-                                        <h2 class="pagetitle">Hi, I'm Josh</h2>
+                                        <div><h2>Not Found</h2></div>
+                                        <span> <h1 id="text-404">4<span id="insideimage">O</span>4</h1></span>
 
-                                    </div>
-                                    <div class="column-6">
-                                        <h3>He does comedy</h3>
-                                        <p>Josh is a comedian, writer and very generous lover. Some people thought his show was good enough to give it some awards. He thinks personal websites are probably a bit stupid. He made a show called 'Please like
-                                            me'. It is on TV in Australia, US and Canada.
-                                        </p><img id="promo-shot" src="resources/images/pleaselikeme.jpg" alt="tv show promo image" />
-
-                                        <p> He is available for private/corporate gigs. If you want to contact him try the contact page <a href="contact.php">here</a>
-
-                                        </p>
-                                    </div>
-
-                                    <div class="column-6">
-                                        <h3>I make television shows</h3>
-                                        <p>I star in the award winning comedy Please Like Me. Season 4 will release later in 2016, and Season 1, 2 and 3 are avaliable through the online shop.</p>
-                                        <p> If you want to find out more about me, <a href="http://token.com.au/joshthomas">give my bio a read.</a></p>
-                                        <p>
-                                            I have recieved awards from the Australian Academy (AACTA) and the Australian Writers Guild for my writing for Please Like Me, and have been nominated for AACTA and Logie Awards for my performances in the show. </br>The show itself has won Best Comedy at the
-                                            AACTA Awards and been nominated as Best Comedy at the International Emmy Awards, Rose d’Or Awards, GLAAD Media Awards and Logie Awards. </br>The show has gained critical acclaim across the globe, and has been named
-                                            as one of the best TV shows of year by Entertainment Weekly, The New Yorker, Time, The A.V. Club and the Los Angeles Times.
-                                        </p>
-                                        <p>
-
-                                            Following on from the show’s success in both Australia and the US, Please Like Me has also been licensed to air in Germany, France, Sweden, Canada, Finland and Israel.</p>
-                                        </p>
-
+                                        <span>We are sorry, but the monkeys in the server room couldn't find what you requested.</span>
+                                        <!-- Original image below sourced for educational purposes:  https://twitter.com/joshthomas87 -->
+                                        <!-- Original image below sourced for educational purposes:  http://www.lrdc.pitt.edu/schunn/research/peers.html -->
 
                                     </div>
 

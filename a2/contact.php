@@ -18,7 +18,7 @@ include 'resources/header.php';
                     <div id="main-body" class="h-panel">
                         <div id="main-body-wrapper" class="column-10">
                             <div class="column-12 h-panel">
-                            <img  class="profile-image" alt="Profile Photo" src="resources/images/ProfileShot2.png"/><h2>Contact Me Here</h2>
+                            <img  class="profile-image" alt="Profile Photo" src="resources/images/ProfileShot2.png"/><h2 class="pagetitle">Contact Me Here</h2>
                             </div>
                             A form and stuff goes here
                             <form>

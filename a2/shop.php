@@ -18,15 +18,83 @@ include 'resources/header.php';
                             <div id="main-body-wrapper" class="column-9">
                                 <div class="column-12 h-panel">
                                     <img class="profile-image" alt="Profile Photo" src="resources/images/ProfileShot3.png" />
-                                    <h2>Buy Stuff I Guess</h2>
+                                    <h2 class="pagetitle">Buy Stuff I Guess</h2>
                                 </div>
                                 <div class="h-panel">
-                                <div class="layout-border shop-entry column-3">Please Like me season 1</div>
+                                    <form action="submit.php" id="form1" formmethod="post">
+                                        <div class="layout-border shop-entry column-3">Please Like me season 1
+                                            <div class="swap-container">
 
-                                <div class="layout-border shop-entry column-3">Please Like me season 2</div>
-                                <div class="layout-border shop-entry column-3">Please Like me season 3</div>
-                                <div class="layout-border shop-entry column-3">Please Like me season 4 Coming soon</div>
-</div>
+                                                <a class="button moreinfo" href="#">More Info</a>
+
+                                                <div class="front">
+                                                    <ul>
+                                                        <li>Some info</li>
+                                                        <li>More Stuff</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="back">
+                                                    <p>$$$$$$$$$$$</p>
+                                                    <input type="checkbox" name="pls1">Add to cart</input>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="layout-border shop-entry column-3">Please Like me season 2
+                                            <div class="swap-container">
+                                                <a class="button moreinfo" href="#">More Info</a>
+
+                                                <div class="front">
+                                                    <ul>
+                                                        <li>Some info</li>
+                                                        <li>More Stuff</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="back">
+                                                    <p>$$$$$$$$$$$</p>
+                                                    <input type="checkbox" name="pls2">Add to cart</input>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="layout-border shop-entry column-3">Please Like me season 3
+                                            <div class="swap-container">
+                                                <a class="button moreinfo" href="#">More Info</a>
+
+                                                <div class="front">
+                                                    <ul>
+                                                        <li>Some info</li>
+                                                        <li>More Stuff</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="back">
+                                                    <p>$$$$$$$$$$$</p>
+                                                    <input type="checkbox" name="pls3">Add to cart</input>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="layout-border shop-entry column-3">Please Like me season 4 Coming soon
+                                            <div class="swap-container">
+                                                <a class="button moreinfo" href="#">More Info</a>
+
+                                                <div class="front">
+                                                    <ul>
+                                                        <li>Some info</li>
+                                                        <li>More Stuff</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="back">
+                                                    <p>$$$$$$$$$$$</p>
+                                                    <input type="checkbox" name="pls4" disabled>Not Avaliable</input>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <input type="submit" value="Checkout" class="button"></input>
+                                    </form>
+                                </div>
 
                             </div>
                             <div id="sidebar-content" class="column-3">
