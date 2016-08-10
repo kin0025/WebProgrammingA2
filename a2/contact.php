@@ -7,40 +7,43 @@
 include 'resources/head.php';
 ?>
 
-<body id="contact">
+        <body id="contact">
 
-    <?php
+            <?php
 include 'resources/header.php';
 ?>
-        <main>
-            <div class=" h-panel relative side-padding">
-                <div id="content-wrapper" class="column-12 drop-shadow-left-right">
-                    <div id="main-body" class="h-panel">
-                        <div id="main-body-wrapper" class="column-10">
-                            <div class="column-12 h-panel">
-                            <img  class="profile-image" alt="Profile Photo" src="resources/images/ProfileShot2.png"/><h2 >Contact Me Here</h2>
+                <main class="drop-shadow-left-right flex-responsive">
+                    <div class="flex-magicbs">
+                        <article class="column-9">
+                            <div class="flex-row">
+                                <h2 class="pagetitle">Contact Me Here</h2>
                             </div>
-                            A form and stuff goes here
-                            <form>
-                            Name: <input "text" name: name /> <br />
-                            Contact No.: <input "number" name: phone /> <br/>
-                            </form>
-                        </div>
-                        <div id="sidebar-content" class="column-2"> </br>For all corporate and media enquiries: 
-                                </br>Australia and Rest of World Management: Token Artists <a href="mailto:erin@token.com.au">erin@token.com.au</a> 
-                                </br>USA Management: Avalon <a href="mailto:davidm@avalon-usa.com">davidm@avalon-usa.com</a> 
-                                </br>USA Agency: WME If
-                                    you would like to post him gifts or free things you can send them here: ATTN: Josh Thomas PO Box 108 Fitzroy Victoria 3065
+                            <div class="flex-responsive">
+                                <form class="column-12">
+                                    Name: <input type="text" name: name /> <br /> Contact No: <input type="text" name: phone /> <br/>
+                                </form>
+                            </div>
+                        </article>
 
+                        <aside id="sidebar-content" class="column-2 flex-column">
+                            <div class="inner-highlight-box">
+                                For all corporate and media enquiries:
+                                <ul class="fa-ul">
+                                    <li><i class="fa fa-li fa-globe" aria-hidden="true"></i>Australia and Rest of World Management: Token Artists <a href="mailto:erin@token.com.au">erin@token.com.au</a></li>
+                                    <li><i class="fa fa-li fa-envelope" aria-hidden="true"></i>USA Management: Avalon <a href="mailto:davidm@avalon-usa.com">davidm@avalon-usa.com</a></li>
+                                    <li><i class="fa fa-li fa-link" aria-hidden="true"></i>USA Agency: <a href="http://wmeentertainment.com/">WME</a></li>
+                                </ul>
+                             <p>If you would like to post me gifts or free things you can send them here:</p>
+                             <p>ATTN: Josh Thomas PO Box 108 Fitzroy Victoria 3065</p>
 
-                        </div>
+                            </div>
+
+                        </aside>
                     </div>
-                </div>
-            </div>
-        </main>
-        <?php
+                </main>
+                <?php
 include 'resources/footer.php';
 ?>
-</body>
+        </body>
 
 </html>

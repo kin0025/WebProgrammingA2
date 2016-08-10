@@ -115,9 +115,11 @@ $footer-text:lighten($color2, 10%);
 $background:lighten($colour2, 20%);
 $backgroundlighten:lighten($colour2, 70%);
 $link-colour:$colour3;
-html,
-body {
-  height: 100%;
+
+
+html, body {
+    height: auto;
+    min-height: 100%;
 }
 
 html,
@@ -162,6 +164,7 @@ body {
 
 .flex-start {
   justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .flex-center {
@@ -172,14 +175,21 @@ body {
 .flex-responsive {
   display: -webkit-flex;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
+  align-content: flex-start;
+}
+
+.flex-magicbs{
+  display:block;
 }
 
 main {
   background-color: $colour4;
-  min-height: 80%;
+  min-height: 80vh;
   max-width: 1200px;
   z-index: 1;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 a {
@@ -217,20 +227,23 @@ a {
 
 /* Nav Stuff Here */
 
-header div {
+header div, header div div {
   display: -webkit-flex;
   display: flex;
 }
 
-header {
-  display: -webkit-flex;
-  display: flex;
-  width: 100%;
+header{
   background-color: $colour3;
   z-index: 2;
   min-height: 10%;
+  padding-bottom:20px;
+}
+header,header >  div {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -246,26 +259,24 @@ header #header-logo {
   width: auto;
 }
 
-header nav {
+header div nav {
   display: -webkit-flex;
   display: flex;
-  flex-direction: row;
-  align-self: flex-end;
 }
 
-header nav ul {
+header div nav ul {
   list-style-type: none;
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
 }
 
-header nav ul li {
+header div nav ul li {
   list-style-type: none;
   margin-left: 0;
 }
 
-header nav ul li a {
+header div nav ul li a {
   color: $colour2;
   background-color: $colour3;
   padding: 20px 18px;
@@ -274,7 +285,7 @@ header nav ul li a {
   transition-duration: 1s;
 }
 
-header nav ul li a:hover {
+header div  nav ul li a:hover {
   background-color: $colour2;
   color: $colour3;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
@@ -317,63 +328,63 @@ header .nav-active {
 
 /* Original css below sourced for educational purposes: http://stackoverflow.com/questions/3338680/is-there-a-css-selector-by-class-prefix */
 
-div[class^="column-"],
-div[class*=" column-"] {
-  padding: 15px;
-  flex-shrink: 0;
+@for $i from 1 through 12 {
+  .#{column}-#{$i} {
+    padding: 5px;
+    width: 100%;
+    flex: 1;
+    box-sizing:border-box;
+  }
 }
 
-div[class^="column-"],
-div[class*=" column-"] {
-  padding: 15px;
-}
-
-aside {
-  display: flex;
-  flex-direction: column;
-}
-
-article {
-  flex-direction: column;
-  display: flex;
-}
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 60em) {
   .column-1 {
-    flex-grow: 1;
+    flex: 1;
+    width: 8.33333%;
   }
   .column-2 {
-    flex-grow: 2;
+    flex: 2;
+    width: 16.66667%;
   }
   .column-3 {
-    flex-grow: 3;
+    flex: 3;
+    width: 25%;
   }
   .column-4 {
-    flex-grow: 4;
+    flex: 4;
+    width: 25%;
   }
   .column-5 {
-    flex-grow: 5;
+    flex: 5;
+    width: 25%;
   }
   .column-6 {
-    flex-grow: 6;
+    flex: 6;
+    width: 50%;
   }
   .column-7 {
-    flex-grow: 7;
+    flex: 7;
+    width: 58.33333%;
   }
   .column-8 {
-    flex-grow: 8;
+    flex: 8;
+    width: 66.66667%;
   }
   .column-9 {
-    flex-grow: 9;
+    flex: 9;
+    width: 75%;
   }
   .column-10 {
-    flex-grow: 10;
+    flex: 10;
+    width: 83.33333%;
   }
   .column-11 {
-    flex-grow: 11;
+    flex: 11;
+    width: 91.66667%;
   }
   .column-12 {
-    flex-grow: 12;
+    flex: 12;
+    width: 100%;
   }
   main {
     width: 80%;
@@ -382,10 +393,6 @@ article {
   header {
     padding: 0 10%;
     box-sizing: border-box;
-  }
-  header nav {
-    margin-left: 0px;
-    flex-direction: column;
   }
   #footer-wrapper {
     width: 80%;
@@ -403,15 +410,25 @@ article {
     flex-direction: column;
   }
   .flex-responsive {
-    flex-direction: row;
+  flex-flow: row wrap;
   }
+  .flex-magicbs{
+  flex-flow: row wrap;
+      display: flex;
+align-content: flex-start;
+width:100%;
+  }
+  
+  #footer-wrapper{
+    padding: 0 5%;
+    box-sizing:border-box;
+  }
+  
 }
+footer div{
+  padding: 15px 15px;
+  }
 
-@media only screen and (max-width: 500px) {
-  .shop-entry {
-    width: 100%;
-  }
-}
 
 footer {
   background-color: $footersides;
@@ -443,6 +460,8 @@ footer ul {
   -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 0 10px;
+  margin: 10px 0 auto 0;
+  flex-wrap:nowrap;
 }
 
 .layout-border {
@@ -455,11 +474,6 @@ footer ul {
 
 h2 .pagetitle {
   padding: 15px;
-}
-
-.profile-image {
-  max-height: 160px;
-  border-radius: 10px;
 }
 
 .inner-highlight-box {

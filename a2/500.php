@@ -2,7 +2,7 @@
 
 <head>
 
-    <title>404</title>
+    <title>500</title>
     <?php
 include 'resources/head.php';
 ?>
@@ -18,10 +18,10 @@ include 'resources/header.php';
 
                         <div>
                             <h2>Not Found</h2></div>
-                        <span> <h1 id="text-404">4<span id="insideimage">O</span>4</h1>
+                        <span> <h1 id="text-404">5<span id="insideimage">O</span>0</h1>
                         </span>
 
-                        <span>We are sorry, but due to a unforseen error the page you were after was sucked into an alternate dimension. Please try a different page.</span>
+                        <span>We are sorry, but due to a lack of birdseed the carrier pidgeon network that we use to deliver content has gone down. We are working as hard as we can to fix the problem, and will try to bring the website back up as soon as possible.</span>
                         <!-- Original image below sourced for educational purposes:  https://twitter.com/joshthomas87 -->
                         <!-- Original image below sourced for educational purposes:  http://www.lrdc.pitt.edu/schunn/research/peers.html -->
 
