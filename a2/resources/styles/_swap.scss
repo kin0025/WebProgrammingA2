@@ -1,9 +1,10 @@
-.swap-container{
-  display: -webkit-flex; /* Safari */
-    -webkit-flex-direction: column-reverse; /* Safari 6.1+ */
-    display: flex;
-    flex-direction: column-reverse; 
-
+.swap-container {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-flex-direction: column-reverse;
+  /* Safari 6.1+ */
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .swap-container p {
@@ -12,68 +13,93 @@
 }
 
 .shop-item {
-   display: flex;
-   flex-direction: column;
-   padding: 1em;
-   width: 100%;
-   flex:1;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  min-width: 98%;
+  flex: 1;
+  background: $background;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 1%;
 }
+
 .shop-item div {
   flex: 1 0 auto;
 }
+
+.shop-item {
+  details {
+    overflow: hidden;
+    background: $backgroundlighten;
+    z-index: 10;
+    display: block;
+    padding:10px;
+    border-radius:5px;
+  }
+  details summary {
+    cursor: pointer;
+  }
+  h4{
+    margin-bottom:0;
+    margin-top:0.5em;
+  }
+  .front{
+      display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  }
+  img{
+    align-self:center;
+  }
+ 
+}
+
 .swap-container ul {
   list-style-position: inside;
 }
 
 .front {
-  position:relative;
+  position: relative;
   visibility: visible;
   opacity: 1;
   transition: visibility 0s, opacity 0.2s linear;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
-  z-index:2;
-  margin-top:-200px;
+  z-index: 2;
+  margin-top: -30vh;
 }
 
 .back {
-  position:relative;
+  position: relative;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.2s linear;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
-  z-index:0;
-
+  z-index: 0;
 }
 
-.swap-container:hover> .front, .moreinfo:active + .front {
- visibility: hidden;
+.swap-container:hover> .front,
+.moreinfo:active+ .front {
+  visibility: hidden;
   opacity: 0;
-    z-index:0;
-
-
-
-
+  z-index: 0;
 }
 
-.swap-container:hover> .back,.moreinfo:active + .back {
+.swap-container:hover> .back,
+.moreinfo:active+ .back {
   visibility: visible;
   opacity: 1;
-    z-index:2;
-
-
-
+  z-index: 2;
 }
 
 .front,
 .back {
   width: 100%;
-  height: 200px;
+  height: 30vh;
 }
 
-
-.moreinfo{
-  z-index:5;
+.moreinfo {
+  z-index: 5;
 }
-

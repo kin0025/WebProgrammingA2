@@ -21,13 +21,13 @@ include 'resources/header.php';
                             </div>
                             <div class="flex-responsive">
                                 <form class="column-12">
-                                    First Name*  <input type="text" name: firstname /> <br />
+                                    First Name*  <input type= "text" name: firstname /> <br />
                                     Last Name* <input type= "text" name: lastname /> <br />
-                                    Email Address* <input type= "text" name: email /> <br />
+                                    Email Address* <input type= "email" name: email /> <br />
                                     Contact No* <input type="text" name: phone /> <br />
                                     Event Date* <input type= "text" name: eventdate /> <br />
-                                    Event Location <input type= "text" name: eventloc /> <br />
-                                    Event Description <input type= "text" name: eventdesc /> <br />
+                                    Event Location <textarea cols:1000 rows:80></textarea> <br />
+                                    Event Description <textarea cols:1000 rows:80></textarea> <br />
                                     Performance Required <select name= 'Performance Required'> 
                                     <option value= ' ' selected> Please Select </option>
                                     <option value= 'Comedy Spot' > Comedy Spot </option>
@@ -35,7 +35,6 @@ include 'resources/header.php';
                                     <option value= 'Full Show'> Full Show </option>
                                     <option value= 'Other'> Other </option>
                                     </select>
-                                    
                                 </form>
                             </div>
                         </article>

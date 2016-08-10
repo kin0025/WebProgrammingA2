@@ -78,7 +78,8 @@ $footermiddle:desaturate($color2,30%);
 */
 /* Coolors Exported Palette - coolors.co/33658a-4BB2EA-2f4858-f6ae2d-F27532 */
 /* HSL */
-html, body {
+html,
+body {
   height: auto;
   min-height: 100%; }
 
@@ -188,7 +189,8 @@ a {
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
 
 /* Nav Stuff Here */
-header div, header div div {
+header div,
+header div div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -199,7 +201,8 @@ header {
   min-height: 10%;
   padding-bottom: 20px; }
 
-header, header > div {
+header,
+header > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,6 +385,171 @@ header .nav-active {
   flex: 1;
   box-sizing: border-box; }
 
+.swap-container {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-flex-direction: column-reverse;
+  /* Safari 6.1+ */
+  display: flex;
+  flex-direction: column-reverse; }
+
+.swap-container p {
+  margin: 0;
+  padding: 0; }
+
+.shop-item {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  min-width: 98%;
+  flex: 1;
+  background: #a6d9f5;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 1%; }
+
+.shop-item div {
+  flex: 1 0 auto; }
+
+.shop-item details {
+  overflow: hidden;
+  background: white;
+  z-index: 10;
+  display: block;
+  padding: 10px;
+  border-radius: 5px; }
+.shop-item details summary {
+  cursor: pointer; }
+.shop-item h4 {
+  margin-bottom: 0;
+  margin-top: 0.5em; }
+.shop-item .front {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+.shop-item img {
+  align-self: center; }
+
+.swap-container ul {
+  list-style-position: inside; }
+
+.front {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.2s linear;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  z-index: 2;
+  margin-top: -30vh; }
+
+.back {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  z-index: 0; }
+
+.swap-container:hover > .front,
+.moreinfo:active + .front {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0; }
+
+.swap-container:hover > .back,
+.moreinfo:active + .back {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2; }
+
+.front,
+.back {
+  width: 100%;
+  height: 30vh; }
+
+.moreinfo {
+  z-index: 5; }
+
+footer div {
+  padding: 15px 15px; }
+
+footer {
+  background-color: #1d9ee5;
+  z-index: 2;
+  content: "";
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-height: 10vh;
+  width: 100%; }
+
+#footer-wrapper,
+#footer-wrapper a {
+  background-color: #1680b9;
+  color: #000000; }
+
+#footer-links ul {
+  list-style-position: inside; }
+
+footer ul {
+  margin-left: 5px; }
+
+#sidebar-content {
+  background-color: #2e4756;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 10px;
+  margin: 10px 0 auto 0;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
+
+.layout-border {
+  border: 2px solid red; }
+
+#promo-shot {
+  width: 100%; }
+
+h2 .pagetitle {
+  padding: 15px; }
+
+.inner-highlight-box {
+  background-color: #F27532;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  margin: 10px 0;
+  color: #2e4756; }
+
+.inner-highlight-box a {
+  color: #2e4756; }
+
+#text-404 {
+  font-size: 330px;
+  margin: 0; }
+
+#insideimage {
+  background-image: url("../images/stacksofpapers.png");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.button {
+  background-color: #F27532;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #2e4756;
+  color: #2e4756;
+  margin: 5px;
+  cursor: pointer; }
+
+#shop-form {
+  width: 100%; }
+
+.shop-item img {
+  min-width: 100px;
+  width: auto;
+  max-height: calc(30vh - 5em); }
+
 @media only screen and (min-width: 60em) {
   .column-1 {
     -webkit-box-flex: 1;
@@ -465,7 +633,8 @@ header .nav-active {
 
   #footer-wrapper {
     width: 80%;
-    max-width: 1200px; }
+    max-width: 1200px;
+    min-height: 10vh; }
 
   article {
     -ms-flex-preferred-size: 80%;
@@ -508,138 +677,9 @@ header .nav-active {
 
   #footer-wrapper {
     padding: 0 5%;
-    box-sizing: border-box; } }
-footer div {
-  padding: 15px 15px; }
+    box-sizing: border-box; }
 
-footer {
-  background-color: #1d9ee5;
-  z-index: 2;
-  content: "";
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  min-height: 10%;
-  width: 100%; }
-
-#footer-wrapper,
-#footer-wrapper a {
-  background-color: #1680b9;
-  min-height: 10%;
-  color: #79c6ef; }
-
-#footer-links ul {
-  list-style-position: inside; }
-
-footer ul {
-  margin-left: 5px; }
-
-#sidebar-content {
-  background-color: #2e4756;
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  padding: 0 10px;
-  margin: 10px 0 auto 0;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap; }
-
-.layout-border {
-  border: 2px solid red; }
-
-#promo-shot {
-  width: 100%; }
-
-h2 .pagetitle {
-  padding: 15px; }
-
-.inner-highlight-box {
-  background-color: #F27532;
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  padding: 10px;
-  margin: 10px 0;
-  color: #2e4756; }
-
-.inner-highlight-box a {
-  color: #2e4756; }
-
-#text-404 {
-  font-size: 330px;
-  margin: 0; }
-
-#insideimage {
-  background-image: url("../images/stacksofpapers.png");
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.button {
-  background-color: #F27532;
-  padding-left: 10px;
-  border-radius: 5px;
-  border: 1px solid #2e4756;
-  color: #2e4756;
-  margin: 5px;
-  cursor: pointer; }
-
-.swap-container {
-  display: -webkit-flex;
-  /* Safari */
-  -webkit-flex-direction: column-reverse;
-  /* Safari 6.1+ */
-  display: flex;
-  flex-direction: column-reverse; }
-
-.swap-container p {
-  margin: 0;
-  padding: 0; }
-
-.shop-item {
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-  width: 100%;
-  flex: 1; }
-
-.shop-item div {
-  flex: 1 0 auto; }
-
-.swap-container ul {
-  list-style-position: inside; }
-
-.front {
-  position: relative;
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0s, opacity 0.2s linear;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  z-index: 2;
-  margin-top: -200px; }
-
-.back {
-  position: relative;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.2s linear;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  z-index: 0; }
-
-.swap-container:hover > .front, .moreinfo:active + .front {
-  visibility: hidden;
-  opacity: 0;
-  z-index: 0; }
-
-.swap-container:hover > .back, .moreinfo:active + .back {
-  visibility: visible;
-  opacity: 1;
-  z-index: 2; }
-
-.front,
-.back {
-  width: 100%;
-  height: 200px; }
-
-.moreinfo {
-  z-index: 5; }
+  .shop-item {
+    min-width: 48%; } }
 
 /*# sourceMappingURL=style.css.map */

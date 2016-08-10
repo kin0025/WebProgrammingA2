@@ -15,10 +15,10 @@ include 'resources/header.php';
 ?>
                 <main class="drop-shadow-left-right flex-responsive">
                     <div class="flex-magicbs">
-                    <article class="column-10 flex-responsive">
+                    <article class="column-10">
 
                         <h2 class="pagetitle">Hi, I'm Josh</h2>
-                        <div class="flex-responsive">
+                        <div class="flex-responsive column-12">
 
                             <div class="column-6">
                                 <h3>He does comedy</h3>
@@ -26,7 +26,7 @@ include 'resources/header.php';
                                     is on TV in Australia, US and Canada.
                                 </p><img id="promo-shot" src="resources/images/pleaselikeme.jpg" alt="tv show promo image" />
 
-                                <p> He is available for private/corporate gigs. If you want to contact him try the contact page <a href="contact.php">here</a>
+                                <p> He is available for private/corporate gigs. If you want to contact him try the contact page <a alt="contact page" href="contact.php">here</a>
 
                                 </p>
                             </div>
@@ -36,12 +36,11 @@ include 'resources/header.php';
                                 <p>I star in the award winning comedy Please Like Me. Season 4 will release later in 2016, and Season 1, 2 and 3 are avaliable through the online shop.</p>
                                 <p> If you want to find out more about me, <a href="http://token.com.au/joshthomas">give my bio a read.</a></p>
                                 <p>
-                                    I have recieved awards from the Australian Academy (AACTA) and the Australian Writers Guild for my writing for Please Like Me, and have been nominated for AACTA and Logie Awards for my performances in the show. </br>The
-                                    show itself has won Best Comedy at the AACTA Awards and been nominated as Best Comedy at the International Emmy Awards, Rose d’Or Awards, GLAAD Media Awards and Logie Awards. </br>The show has gained critical acclaim
+                                    I have recieved awards from the Australian Academy (AACTA) and the Australian Writers Guild for my writing for Please Like Me, and have been nominated for AACTA and Logie Awards for my performances in the show. <br>The
+                                    show itself has won Best Comedy at the AACTA Awards and been nominated as Best Comedy at the International Emmy Awards, Rose d’Or Awards, GLAAD Media Awards and Logie Awards. <br>The show has gained critical acclaim
                                     across the globe, and has been named as one of the best TV shows of year by Entertainment Weekly, The New Yorker, Time, The A.V. Club and the Los Angeles Times.
                                 </p>
                                 <p>Following on from the show’s success in both Australia and the US, Please Like Me has also been licensed to air in Germany, France, Sweden, Canada, Finland and Israel.</p>
-                                </p>
                             </div>
                         </div>
                     </article>
