@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,7 +21,21 @@ include 'resources/header.php';
                             </div>
                             <div class="flex-responsive">
                                 <form class="column-12">
-                                    Name: <input type="text" name: name /> <br /> Contact No: <input type="text" name: phone /> <br/>
+                                    First Name*  <input type="text" name: firstname /> <br />
+                                    Last Name* <input type= "text" name: lastname /> <br />
+                                    Email Address* <input type= "text" name: email /> <br />
+                                    Contact No* <input type="text" name: phone /> <br />
+                                    Event Date* <input type= "text" name: eventdate /> <br />
+                                    Event Location <input type= "text" name: eventloc /> <br />
+                                    Event Description <input type= "text" name: eventdesc /> <br />
+                                    Performance Required <select name= 'Performance Required'> 
+                                    <option value= ' ' selected> Please Select </option>
+                                    <option value= 'Comedy Spot' > Comedy Spot </option>
+                                    <option value= 'MC' > MC </option>
+                                    <option value= 'Full Show'> Full Show </option>
+                                    <option value= 'Other'> Other </option>
+                                    </select>
+                                    
                                 </form>
                             </div>
                         </article>
