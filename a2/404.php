@@ -13,7 +13,6 @@ include 'resources/head.php';
 include 'resources/header.php';
 ?>
                 <main>
-                    <div class=" h-panel relative side-padding">
                         <div id="content-wrapper" class="column-12 drop-shadow-left-right">
 
                             <div id="main-body" class="h-panel">

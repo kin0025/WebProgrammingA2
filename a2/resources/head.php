@@ -5,7 +5,7 @@
     <link rel="shortcut icon" type="image/png" href="favicon.png" />    <!--Google font file -->
     
     <!-- Original stylesheet below sourced for educational purposes: https://www.google.com/fonts -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:600|Roboto" rel="stylesheet">
 </head>
 <?php
 ?>

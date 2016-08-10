@@ -12,17 +12,15 @@ include 'resources/head.php';
             <?php
 include 'resources/header.php';
 ?>
-                <div class=" h-panel relative side-padding">
-                    <div id="content-wrapper" class="column-12 drop-shadow-left-right">
-                        <div id="main-body" class="h-panel">
-                            <div id="main-body-wrapper" class="column-9">
-                                <div class="column-12 h-panel">
+                    <main class="drop-shadow-left-right">
+                            <article class="column-9 flex-row">
+                                <div class="column-12 flex-row">
                                     <img class="profile-image" alt="Profile Photo" src="resources/images/ProfileShot3.png" />
                                     <h2 class="pagetitle">Buy Stuff I Guess</h2>
                                 </div>
-                                <div class="h-panel">
-                                    <form action="submit.php" id="form1" formmethod="post">
-                                        <div class="layout-border shop-entry column-3">Please Like me season 1
+                                     <form  action="submit.php" id="form1" formmethod="post">
+                                        <div class="flex-row">
+                                        <div class="shop-entry column-3">Please Like me season 1
                                             <div class="swap-container">
 
                                                 <a class="button moreinfo" href="#">More Info</a>
@@ -40,7 +38,7 @@ include 'resources/header.php';
                                             </div>
                                         </div>
 
-                                        <div class="layout-border shop-entry column-3">Please Like me season 2
+                                        <div class="shop-entry column-3">Please Like me season 2
                                             <div class="swap-container">
                                                 <a class="button moreinfo" href="#">More Info</a>
 
@@ -57,7 +55,7 @@ include 'resources/header.php';
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="layout-border shop-entry column-3">Please Like me season 3
+                                        <div class="shop-entry column-3">Please Like me season 3
                                             <div class="swap-container">
                                                 <a class="button moreinfo" href="#">More Info</a>
 
@@ -74,7 +72,7 @@ include 'resources/header.php';
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="layout-border shop-entry column-3">Please Like me season 4 Coming soon
+                                        <div class="shop-entry column-3">Please Like me season 4 Coming soon
                                             <div class="swap-container">
                                                 <a class="button moreinfo" href="#">More Info</a>
 
@@ -92,12 +90,14 @@ include 'resources/header.php';
 
                                             </div>
                                         </div>
+                                        </div>
+                                        <div class="flex-row">
                                         <input type="submit" value="Checkout" class="button"></input>
+                                        </div>
                                     </form>
-                                </div>
-
-                            </div>
-                            <div id="sidebar-content" class="column-3">
+                                
+                    </article>    
+                            <aside id="sidebar-content" class="column-3 flex-column">
                                 <div class="inner-highlight-box">
                                     <i class="fa fa-globe" aria-hidden="true"></i> Australia
                                     <ul class="fa-ul">
@@ -165,13 +165,11 @@ include 'resources/header.php';
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-                            </br>
+                            </aside>
+                            
 
-                        </div>
-                    </div>
-                </div>
-                </div>
+                    </main>
+                    
                 <?php
 include 'resources/footer.php';
 ?>
