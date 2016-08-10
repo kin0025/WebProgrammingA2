@@ -15,7 +15,7 @@
             <div class="flex-magicbs">
                 <article class="column-9">
                     <h2 class="pagetitle column-12 flex-row">Buy Stuff I Guess?</h2>
-                    <div class="flex-row column-12">
+                    <div class="column-12">
                         <form id="shopform" method="post" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php">
                             <div class="flex-row">
                                 <div class="shop-item column-6">
@@ -115,7 +115,7 @@
                                 </div>
                             </div>
                             <div class="flex-row">
-                                <input type="submit" value="Checkout" class="button"></input>
+                                <input type="submit" value="Checkout" class="button checkout"></input>
                             </div>
                         </form>
                     </div>

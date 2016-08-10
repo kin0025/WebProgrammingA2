@@ -430,6 +430,12 @@ header .nav-active {
 .shop-item img {
   align-self: center; }
 
+.checkout {
+  width: 100%;
+  min-height: 20px;
+  font-size: 3em;
+  font-weight: bold; }
+
 .swap-container ul {
   list-style-position: inside; }
 
