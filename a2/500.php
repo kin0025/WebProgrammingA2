@@ -6,7 +6,7 @@
     <?php
 include 'resources/head.php';
 ?>
-
+</head>
         <body>
 
             <?php
@@ -17,7 +17,6 @@ include 'resources/header.php';
                     <article class="column-9 flex-responsive">
 
                         <div>
-                            <h2>Not Found</h2></div>
                         <span> <h1 id="text-404">5<span id="insideimage">O</span>0</h1>
                         </span>
 

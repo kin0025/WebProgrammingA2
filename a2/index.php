@@ -7,7 +7,7 @@
     <?php
 include 'resources/head.php';
 ?>
-
+</head>
         <body id="home">
 
             <?php

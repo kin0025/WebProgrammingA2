@@ -6,7 +6,7 @@
     <title>Contact Us</title>
     <?php
 include 'resources/head.php';
-?>
+?></head>
 
         <body id="contact">
 
@@ -21,14 +21,15 @@ include 'resources/header.php';
                             </div>
                             <div class="flex-responsive">
                                 <form class="column-12">
-                                    First Name*  <input type= "text" name: firstname /> <br />
-                                    Last Name* <input type= "text" name: lastname /> <br />
-                                    Email Address* <input type= "email" name: email /> <br />
-                                    Contact No* <input type="text" name: phone /> <br />
-                                    Event Date* <input type= "text" name: eventdate /> <br />
-                                    Event Location <textarea cols:1000 rows:80></textarea> <br />
-                                    Event Description <textarea cols:1000 rows:80></textarea> <br />
-                                    Performance Required <select name= 'Performance Required'> 
+                                   
+                                    <span class= "column-4">  Name</span><br /> <input type = "text" class = "column-9" required type= "text" name="firstname" /> <br />
+                                    <span class="column-4">Last Name </span><br /><input class="column-9" required type= "text" name: "lastname" /> <br />
+                                    <span class= "column-4"> Email Address*</span><br /> <input class = "column-9" required type= "email" name="email" /> <br />
+                                    <span class= "column-4"> Contact No* </span><br /><input class= "column-9" required type="text" name: phone /> <br />
+                                    <span class= "column-4"> Event Date* </span><br /> <input class= "column-9" required class="column-9" type= "text" name="eventdate" /> <br />
+                                    <span class = "column-4"> Event Location </span><br /> <input class= "form-1" type = "text" name="location"></input> <br />
+                                    <span class= "column-4"> Event Description </span><br /><input class= "form-1" type = "text" name= "description"></input> <br />
+                                    <span class= "column-4"> Performance Required </span><br /><select class= "column-9" name= 'Performance Required'> 
                                     <option value= ' ' selected> Please Select </option>
                                     <option value= 'Comedy Spot' > Comedy Spot </option>
                                     <option value= 'MC' > MC </option>

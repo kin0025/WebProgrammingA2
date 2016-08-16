@@ -6,7 +6,7 @@
     <?php
 include 'resources/head.php';
 ?>
-
+</head>
         <body>
 
             <?php

@@ -8,116 +8,33 @@ Highlights: #0B0A07
 
 */
 
-
-/*
-$colour1 : #50514F;
-$colour2 : #AA5042;
-$colour3 : #FFC53A;
-$colour4 : #B4B8AB;
-$colour5: #0B0A07;
-
-https://coolors.co/b9d6f2-061a40-0353a4-006daa-003559
-*/
-
-
-/*
-$colour1 : #0C0C0C; //TextColour
-$colour2 : #BA5A31; //Links
-$colour3 : #E59F71; //Header
-$colour4 : #FFFFFF; //Body
-$colour5: #69DC9E;  //Highlight
-*/
-
-
-/* Coolors Exported Palette - coolors.co/998650-75b09c-d8f793-a0ca92-e0be36
-
-$color1: hsla(44%, 31%, 46%, 1);
-$color2: hsla(160%, 27%, 57%, 1);
-$color3: hsla(79%, 86%, 77%, 1);
-$color4: hsla(105%, 35%, 68%, 1);
-$color5: hsla(48%, 73%, 55%, 1);
-*/
-
-
-/* Coolors Exported Palette - coolors.co/eaebed-006989-a3bac3-007090-01a7c2
-
-$color1: hsla(220%, 8%, 92%, 1);
-$color2: hsla(194%, 100%, 27%, 1);
-$color3: hsla(197%, 21%, 70%, 1);
-$color4: hsla(193%, 100%, 28%, 1);
-$color5: hsla(188%, 99%, 38%, 1);
-*/
-
-
-/* Coolors Exported Palette - coolors.co/4b4237-d68420-ede4da-a39b92-72695f
-
-$color1: hsla(33%, 15%, 25%, 1);
-$color2: hsla(33%, 74%, 48%, 1);
-$color3: hsla(32%, 35%, 89%, 1);
-$color4: hsla(32%, 8%, 61%, 1);
-$color5: hsla(32%, 9%, 41%, 1);
-*/
-
-
-/* Coolors Exported Palette - coolors.co/353535-3c6e71-ffffff-d9d9d9-284b63
 $color1: hsla(0%, 0%, 21%, 1);
 $color2: hsla(183%, 31%, 34%, 1);
 $color3: hsla(0%, 0%, 100%, 1);
 $color4: hsla(0%, 0%, 85%, 1);
 $color5: hsla(204%, 42%, 27%, 1);
-*/
 
+//Contrast test
+$color2: #5ED6DE;
+$color3: #1E1E1E;
+$color1:#22435c;
 
-/* Coolors Exported Palette - coolors.co/2d3142-4f5d75-bfc0c0-ffffff-ef8354 Good one
-$color1: hsla(229%, 19%, 22%, 1);
-$color2: hsla(218%, 19%, 38%, 1);
-$color3: hsla(180%, 1%, 75%, 1);
-$color4: hsla(0%, 0%, 100%, 1);
-
-$color5$footersides: darken($colour2,10%);
-$footermiddle:lighten($colour2,10%);: hsla(18%, 83%, 63%, 1);
-
-*/
-
-
-/* Coolors Exported Palette - coolors.co/1d1a05-fffbbd-ca3c25-e6aa68-7fb069
-
-$color1: hsla(53%, 71%, 7%, 1);
-$color2: hsla(56%, 100%, 87%, 1);
-$color3: hsla(8%, 69%, 47%, 1);
-$color4: hsla(31%, 72%, 65%, 1);
-$color5: hsla(101%, 31%, 55%, 1);
-
-$footersides: darken($color2,20%);
-$footermiddle:desaturate($color2,30%);
-
-*/
-
-
-/* Coolors Exported Palette - coolors.co/33658a-4BB2EA-2f4858-f6ae2d-F27532 */
-
-
-/* HSL */
-
-$color1: hsla(206%, 46%, 37%, 1);
-$color2: #4BB2EA;
-$color3: hsla(203%, 30%, 26%, 1);
-$color4: hsla(39%, 92%, 57%, 1);
-$color5: #F27532;
-$footersides: darken($color2, 10%);
-$footermiddle:darken($color2, 20%);
 $colour1:$color1;
 $colour2:$color2;
 $colour3:$color3;
 $colour4:$color4;
 $colour5:$color5;
-$footer-text:lighten($color2, 10%);
-$background:lighten($colour2, 20%);
-$backgroundlighten:lighten($colour2, 70%);
-$link-colour:$colour3;
-//To improve contrast
-$color1:#22435c;
-$footer-text:#000000;
+
+$footersides: desaturate($color2, 20%);
+$footermiddle: $color3;
+$footer-text: lighten($color2, 10%);
+
+$background: lighten($colour2, 20%);
+$backgroundlighten: darken($colour2, 10%);
+
+$link-colour: darken($colour3, 20%);
+$header-shadow: darken($colour2, 30%);
+
 html,
 body {
   height: auto;
@@ -288,12 +205,14 @@ header> div {
 header h1 {
   font-family: 'Roboto', sans-serif;
   color: $colour2;
+  text-shadow: $header-shadow 0px 1px 0px, $header-shadow 0px 2px 0px;
 }
 
 header #header-logo {
   max-height: 150px;
-  height: 10vh;
+  max-height: 10vh;
   width: auto;
+  margin-right: 10px;
 }
 
 header div nav {
@@ -327,7 +246,8 @@ header div nav ul li a {
   transition-duration: 1s;
 }
 
-header div nav ul li a:hover {
+header div nav ul li a:hover,
+header div nav ul li a:active {
   background-color: $colour2;
   color: $colour3;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
@@ -355,32 +275,132 @@ header .nav-active {
   color: $colour3;
 }
 
-#home nav .menu-home a:hover {
+#home nav .menu-home a:hover,
+#home nav .menu-home a:active {
   -webkit-animation: dropshadow;
   animation: dropshadow;
 }
 
-#contact nav .menu-contact a:hover {
+#contact nav .menu-contact a:hover,
+#contact nav .menu-contact a:active {
   -webkit-animation: none;
   animation: none;
 }
 
-#shop nav .menu-shop a:hover {
+#shop nav .menu-shop a:hover,
+#shop nav .menu-shop a:active {
   -webkit-animation: none;
   animation: none;
 }
 
-@for $i from 1 through 12 {
-  .#{column}-#{$i} {
-    padding: 5px;
-    width: 100%;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    box-sizing: border-box;
-  }
+.column-1 {
+  padding: 5px;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
 }
-@import "swap";
+
+.column-2 {
+  padding: 5px;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.column-3 {
+  padding: 5px;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.column-4 {
+  padding: 5px;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.column-5 {
+  padding: 5px;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.column-6 {
+  padding: 5px;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.column-7 {
+  padding: 5px;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.column-8 {
+  padding: 5px;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.column-9 {
+  padding: 5px;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.column-10 {
+  padding: 5px;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.column-11 {
+  padding: 5px;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.column-12 {
+  padding: 5px;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+}
+
 
 footer div {
   padding: 15px 15px;
@@ -412,13 +432,15 @@ footer ul {
   margin-left: 5px;
 }
 
-#sidebar-content {
+aside#sidebar-content {
   background-color: $colour3;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 0 10px;
   margin: 10px 0 auto 0;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  color:$colour2;
+
 }
 
 .layout-border {
@@ -434,7 +456,7 @@ h2 .pagetitle {
 }
 
 .inner-highlight-box {
-  background-color: $colour5;
+  background-color: $colour2;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 10px;
   margin: 10px 0;
@@ -457,23 +479,13 @@ h2 .pagetitle {
 }
 
 .button {
-  background-color: $colour5;
-  padding-left: 10px;
-  border-radius: 5px;
-  border: 1px solid $link-colour;
-  color: $link-colour;
+  background-color: $colour3;
+  padding: 10px;
+  color: $colour2;
   margin: 5px;
   cursor: pointer;
-}
-
-#shop-form {
-  width: 100%;
-}
-
-.shop-item img {
-  min-width: 100px;
-  width: auto;
-  max-height: calc(30vh - 5em);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  border:0px;
 }
 
 
@@ -603,11 +615,20 @@ h2 .pagetitle {
     width: 100%;
   }
   #footer-wrapper {
-    padding: 0 5%;
+    padding: 10px 5%;
     box-sizing: border-box;
   }
-  .shop-item{
-       min-width: 48%;
+  .shop-item {
+    min-width: 48%;
   }
 }
 
+.form-1 {
+  -webkit-box-flex: 9;
+  -ms-flex: 9;
+  flex: 9;
+  width: 75%;
+  height: 15%;
+  
+  
+}
