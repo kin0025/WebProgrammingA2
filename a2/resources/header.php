@@ -1,4 +1,4 @@
-<header class= "drop-shadow-bottom">
+<header>
     <!-- A container div for the header elements. Used to provide flexbox implementation while keeping inside header- padding -->
     <div>
         <!-- A container element for left-justified elements in the header -->

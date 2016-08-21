@@ -3,16 +3,16 @@
 
 <head>
     <title>Shop</title>
-    <link rel="stylesheet" type=text/css href="resources/styles/shop.css">
 
     <meta Name="description" Content="Josh Thomas is an Australian comedian. He has starred in Please Like Me. You can purchase Please Like Me at the online shop.">
     <?php include 'resources/head.php'; ?>
+    <link rel="stylesheet" type=text/css href="resources/styles/shop.css">
 
 </head>
 
 <body id="shop">
     <?php include 'resources/header.php'; ?>
-    <main class="drop-shadow-left-right flex-responsive">
+    <main class="flex-responsive">
         <div class="flex-magicbs">
             <article class="column-9">
                 <h2 class="pagetitle column-12 flex-row">Buy Stuff I Guess?</h2>

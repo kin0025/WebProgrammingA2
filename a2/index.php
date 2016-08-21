@@ -3,12 +3,15 @@
 
 <head>
     <title>Home</title>
+
     <?php include 'resources/head.php';?>
+    <link rel="stylesheet" type=text/css href="resources/styles/home.css">
+
 </head>
 
 <body id="home">
     <?php include 'resources/header.php';?>
-    <main class="drop-shadow-left-right flex-responsive">
+    <main class="flex-responsive">
         <div class="flex-magicbs">
             <article class="column-10">
 

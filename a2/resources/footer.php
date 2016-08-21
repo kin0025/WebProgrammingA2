@@ -1,8 +1,8 @@
-<footer id="footer-content" class="drop-shadow-top-inset flex-column flex-center">
+<footer class="flex-column flex-center">
     <!-- A wrapper for footer content. Has different shadowing and styling from the standard footer content -->
-    <div id="footer-wrapper" class="drop-shadow-left-right flex-responsive ">
+    <div id="footer-wrapper" class="flex-responsive ">
         <!-- The links in the footer- import the page list -->
-        <div id="footer-links" class="column-3 border-left-right">
+        <div id="footer-links" class="column-3">
             <?php include 'menu-items.php'; ?>
         </div>
         <!-- Wasn't sure what to put here, so a link to the top of the page -->

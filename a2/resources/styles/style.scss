@@ -4,22 +4,22 @@ $color3: #1E1E1E;
 $color1:#22435c;
 $color4: hsla(0%, 0%, 85%, 1);
 
-/* Cos I don't spell american */
+// Cos I don't spell american
 $colour1:$color1;
 $colour2:$color2;
 $colour3:$color3;
 $colour4:$color4;
 
-/* Footer Colours */
+// Footer Colours 
 $footersides: desaturate($color2, 20%);
 $footermiddle: $color3;
 $footer-text: lighten($color2, 10%);
 
-/* Colours for the background gradient magic */
+// Colours for the background gradient magic 
 $background: lighten($colour2, 20%);
 $backgroundlighten: darken($colour2, 10%);
 
-/* Colour derivations  */
+// Colour derivations  
 $link-colour: darken($colour3, 20%);
 $header-shadow: darken($colour2, 30%);
 
@@ -53,7 +53,6 @@ body {
   background-color: $background;
   background-size: 32px 64px;
   background-position: 16px 16px;
-  
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,6 +63,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  min-width:800px;
 }
 
 .flex-row {
@@ -119,7 +119,9 @@ body {
 main {
   background-color: $colour4;
   min-height: 80vh;
-  max-width: 1200px;
+  /* Website should be fully replonsive below 800px, but assignment spec */
+  min-width: 800px;
+  box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75), -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
   z-index: 1;
   padding: 0 15px;
   box-sizing: border-box;
@@ -150,7 +152,8 @@ a {
 }
 
 .drop-shadow-left-right {
-  box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75), -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75), -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
 }
 
 .drop-shadow-bottom-right {
@@ -172,6 +175,8 @@ header {
   z-index: 2;
   min-height: 10%;
   padding-bottom: 20px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+
 }
 
 header,
@@ -275,6 +280,113 @@ header div nav ul li a:active {
 #shop nav .menu-shop a:hover,
 #shop nav .menu-shop a:active {
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+footer div {
+  padding: 15px 15px;
+}
+
+footer {
+  background-color: $footersides;
+  z-index: 2;
+  content: "";
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-height: 10vh;
+  width: 100%;
+    box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+
+}
+#footer-wrapper{
+  box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75), -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  width:100%;
+   padding: 10px 5%;
+    box-sizing: border-box;
+  
+}
+
+#footer-wrapper,
+#footer-wrapper a {
+  background-color: $footermiddle;
+  color: $footer-text;
+}
+
+#footer-links ul {
+  list-style-position: inside;
+}
+
+footer ul {
+  margin-left: 5px;
+}
+
+aside#sidebar-content{
+  background-color: $colour3;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 10px;
+  margin: 10px 0 auto 0;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  color:$colour2;
+
+
+}
+
+
+
+h2 .pagetitle {
+  padding: 15px;
+}
+
+.inner-highlight-box {
+  background-color: $colour2;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  margin: 10px 0;
+  color: $colour3;
+}
+
+.inner-highlight-box a {
+/* Original css below sourced for educational purposes: https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/*/
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  color: $colour3;
+}
+
+#text-404 {
+  font-size: 330px;
+  margin: 0;
+}
+
+#insideimage {
+  background-image: url("../images/stacksofpapers.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button {
+  background-color: $colour3;
+  padding: 10px;
+  color: $colour2;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  border:0px;
+}
+
+.form-1 {
+  -webkit-box-flex: 9;
+  -ms-flex: 9;
+  flex: 9;
+  width: 100%;
+  height: 15%;
+  
+  
 }
 
 .column-1 {
@@ -386,103 +498,8 @@ header div nav ul li a:active {
 }
 
 
-footer div {
-  padding: 15px 15px;
-}
-
-footer {
-  background-color: $footersides;
-  z-index: 2;
-  content: "";
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  min-height: 10vh;
-  width: 100%;
-}
-
-#footer-wrapper,
-#footer-wrapper a {
-  background-color: $footermiddle;
-  color: $footer-text;
-}
-
-#footer-links ul {
-  list-style-position: inside;
-}
-
-footer ul {
-  margin-left: 5px;
-}
-
-aside#sidebar-content{
-  background-color: $colour3;
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  padding: 0 10px;
-  margin: 10px 0 auto 0;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  color:$colour2;
 
 
-}
-
-#promo-shot {
-  width: 100%;
-}
-
-h2 .pagetitle {
-  padding: 15px;
-}
-
-.inner-highlight-box {
-  background-color: $colour2;
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  padding: 10px;
-  margin: 10px 0;
-  color: $colour3;
-}
-
-.inner-highlight-box a {
-/* Original css below sourced for educational purposes: https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/*/
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
-  word-break: break-all;
-  word-break: break-word;
-  color: $colour3;
-}
-
-#text-404 {
-  font-size: 330px;
-  margin: 0;
-}
-
-#insideimage {
-  background-image: url("../images/stacksofpapers.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.button {
-  background-color: $colour3;
-  padding: 10px;
-  color: $colour2;
-  margin: 5px;
-  cursor: pointer;
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  border:0px;
-}
-@media only screen and (max-width: 1100px) {
-aside {
-  width: 100%;
-  -webkit-box-flex: 5;
-  -ms-flex: 5;
-  flex: 5;
-}
-
-}
 
 @media only screen and (min-width: 900px) {
   .column-1 {
@@ -559,8 +576,6 @@ aside {
   }
   main,#footer-wrapper {
     width: 80%;
-    /* Website should be fully replonsive below 800px, but assignment spec */
-    min-width: 800px;
     max-width: 1600px;
   }
   header {
@@ -568,7 +583,6 @@ aside {
     box-sizing: border-box;
   }
   #footer-wrapper {
-    width: 80%;
     min-height: 10vh;
   }
   article {
@@ -610,21 +624,21 @@ aside {
     align-content: flex-start;
     width: 100%;
   }
-  #footer-wrapper {
-    padding: 10px 5%;
-    box-sizing: border-box;
-  }
-  .shop-item {
+
+  div.shop-item {
     min-width: 48%;
   }
 }
-
-.form-1 {
-  -webkit-box-flex: 9;
-  -ms-flex: 9;
-  flex: 9;
+@media only screen and (max-width: 1100px) {
+aside#sidebar-content {
   width: 100%;
-  height: 15%;
-  
-  
+  -webkit-box-flex: 5;
+  -ms-flex: 5;
+  flex: 5;
 }
+  div.shop-item {
+    min-width: 98%;
+  }
+
+}
+

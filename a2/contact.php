@@ -8,7 +8,7 @@
 
 <body id="contact">
     <?php include 'resources/header.php';?>
-    <main class="drop-shadow-left-right flex-responsive">
+    <main class="flex-responsive">
         <div class="flex-magicbs">
             <article class="column-9">
                 <div class="flex-row">

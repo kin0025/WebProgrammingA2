@@ -1,4 +1,7 @@
 /* Cos I don't spell american */
+/* Footer Colours */
+/* Colours for the background gradient magic */
+/* Colour derivations  */
 /* Shop page specific css, used for styling shop elements and the fancy transitions */
 .swap-container {
   display: -webkit-flex;
@@ -19,7 +22,8 @@
   background: #b3ecef;
   border-radius: 10px;
   box-sizing: border-box;
-  margin: 1%; }
+  margin: 1%;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
 
 .shop-item div {
   flex: 1 0 auto; }
@@ -30,13 +34,12 @@
   overflow: auto;
   max-height: 250px;
   background: #34cbd5;
-  margin-left:10px;
+  margin-left: 1em;
   z-index: 10;
   display: block;
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: auto;
-  box-sizing:border-box}
+  margin-bottom: auto; }
 
 .shop-item details summary {
   cursor: pointer; }
