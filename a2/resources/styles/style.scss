@@ -1,40 +1,29 @@
-/*Colour reference
-https://coolors.co/50514f-aa5042-ffc53a-B4B8AB-0B0A07
-TextColour: #50514F;
-Links and Header-Hover: #AA5042;
-Header and Sidebar: #FFC53A
-Body Background: #B4B8AB
-Highlights: #0B0A07
-
-*/
-
-$color1: hsla(0%, 0%, 21%, 1);
-$color2: hsla(183%, 31%, 34%, 1);
-$color3: hsla(0%, 0%, 100%, 1);
-$color4: hsla(0%, 0%, 85%, 1);
-$color5: hsla(204%, 42%, 27%, 1);
-
 //Contrast test
 $color2: #5ED6DE;
 $color3: #1E1E1E;
 $color1:#22435c;
+$color4: hsla(0%, 0%, 85%, 1);
 
+/* Cos I don't spell american */
 $colour1:$color1;
 $colour2:$color2;
 $colour3:$color3;
 $colour4:$color4;
-$colour5:$color5;
 
+/* Footer Colours */
 $footersides: desaturate($color2, 20%);
 $footermiddle: $color3;
 $footer-text: lighten($color2, 10%);
 
+/* Colours for the background gradient magic */
 $background: lighten($colour2, 20%);
 $backgroundlighten: darken($colour2, 10%);
 
+/* Colour derivations  */
 $link-colour: darken($colour3, 20%);
 $header-shadow: darken($colour2, 30%);
 
+/** Semi-reset stuff */
 html,
 body {
   height: auto;
@@ -50,8 +39,10 @@ ol {
 }
 
 
-/* Original css below sourced for educational purposes: http://lea.verou.me/css3patterns/#weave (Note- modified to make more dense) */
+/* Original css below sourced for educational purposes: http://lea.verou.me/css3patterns/#weave (Note- modified to make more dense, change colours and pattern slightly) */
 
+
+/* Body background, page font set here. Also some flex box :(*/
 body {
   color: $colour1;
   font-family: 'Open Sans', sans-serif;
@@ -62,6 +53,7 @@ body {
   background-color: $background;
   background-size: 32px 64px;
   background-position: 16px 16px;
+  
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,11 +245,6 @@ header div nav ul li a:active {
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-header .nav-active {
-  color: #ffe550;
-}
-
-
 /* Per Page Highlighting */
 
 #home nav .menu-home a {
@@ -277,20 +264,17 @@ header .nav-active {
 
 #home nav .menu-home a:hover,
 #home nav .menu-home a:active {
-  -webkit-animation: dropshadow;
-  animation: dropshadow;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 #contact nav .menu-contact a:hover,
 #contact nav .menu-contact a:active {
-  -webkit-animation: none;
-  animation: none;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 #shop nav .menu-shop a:hover,
 #shop nav .menu-shop a:active {
-  -webkit-animation: none;
-  animation: none;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .column-1 {
@@ -432,7 +416,7 @@ footer ul {
   margin-left: 5px;
 }
 
-aside#sidebar-content {
+aside#sidebar-content{
   background-color: $colour3;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 0 10px;
@@ -441,10 +425,7 @@ aside#sidebar-content {
   flex-wrap: nowrap;
   color:$colour2;
 
-}
 
-.layout-border {
-  border: 2px solid red;
 }
 
 #promo-shot {
@@ -464,6 +445,12 @@ h2 .pagetitle {
 }
 
 .inner-highlight-box a {
+/* Original css below sourced for educational purposes: https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/*/
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
   color: $colour3;
 }
 
@@ -487,9 +474,17 @@ h2 .pagetitle {
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   border:0px;
 }
+@media only screen and (max-width: 1100px) {
+aside {
+  width: 100%;
+  -webkit-box-flex: 5;
+  -ms-flex: 5;
+  flex: 5;
+}
 
+}
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 900px) {
   .column-1 {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -562,9 +557,11 @@ h2 .pagetitle {
     flex: 12;
     width: 100%;
   }
-  main {
+  main,#footer-wrapper {
     width: 80%;
-    max-width: 1200px;
+    /* Website should be fully replonsive below 800px, but assignment spec */
+    min-width: 800px;
+    max-width: 1600px;
   }
   header {
     padding: 0 10%;
@@ -572,7 +569,6 @@ h2 .pagetitle {
   }
   #footer-wrapper {
     width: 80%;
-    max-width: 1200px;
     min-height: 10vh;
   }
   article {
@@ -627,7 +623,7 @@ h2 .pagetitle {
   -webkit-box-flex: 9;
   -ms-flex: 9;
   flex: 9;
-  width: 75%;
+  width: 100%;
   height: 15%;
   
   

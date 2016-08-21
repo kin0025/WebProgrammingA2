@@ -1,12 +1,8 @@
-/*Colour reference
-https://coolors.co/50514f-aa5042-ffc53a-B4B8AB-0B0A07
-TextColour: #50514F;
-Links and Header-Hover: #AA5042;
-Header and Sidebar: #FFC53A
-Body Background: #B4B8AB
-Highlights: #0B0A07
-
-*/
+/* Cos I don't spell american */
+/* Footer Colours */
+/* Colours for the background gradient magic */
+/* Colour derivations  */
+/** Semi-reset stuff */
 html,
 body {
   height: auto;
@@ -19,9 +15,10 @@ ol {
   margin: 0;
   padding: 0; }
 
-/* Original css below sourced for educational purposes: http://lea.verou.me/css3patterns/#weave (Note- modified to make more dense) */
+/* Original css below sourced for educational purposes: http://lea.verou.me/css3patterns/#weave (Note- modified to make more dense, change colours and pattern slightly) */
+/* Body background, page font set here. Also some flex box :(*/
 body {
-  color: #363636;
+  color: #22435c;
   font-family: 'Open Sans', sans-serif;
   background: -webkit-linear-gradient(315deg, #b3ecef 11px, #34cbd5 11px, #34cbd5 12px, transparent 12px, transparent 33.5px, #34cbd5 33.5px, #34cbd5 34px, transparent 34px), -webkit-linear-gradient(225deg, #b3ecef 11px, #34cbd5 11px, #34cbd5 12px, transparent 12px, transparent 33.5px, #34cbd5 33.5px, #34cbd5 34px, transparent 34px) 0 32px;
   background: linear-gradient(135deg, #b3ecef 11px, #34cbd5 11px, #34cbd5 12px, transparent 12px, transparent 33.5px, #34cbd5 33.5px, #34cbd5 34px, transparent 34px), linear-gradient(225deg, #b3ecef 11px, #34cbd5 11px, #34cbd5 12px, transparent 12px, transparent 33.5px, #34cbd5 33.5px, #34cbd5 34px, transparent 34px) 0 32px;
@@ -193,9 +190,6 @@ header div nav ul li a:active {
   color: #1E1E1E;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
 
-header .nav-active {
-  color: #ffe550; }
-
 /* Per Page Highlighting */
 #home nav .menu-home a {
   background-color: #5ED6DE;
@@ -211,18 +205,15 @@ header .nav-active {
 
 #home nav .menu-home a:hover,
 #home nav .menu-home a:active {
-  -webkit-animation: dropshadow;
-  animation: dropshadow; }
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
 
 #contact nav .menu-contact a:hover,
 #contact nav .menu-contact a:active {
-  -webkit-animation: none;
-  animation: none; }
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
 
 #shop nav .menu-shop a:hover,
 #shop nav .menu-shop a:active {
-  -webkit-animation: none;
-  animation: none; }
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
 
 .column-1 {
   padding: 5px;
@@ -320,112 +311,6 @@ header .nav-active {
   flex: 1;
   box-sizing: border-box; }
 
-.swap-container {
-  display: -webkit-flex;
-  -webkit-flex-direction: column-reverse;
-  display: flex;
-  flex-direction: column-reverse; }
-
-.swap-container p {
-  margin: 0;
-  padding: 0; }
-
-.shop-item {
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-  min-width: 98%;
-  flex: 1;
-  background: #b3ecef;
-  border-radius: 10px;
-  box-sizing: border-box;
-  margin: 1%; }
-
-.shop-item div {
-  flex: 1 0 auto; }
-
-.shop-item details {
-  width: 90%;
-  color: black;
-  overflow: auto;
-  max-height: 250px;
-  background: #34cbd5;
-  z-index: 10;
-  display: block;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: auto; }
-
-.shop-item details summary {
-  cursor: pointer; }
-
-.shop-item h4 {
-  margin-bottom: 0;
-  margin-top: 0.5em; }
-
-.shop-item .front {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; }
-
-.shop-item img {
-  align-self: center; }
-
-.checkout {
-  width: 100%;
-  min-height: 20px;
-  font-size: 3em;
-  font-weight: bold; }
-
-.swap-container ul {
-  list-style-position: inside; }
-
-.front {
-  position: relative;
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0s, opacity 0.2s linear;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  z-index: 2;
-  margin-top: -30vh; }
-
-.back {
-  position: relative;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.2s linear;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  z-index: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
-
-.swap-container:hover > .front,
-.moreinfo:active + .front {
-  visibility: hidden;
-  opacity: 0;
-  z-index: 0; }
-
-.swap-container:hover > .back,
-.moreinfo:active + .back {
-  visibility: visible;
-  opacity: 1;
-  z-index: 2; }
-
-.front,
-.back {
-  width: 100%;
-  height: 30vh; }
-
-.moreinfo {
-  z-index: 5; }
-
 footer div {
   padding: 15px 15px; }
 
@@ -460,9 +345,6 @@ aside#sidebar-content {
   flex-wrap: nowrap;
   color: #5ED6DE; }
 
-.layout-border {
-  border: 2px solid red; }
-
 #promo-shot {
   width: 100%; }
 
@@ -477,6 +359,12 @@ h2 .pagetitle {
   color: #1E1E1E; }
 
 .inner-highlight-box a {
+  /* Original css below sourced for educational purposes: https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/*/
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
   color: #1E1E1E; }
 
 #text-404 {
@@ -497,15 +385,13 @@ h2 .pagetitle {
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   border: 0px; }
 
-#shop-form {
-  width: 100%; }
-
-.shop-item img {
-  min-width: 100px;
-  width: auto;
-  max-height: calc(30vh - 5em); }
-
-@media only screen and (min-width: 60em) {
+@media only screen and (max-width: 1100px) {
+  aside {
+    width: 100%;
+    -webkit-box-flex: 5;
+    -ms-flex: 5;
+    flex: 5; } }
+@media only screen and (min-width: 900px) {
   .column-1 {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -578,9 +464,11 @@ h2 .pagetitle {
     flex: 12;
     width: 100%; }
 
-  main {
+  main, #footer-wrapper {
     width: 80%;
-    max-width: 1200px; }
+    /* Website should be fully replonsive below 800px, but assignment spec */
+    min-width: 800px;
+    max-width: 1600px; }
 
   header {
     padding: 0 10%;
@@ -588,7 +476,6 @@ h2 .pagetitle {
 
   #footer-wrapper {
     width: 80%;
-    max-width: 1200px;
     min-height: 10vh; }
 
   article {
@@ -640,7 +527,7 @@ h2 .pagetitle {
   -webkit-box-flex: 9;
   -ms-flex: 9;
   flex: 9;
-  width: 75%;
+  width: 100%;
   height: 15%; }
 
 /*# sourceMappingURL=style.css.map */

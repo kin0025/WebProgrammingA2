@@ -1,31 +1,28 @@
-$color1: hsla(0%, 0%, 21%, 1);
-$color2: hsla(183%, 31%, 34%, 1);
-$color3: hsla(0%, 0%, 100%, 1);
-$color4: hsla(0%, 0%, 85%, 1);
-$color5: hsla(204%, 42%, 27%, 1);
 
 //Contrast test
 $color2: #5ED6DE;
 $color3: #1E1E1E;
 $color1:#22435c;
 
+/* Cos I don't spell american */
 $colour1:$color1;
 $colour2:$color2;
 $colour3:$color3;
-$colour4:$color4;
-$colour5:$color5;
 
+/* Footer Colours */
 $footersides: desaturate($color2, 20%);
 $footermiddle: $color3;
 $footer-text: lighten($color2, 10%);
 
+/* Colours for the background gradient magic */
 $background: lighten($colour2, 20%);
 $backgroundlighten: darken($colour2, 10%);
 
+/* Colour derivations  */
 $link-colour: darken($colour3, 20%);
 $header-shadow: darken($colour2, 30%);
 
-
+/* Shop page specific css, used for styling shop elements and the fancy transitions */
 
 .swap-container {
   display: -webkit-flex;

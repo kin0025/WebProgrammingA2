@@ -11,7 +11,6 @@
 </head>
 
 <body id="shop">
-
     <?php include 'resources/header.php'; ?>
     <main class="drop-shadow-left-right flex-responsive">
         <div class="flex-magicbs">
@@ -118,7 +117,7 @@
                     </form>
                 </div>
             </article>
-            <aside id="sidebar-content" class="column-3 flex-column">
+            <aside id="sidebar-content" class="column-2 flex-column">
                 <h4>Other places to get Please Like Me</h4>
                 <div class="inner-highlight-box">
                     <i class="fa fa-globe" aria-hidden="true"></i> Australia

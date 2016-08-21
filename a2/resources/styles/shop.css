@@ -1,3 +1,5 @@
+/* Cos I don't spell american */
+/* Shop page specific css, used for styling shop elements and the fancy transitions */
 .swap-container {
   display: -webkit-flex;
   -webkit-flex-direction: column-reverse;
@@ -28,11 +30,13 @@
   overflow: auto;
   max-height: 250px;
   background: #34cbd5;
+  margin-left:10px;
   z-index: 10;
   display: block;
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: auto; }
+  margin-bottom: auto;
+  box-sizing:border-box}
 
 .shop-item details summary {
   cursor: pointer; }

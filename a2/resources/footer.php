@@ -1,13 +1,15 @@
 <footer id="footer-content" class="drop-shadow-top-inset flex-column flex-center">
+    <!-- A wrapper for footer content. Has different shadowing and styling from the standard footer content -->
     <div id="footer-wrapper" class="drop-shadow-left-right flex-responsive ">
+        <!-- The links in the footer- import the page list -->
         <div id="footer-links" class="column-3 border-left-right">
-            <?php
-            include 'menu-items.php';
-            ?>
+            <?php include 'menu-items.php'; ?>
         </div>
+        <!-- Wasn't sure what to put here, so a link to the top of the page -->
         <div class="column-1 "><a href="#top">Top</a></div>
+        <!-- Standard copyright, should show 2016- year but who cares -->
         <div class="column-6">
-            &copy; <?php echo date("Y"); ?> - All rights reserved Alex Kinross-Smith and Mukund Boni 
+            &copy; 2016 - All rights reserved Alex Kinross-Smith and Mukund Boni 
         </div>
     </div>
     
