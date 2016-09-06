@@ -7,7 +7,35 @@
     <meta Name="description" Content="Josh Thomas is an Australian comedian. He has starred in Please Like Me. You can purchase Please Like Me at the online shop.">
     <?php include 'resources/head.php'; ?>
     <link rel="stylesheet" type=text/css href="resources/styles/shop.css">
+<script>
+function calculateTotal(){
+    var totalElement = document.getElementById('total');
+    var counts1 = document.getElementById('s1amount').value;
+        var counts2 = document.getElementById('s2amount').value;
 
+    var counts3 = document.getElementById('s3amount').value;
+    
+    var total = (counts1 * 17) + (counts2*22.5) + (counts3*26.75);
+    
+    totalElement.value = "$" + total;
+}
+function calculateSubTotal(element,cost){
+    var elementID = element.id;
+    var subtotal;
+    var total = element.value * cost;
+
+    switch(elementID.charAt(1)){
+        case '1': subtotal = document.getElementById('s1total');
+        break;
+           case '2': subtotal = document.getElementById('s2total');
+        break;
+           case '3': subtotal = document.getElementById('s3total');
+        break;
+    }
+    
+    subtotal.value = "$" + total.toFixed(2);
+}
+</script>
 </head>
 
 <body id="shop">
@@ -23,8 +51,10 @@
                                 <h3>Please Like Me: Season 1</h3>
                                 <div class="swap-container">
                                     <a class="button moreinfo" href="#">More Info</a>
+                                      <!-- A3 Stuff 
+                        <span>Subtotal:<input type="text" id="s1total" /></span>-->
                                     <p>$17.00</p>
-                                    <span>Add to cart: <input type="number" name="plm[s1]" min="0" max="5" value="0"></span>
+                                    <span>Add to cart: <input id="s1amount" oninput="calculateTotal();calculateSubTotal(this,17)" type="number" name="plm[s1]" min="0" max="5" value="0"></span>
                                     <div class="front">
                                         <img src="resources/images/s1.jpg" alt="Season 1 Cover Art" width="100px">
                                         <ul>
@@ -48,8 +78,11 @@
                                 <h3>Please Like Me: Season 2</h3>
                                 <div class="swap-container">
                                     <a class="button moreinfo" href="#">More Info</a>
-                                    <p>$22.50</p>
-                                    <span>Add to cart: <input type="number" name="plm[s2]" min="0" max="5" value="0"></span>
+                                    <!-- A3 Stuff
+                                    <span>Subtotal:<input type="text" id="s2total"/></span> -->
+                                    <p>$22.50</p>                                       
+
+                                    <span>Add to cart: <input  id="s2amount" oninput="calculateTotal();calculateSubTotal(this,22.50)" type="number" name="plm[s2]" min="0" max="5" value="0"></span>
                                     <div class="front">
                                                                     <!-- Original image below sourced for educational purposes: https://shop.abc.net.au/products/please-like-me-season-2-2dvd -->
 
@@ -75,8 +108,11 @@
                                 <h3>Please Like Me: Season 3</h3>
                                 <div class="swap-container">
                                     <a class="button moreinfo" href="#">More Info</a>
+                                    <!-- A3 Stuff 
+                                    <span>Subtotal:<input type="text" id="s3total"/></span>-->
                                     <p>$26.75</p>
-                                    <span>Add to cart: <input type="number" name="plm[s3]" min="0" max="5" value="0"></span>
+
+                                    <span>Add to cart: <input  id="s3amount" oninput="calculateTotal();calculateSubTotal(this,26.75)" type="number" name="plm[s3]" min="0" max="5" value="0"></span>
                                     <div class="front">
                                         <img src="resources/images/s3.jpg" alt="Season 3 Cover Art" width="100px">
 
@@ -115,6 +151,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- A3 Stuff -->
+                        <input type="text" id="total" style="display:none;"/>
                         <div class="flex-row">
                             <input type="submit" value="Checkout" class="button checkout"></input>
                         </div>
