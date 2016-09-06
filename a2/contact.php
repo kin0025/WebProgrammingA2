@@ -4,6 +4,29 @@
 <head>
     <title>Contact Us</title>
     <?php include 'resources/head.php';?>
+        <link rel="stylesheet" type=text/css href="resources/styles/contact.css">
+<script>
+    function fillFlexibility(){
+        var flexiValue = parseInt(document.getElementById('flexibility').value)
+        if(isNaN(flexiValue))
+        {
+            alert('Input on the flexibility slider is invalid. Try resubmitting with different values');
+            return false;
+        }
+        var flexiFill;
+        switch(flexiValue){
+            case 0: flexiFill = 'no variation';
+            break;
+            case 1: flexiFill = 'same day';
+            break;
+            case 2: flexiFill = 'different day avaliability'
+            break;
+            default: flexiFill = 'No answer provided'
+            break;
+        }
+        document.getElementById('flexibilityactual').value = flexiFill;
+    }
+</script>
 </head>
 
 <body id="contact">
@@ -15,16 +38,20 @@
                     <h2 class="pagetitle">Contact Me Here</h2>
                 </div>
                 <div class="flex-responsive">
-                    <form id="Contact Form" class="column-12" method="post" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php">
+                    <form id="contact-form" class="column-9 flex-column" method="post" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php">
 
-                        <span class="column-4">  Name</span><br /> <input type="text" class="column-12" required type="text" name="firstname" /> <br />
-                        <span class="column-4">Last Name </span><br /><input class="column-12" required type="text" name: "lastname" /> <br />
-                        <span class="column-4"> Email Address*</span><br /> <input class="column-12" required type="email" name="email" /> <br />
-                        <span class="column-4"> Contact No* </span><br /><input class="column-12" required type="text" name: phone /> <br />
-                        <span class="column-4"> Event Date* </span><br /> <input class="column-12" required type="text" name="eventdate" /> <br />
-                        <span class="column-4"> Event Location </span><br /> <input class="form-1" type="text" name="location"></input> <br />
-                        <span class="column-4"> Event Description </span><br /><input class="form-1" type="text" name="description"></input> <br />
-                        <span class="column-4"> Performance Required </span><br /><select class="column-12" name='Performance Required'> 
+                        <span  >Name</span> <input type="text"   required type="text" name="firstname" pattern = "[a-zA-Z \-']+" placeholder="Josh"/> 
+                        <span  >Last Name </span><input   required type="text" name="lastname" pattern = "[a-zA-Z \-']+" placeholder="Thomas"/> 
+                        <span  >Email Address*</span> <input   required type="email" name="email" placeholder="name@example.com"/>
+                        <span  >Contact No* </span><input   required type="tel" name="phone" pattern = "[0-9 +\(\)\-]+" placeholder="03 12345678"/>
+                        <span  >Event Date* </span> <input   required input type="date" name="eventdate" /> 
+                        <span  >Event Time* </span> <input   required input type="time" name="eventtime" /> 
+                        <span  >Flexibility </span> <div class="flex-row flexibility-text"><p>Inflexible (No time variation)</p><p>Flexible (Same Day Variation)</p><p>Very Flexible (Multi-Day Variation)</p></div>
+                        <input id="flexibility"  onmouseleave="fillFlexibility()" required input type="range" min="0" max="2" step="1" list name="eventflexibility" />
+                        <input id="flexibilityactual" type="text" name="eventflexibility" value="same day" hidden/>
+                        <span  >Event Location </span> <textarea class="form-1" type="text" name="eventlocation" pattern = "[A-Za-z0-9 .\-]+" required placeholder="1 Bourke St Melbourne Victoria Australia"></textarea> 
+                        <span  >Event Description </span><textarea class="form-1" type="text" name="eventdescription" pattern = "[A-Za-z .\-']+" required placeholder="MC for award ceremony"></textarea>
+                        <span  >Performance Required </span><select name='performance'> 
                                     <option value= ' ' selected> Please Select </option>
                                     <option value= 'Comedy Spot' > Comedy Spot </option>
                                     <option value= 'MC' > MC </option>
@@ -37,7 +64,7 @@
                 </div>
             </article>
 
-            <aside id="sidebar-content" class="column-2 flex-column">
+            <aside class="column-2 flex-column outer-highlight-box">
                 <div class="inner-highlight-box">
                     For all corporate and media enquiries:
                     <ul class="fa-ul">

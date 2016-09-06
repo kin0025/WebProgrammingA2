@@ -5,7 +5,7 @@
     <title>Home</title>
 
     <?php include 'resources/head.php';?>
-    <link rel="stylesheet" type=text/css href="resources/styles/home.css">
+    <link rel="stylesheet" type=text/css href="resources/styles/index.css">
 
 </head>
 
@@ -13,23 +13,40 @@
     <?php include 'resources/header.php';?>
     <main class="flex-responsive">
         <div class="flex-magicbs">
+
             <article class="column-10">
-
                 <h2 class="pagetitle">Hi, I'm Josh</h2>
-                <div class="flex-responsive column-12">
 
-                    <div class="column-6">
-                        <h3>I do comedy</h3>
-                        <p>I am a comedian, writer and very generous lover. Some people thought my show was good enough to give it some awards. I think personal websites are probably a bit stupid. I make a show called 'Please like me'. It is on TV in Australia,
-                            US and Canada.
-                        </p><img id="promo-shot" src="resources/images/pleaselikeme.jpg" alt="tv show promo image" />
-
-                        <p> I am available for private/corporate gigs. If you want to contact me fill out a form on the <a alt="contact page" href="contact.php">contact page</a>
-
-                        </p>
+                <!-- Top 3 Boxes -->
+                <div class="flex-responsive outer-highlight-box">
+                    <div class="home-box column-4">
+                        <h3>I do events</h3>
+                        <!-- Original image below sourced for educational purposes: http://junkee.com/we-talked-to-josh-thomas-about-pop-culture-it-didnt-go-very-well/67297 -->
+                        <img class="promo-shot" src="resources/images/josh-thomas.jpg" alt="A Close Up of Josh Thomas's face" />
+                        <p> I am available for private/corporate gigs. You can contact me by filling out the contact page.</p>
+                        <a class="button" alt="contact page" href="contact.php">Contact Me</a>
                     </div>
+                    <div class="home-box column-4 border-lr">
+                        <h3> Coming Soon</h3>
 
-                    <div class="column-6">
+                        <!-- Original inage below sourced for educational purposes: https://www.facebook.com/pleaselikemeABC2/photos/a.685788458138828.1073741826.332602973457380/1211086392275696/?type=3 -->
+                        <img class="promo-shot" src="resources/images/plm2016.jpg" alt="Josh Thomas holding a bunch of flowers" />
+                        <p>Please Like Me Season 4 is coming soon in 2016. Filming has finished! Check our social links in the sidebar to follow the show!
+
+                    </div>
+                    <div class="home-box column-4">
+
+                        <h3>Past Seasons</h3>
+                        <!-- Original inage below sourced for educational purposes: https://www.facebook.com/pleaselikemeABC2/photos/pb.332602973457380.-2207520000.1471870875./1188918787825790/?type=3&theater -->
+                        <img class="promo-shot" src="resources/images/plmpromo.jpg" alt="A clay model of the cast of the show sitting on a red chair" />
+                        <p>If you want to purchase a copy of the previous seasons, check on the store for more information</p>
+                        <a class="button" alt="Store Page" href="store.php">Shop Now</a>
+
+                    </div>
+                </div>
+                <!-- The Main Content -->
+                <div class="flex-responsive column-12">
+                    <div class="home-box">
                         <h3>I make television shows</h3>
                         <p>I star in the award winning comedy Please Like Me. Season 4 will release later in 2016, and Season 1, 2 and 3 are avaliable through the online shop.</p>
                         <p> If you want to find out more about me, <a href="http://token.com.au/joshthomas">give my bio a read.</a></p>
@@ -40,9 +57,20 @@
                         </p>
                         <p>Following on from the show’s success in both Australia and the US, Please Like Me has also been licensed to air in Germany, France, Sweden, Canada, Finland and Israel.</p>
                     </div>
+                    <div class="home-box">
+                        <h3>I'm a comedian</h3>
+                        <p>I have performed at several comedy festivals, and </p>
+
+                        <!-- Original inage below sourced for educational purposes: https://play.google.com/store/tv/show/Please_Like_Me?id=RtnabrwLBEs -->
+                        <img class="promo-shot" src="resources/images/pleaselikeme.jpg" alt="Josh thomas standing next to the name of the show with the cast in the background" />
+                    </div>
+                    <hr>
+
+
                 </div>
+
             </article>
-            <aside id="sidebar-content" class="column-2 flex-column">
+            <aside class="column-2 flex-column outer-highlight-box">
                 <div class="inner-highlight-box">
                     Personal Social
                     <ul class="fa-ul">

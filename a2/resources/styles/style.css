@@ -11,6 +11,13 @@ ol {
   margin: 0;
   padding: 0; }
 
+article h1, article h2, article h3, article h4, article h5, article h6 {
+  font-family: 'Roboto', sans-serif;
+  /*font for the headers */ }
+
+aside h4 {
+  margin: 0; }
+
 /* Original css below sourced for educational purposes: http://lea.verou.me/css3patterns/#weave (Note- modified to make more dense, change colours and pattern slightly) */
 /* Body background, page font set here. Also some flex box :(*/
 body {
@@ -35,54 +42,11 @@ body {
   flex-direction: column;
   min-width: 800px; }
 
-.flex-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap; }
-
-.flex-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap; }
-
-.flex-start {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  -ms-grid-row-align: flex-start;
-  align-items: flex-start; }
-
-.flex-center {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -ms-grid-row-align: center;
-  align-items: center; }
-
-.flex-responsive {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -ms-flex-line-pack: start;
-  align-content: flex-start; }
-
-.flex-magicbs {
-  display: block; }
-
+/*setting main min height, colour, a box shadow*/
 main {
-  background-color: #d9d9d9;
-  min-height: 80vh;
-  /* Website should be fully replonsive below 800px, but assignment spec */
+  background-color: #e6e6e6;
+  min-height: 83vh;
+  /* Website should be fully reponsive below 800px, but assignment spec */
   min-width: 800px;
   box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75), -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
   z-index: 1;
@@ -90,42 +54,23 @@ main {
   box-sizing: border-box; }
 
 a {
-  color: black; }
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500; }
 
-.drop-shadow-top {
-  box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75); }
-
-.drop-shadow-top-inset {
-  box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.75); }
-
-.drop-shadow-bottom {
+/* Header Stuff Here */
+header {
+  background-color: #1E1E1E;
+  z-index: 2;
+  min-height: 7vh;
+  padding-bottom: 20px;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75); }
 
-.drop-shadow-left {
-  box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75); }
-
-.drop-shadow-right {
-  box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75); }
-
-.drop-shadow-left-right {
-  box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75), -1px 0px 5px 0px rgba(0, 0, 0, 0.75); }
-
-.drop-shadow-bottom-right {
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
-
-/* Nav Stuff Here */
 header div,
 header div div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-
-header {
-  background-color: #1E1E1E;
-  z-index: 2;
-  min-height: 10%;
-  padding-bottom: 20px;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75); }
 
 header,
 header > div {
@@ -152,8 +97,8 @@ header h1 {
   text-shadow: #1c8187 0px 1px 0px, #1c8187 0px 2px 0px; }
 
 header #header-logo {
-  max-height: 150px;
-  max-height: 10vh;
+  max-height: 100px;
+  min-height: 7vh;
   width: auto;
   margin-right: 10px; }
 
@@ -177,6 +122,7 @@ header div nav ul li {
   margin-left: 0; }
 
 header div nav ul li a {
+  font-weight: 700;
   color: #5ED6DE;
   background-color: #1E1E1E;
   padding: 20px 18px;
@@ -215,6 +161,54 @@ header div nav ul li a:active {
 #shop nav .menu-shop a:active {
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
 
+/*** MAIN ***/
+h2.pagetitle {
+  margin-bottom: 5px; }
+
+h3 {
+  margin: 5px; }
+
+aside.outer-highlight-box, div.outer-highlight-box {
+  background-color: #1E1E1E;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  margin: 10px 0 auto 0;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  color: #5ED6DE; }
+
+.inner-highlight-box {
+  background-color: #5ED6DE;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  margin: 10px 0;
+  color: #1E1E1E; }
+
+.inner-highlight-box a {
+  /* Original css below sourced for educational purposes: https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/*/
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  color: #1E1E1E; }
+
+.button {
+  background-color: #1E1E1E;
+  padding: 10px;
+  color: #5ED6DE;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  border: 0px;
+  height: auto;
+  text-decoration: none; }
+
+.outer-highlight-box .button {
+  background-color: #5ED6DE;
+  color: #1E1E1E; }
+
+/** Footer ****/
 footer div {
   padding: 15px 15px; }
 
@@ -246,289 +240,5 @@ footer {
 
 footer ul {
   margin-left: 5px; }
-
-aside#sidebar-content {
-  background-color: #1E1E1E;
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  padding: 0 10px;
-  margin: 10px 0 auto 0;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  color: #5ED6DE; }
-
-h2 .pagetitle {
-  padding: 15px; }
-
-.inner-highlight-box {
-  background-color: #5ED6DE;
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  padding: 10px;
-  margin: 10px 0;
-  color: #1E1E1E; }
-
-.inner-highlight-box a {
-  /* Original css below sourced for educational purposes: https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/*/
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
-  word-break: break-all;
-  word-break: break-word;
-  color: #1E1E1E; }
-
-#text-404 {
-  font-size: 330px;
-  margin: 0; }
-
-#insideimage {
-  background-image: url("../images/stacksofpapers.png");
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.button {
-  background-color: #1E1E1E;
-  padding: 10px;
-  color: #5ED6DE;
-  margin: 5px;
-  cursor: pointer;
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  border: 0px; }
-
-.form-1 {
-  -webkit-box-flex: 9;
-  -ms-flex: 9;
-  flex: 9;
-  width: 100%;
-  height: 15%; }
-
-.column-1 {
-  padding: 5px;
-  width: 100%;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  box-sizing: border-box; }
-
-.column-2 {
-  padding: 5px;
-  width: 100%;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  box-sizing: border-box; }
-
-.column-3 {
-  padding: 5px;
-  width: 100%;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  box-sizing: border-box; }
-
-.column-4 {
-  padding: 5px;
-  width: 100%;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  box-sizing: border-box; }
-
-.column-5 {
-  padding: 5px;
-  width: 100%;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  box-sizing: border-box; }
-
-.column-6 {
-  padding: 5px;
-  width: 100%;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  box-sizing: border-box; }
-
-.column-7 {
-  padding: 5px;
-  width: 100%;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  box-sizing: border-box; }
-
-.column-8 {
-  padding: 5px;
-  width: 100%;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  box-sizing: border-box; }
-
-.column-9 {
-  padding: 5px;
-  width: 100%;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  box-sizing: border-box; }
-
-.column-10 {
-  padding: 5px;
-  width: 100%;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  box-sizing: border-box; }
-
-.column-11 {
-  padding: 5px;
-  width: 100%;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  box-sizing: border-box; }
-
-.column-12 {
-  padding: 5px;
-  width: 100%;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  box-sizing: border-box; }
-
-@media only screen and (min-width: 900px) {
-  .column-1 {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    width: 8.33333%; }
-
-  .column-2 {
-    -webkit-box-flex: 2;
-    -ms-flex: 2;
-    flex: 2;
-    width: 16.66667%; }
-
-  .column-3 {
-    -webkit-box-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-    width: 25%; }
-
-  .column-4 {
-    -webkit-box-flex: 4;
-    -ms-flex: 4;
-    flex: 4;
-    width: 25%; }
-
-  .column-5 {
-    -webkit-box-flex: 5;
-    -ms-flex: 5;
-    flex: 5;
-    width: 25%; }
-
-  .column-6 {
-    -webkit-box-flex: 6;
-    -ms-flex: 6;
-    flex: 6;
-    width: 50%; }
-
-  .column-7 {
-    -webkit-box-flex: 7;
-    -ms-flex: 7;
-    flex: 7;
-    width: 58.33333%; }
-
-  .column-8 {
-    -webkit-box-flex: 8;
-    -ms-flex: 8;
-    flex: 8;
-    width: 66.66667%; }
-
-  .column-9 {
-    -webkit-box-flex: 9;
-    -ms-flex: 9;
-    flex: 9;
-    width: 75%; }
-
-  .column-10 {
-    -webkit-box-flex: 10;
-    -ms-flex: 10;
-    flex: 10;
-    width: 83.33333%; }
-
-  .column-11 {
-    -webkit-box-flex: 11;
-    -ms-flex: 11;
-    flex: 11;
-    width: 91.66667%; }
-
-  .column-12 {
-    -webkit-box-flex: 12;
-    -ms-flex: 12;
-    flex: 12;
-    width: 100%; }
-
-  main, #footer-wrapper {
-    width: 80%;
-    max-width: 1600px; }
-
-  header {
-    padding: 0 10%;
-    box-sizing: border-box; }
-
-  #footer-wrapper {
-    min-height: 10vh; }
-
-  article {
-    -ms-flex-preferred-size: 80%;
-    flex-basis: 80%;
-    -webkit-box-flex: 4;
-    -ms-flex-positive: 4;
-    flex-grow: 4;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row; }
-
-  aside {
-    -ms-flex-preferred-size: 20%;
-    flex-basis: 20%;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-
-  .flex-responsive {
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap; }
-
-  .flex-magicbs {
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-line-pack: start;
-    align-content: flex-start;
-    width: 100%; }
-
-  div.shop-item {
-    min-width: 48%; } }
-@media only screen and (max-width: 1100px) {
-  aside#sidebar-content {
-    width: 100%;
-    -webkit-box-flex: 5;
-    -ms-flex: 5;
-    flex: 5; }
-
-  div.shop-item {
-    min-width: 98%; } }
 
 /*# sourceMappingURL=style.css.map */

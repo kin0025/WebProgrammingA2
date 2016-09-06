@@ -1,0 +1,144 @@
+//Contrast test
+$colour2: #5ED6DE;
+$colour3: #1E1E1E;
+$colour1:#22435c;
+$colour4: #fff;
+$colour5: #fff;
+
+// Footer Colours 
+$footersides: desaturate($colour2, 20%);
+$footermiddle: $colour3;
+$footer-text: lighten($colour2, 10%);
+// Colours for the background gradient magic 
+$background: lighten($colour2, 20%);
+$backgroundlighten: darken($colour2, 10%);
+// Colour derivations  
+$link-colour: darken($colour3, 20%);
+$header-shadow: darken($colour2, 30%);
+#contact-form {
+  flex-wrap: nowrap;
+}
+
+#contact-form span {
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form select {
+  height: auto;
+  min-height: 30px;
+}
+
+#contact-form input:focus:invalid,
+#contact_form textarea:focus:invalid {
+  background: rgba(255, 0, 0, 0.25);
+  box-shadow: 0 0 5px #d45252;
+  border-color: #b03535
+}
+
+textarea {
+  resize: vertical;
+}
+
+input,
+textarea {
+  background: $colour5;
+  border: $colour3 solid 1px;
+}
+
+.form-1 {
+  width: 100%;
+  height: 5em;
+}
+
+.flexibility-text {
+  justify-content: space-between;
+  -moz-box-wrap: nowrap;
+  -webkit-box-wrap: nowrap;
+  -ms-flexbox-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.flexibility-text p {
+  margin: 0 0 3px 0;
+}
+
+input#flexibility {
+  -webkit-appearance: none;
+  width: 100%;
+  min-height: auto;
+  margin: 3px 0;
+}
+
+input#flexibility:focus {
+  outline: none;
+}
+
+input#flexibility::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  background: $colour2;
+  border: 0;
+}
+
+input#flexibility::-moz-range-track {}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0.9px 0.9px 1px #000031, 0px 0px 0.9px #00004b;
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background: $colour1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+  border: 0;
+}
+
+input#flexibility::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background: $colour1;
+  cursor: pointer;
+  border: 0;
+}
+
+input#flexibility::-ms-track {
+  width: 100%;
+  height: 11.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+  border: 0;
+}
+
+input#flexibility::-ms-fill-lower {
+  background: rgba(42, 100, 149, 0.78);
+  border-radius: 2.6px;
+}
+
+input#flexibility::-ms-fill-upper {
+  background: rgba(48, 113, 169, 0.78);
+  border-radius: 2.6px;
+}
+
+input#flexibility::-ms-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background: $colour1;
+  cursor: pointer;
+  height: 11.4px;
+  border: 0;
+}
+
+input#flexibility:focus::-ms-fill-lower {
+  background: rgba(48, 113, 169, 0.78);
+}
+
+input#flexibility:focus::-ms-fill-upper {
+  background: rgba(54, 126, 189, 0.78);
+}

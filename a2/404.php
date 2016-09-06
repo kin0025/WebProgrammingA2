@@ -6,6 +6,8 @@
     <?php
 include 'resources/head.php';
 ?>
+<link rel="stylesheet" type=text/css href="resources/styles/404.css">
+
 </head>
         <body>
 
@@ -26,7 +28,7 @@ include 'resources/header.php';
                         <!-- Original image below sourced for educational purposes:  http://www.lrdc.pitt.edu/schunn/research/peers.html -->
 
                     </article>
-                    <aside id="sidebar-content" class="column-3 flex-column">
+            <aside class="column-2 flex-column outer-highlight-box">
                         <div class="inner-highlight-box">
                             Personal Social
                             <ul class="fa-ul">

@@ -20,9 +20,11 @@
                     <form id="shopform" method="post" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php">
                         <div class="flex-row">
                             <div class="shop-item column-6">
-                                <h4>Please Like Me: Season 1</h4>
+                                <h3>Please Like Me: Season 1</h3>
                                 <div class="swap-container">
                                     <a class="button moreinfo" href="#">More Info</a>
+                                    <p>$17.00</p>
+                                    <span>Add to cart: <input type="number" name="plm[s1]" min="0" max="5" value="0"></span>
                                     <div class="front">
                                         <img src="resources/images/s1.jpg" alt="Season 1 Cover Art" width="100px">
                                         <ul>
@@ -38,42 +40,43 @@
                                             Based on the award-winning comedy of Josh Thomas, the six-part series is about cavoodles, custard tarts, boyfriends and girlfriends. Mostly, though, it’s about growing up quickly and realising that your parents are not heroes, but big dopes with no idea
                                             what’s going on – just like you.
                                         </details>
-                                        <p>$20 each</p>
-                                        <span>Add to cart: <input type="number" name="plm[s1]" min="0" max="5" value="0"></span>
+                                        
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-item column-6">
-                                <h4>Please Like Me: Season 2</h4>
+                                <h3>Please Like Me: Season 2</h3>
                                 <div class="swap-container">
                                     <a class="button moreinfo" href="#">More Info</a>
-
+                                    <p>$22.50</p>
+                                    <span>Add to cart: <input type="number" name="plm[s2]" min="0" max="5" value="0"></span>
                                     <div class="front">
+                                                                    <!-- Original image below sourced for educational purposes: https://shop.abc.net.au/products/please-like-me-season-2-2dvd -->
+
                                         <img src="resources/images/s2.jpg" alt="Season 2 Cover Art" width="100px">
                                         <ul>
-                                            <!-- Original image below sourced for educational purposes: https://shop.abc.net.au/products/please-like-me-s3-2dvd -->
                                             <li>Released in 2014</li>
                                             <li>10 Episodes</li>
                                         </ul>
                                     </div>
 
                                     <div class="back">
-                                        <!-- Original text below sourced for educational purposes: https://shop.abc.net.au/products/please-like-me-dvd-s1 -->
+                                        <!-- Original text below sourced for educational purposes: https://shop.abc.net.au/products/please-like-me-season-2-2dvd -->
                                         <details>
                                             <summary>Best new comedy</summary>
                                             The coming-of-age comedy returns having received critical acclaim in Australia and the USA, where it was hailed as “best new comedy”. The award-winning Please Like Me is back for a second season, written by and starring Josh Thomas.</details>
-                                        <p>$25 each</p>
-                                        <span>Add to cart: <input type="number" name="plm[s2]" min="0" max="5" value="0"></span>
+                                        
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Original image below sourced for educational purposes: https://shop.abc.net.au/products/please-like-me-season-2-2dvd -->
+                            <!-- Original image below sourced for educational purposes: https://shop.abc.net.au/products/please-like-me-s3-2dvd -->
                             <div class="shop-item column-6">
-                                <h4>Please Like Me: Season 3</h4>
+                                <h3>Please Like Me: Season 3</h3>
                                 <div class="swap-container">
                                     <a class="button moreinfo" href="#">More Info</a>
-
+                                    <p>$26.75</p>
+                                    <span>Add to cart: <input type="number" name="plm[s3]" min="0" max="5" value="0"></span>
                                     <div class="front">
                                         <img src="resources/images/s3.jpg" alt="Season 3 Cover Art" width="100px">
 
@@ -84,19 +87,20 @@
                                     </div>
 
                                     <div class="back">
-                                        <!-- Original text below sourced for educational purposes: https://shop.abc.net.au/products/please-like-me-dvd-s1 -->
+                                                                        <!-- Original text below sourced for educational purposes: https://shop.abc.net.au/products/please-like-me-s3-2dvd -->
                                         <details>
                                             <summary>Hilariously awkward</summary>Kicking off with a half-hour romcom and ending with an unforgettable family Christmas lunch, this season is filled with food, sex, drugs, dancing, singing, secrets and a transgender
                                             chicken.</details>
-                                        <p>$33 each</p>
-                                        <span>Add to cart: <input type="number" name="plm[s3]" min="0" max="5" value="0"></span>
+                                
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-item column-6">
-                                <h4>Please Like Me: Season 4</h4>
+                                <h3>Please Like Me: Season 4</h3>
                                 <div class="swap-container">
                                     <a class="button moreinfo" href="#">More Info</a>
+                                    <p>$50</p>
+                                    <span>Add to cart: <input style="background-colour:red;cursor:not-allowed;" type="number" name="plm[s4]" min="0" max="5" value="0" disabled></span>
                                     <div class="front">
                                         <ul>
                                             <li>Coming soon in 2016</li>
@@ -104,8 +108,8 @@
                                     </div>
 
                                     <div class="back">
-                                        <p>$50</p>
-                                        <span>Add to cart: <input style="background-colour:red;cursor:not-allowed;" type="number" name="plm[s4]" min="0" max="5" value="0" disabled></span>
+                                        <h4>Broadcasting 2016</h4>
+                                        <p>Season 4 has wrapped up filming and will be released later in the year. Look for it on your local distributing broadcaster or on one of the avaliable store options</p>
                                     </div>
 
                                 </div>
@@ -117,7 +121,7 @@
                     </form>
                 </div>
             </article>
-            <aside id="sidebar-content" class="column-2 flex-column">
+            <aside class="column-2 flex-column outer-highlight-box">
                 <h4>Other places to get Please Like Me</h4>
                 <div class="inner-highlight-box">
                     <i class="fa fa-globe" aria-hidden="true"></i> Australia

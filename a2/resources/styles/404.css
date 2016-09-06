@@ -1,0 +1,10 @@
+#text-404 {
+  font-size: 330px;
+  margin: 0;
+}
+
+#insideimage {
+  background-image: url("../images/stacksofpapers.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
