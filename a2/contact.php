@@ -6,25 +6,50 @@
     <?php include 'resources/head.php';?>
         <link rel="stylesheet" type=text/css href="resources/styles/contact.css">
 <script>
-    function fillFlexibility(){
+    function fillFlexibilityField(){
+        //Take the value of the slider
         var flexiValue = parseInt(document.getElementById('flexibility').value)
+        
+        //Should always be a number
         if(isNaN(flexiValue))
         {
             alert('Input on the flexibility slider is invalid. Try resubmitting with different values');
             return false;
         }
+        //Choose what we want to set
         var flexiFill;
         switch(flexiValue){
-            case 0: flexiFill = 'no variation';
+            case 0: flexiFill = 'none';
             break;
-            case 1: flexiFill = 'same day';
+            case 1: flexiFill = 'days';
             break;
-            case 2: flexiFill = 'different day avaliability'
+            case 2: flexiFill = 'weeks'
             break;
-            default: flexiFill = 'No answer provided'
+            default: flexiFill = 'none'
             break;
         }
+        //Set the value of the hidden element
         document.getElementById('flexibilityactual').value = flexiFill;
+    }
+    function fillFlexibilitySlider(){
+        //Take the value of the slider
+        var flexiValue = document.getElementById('flexibilityactual')
+        var chosen = flexiValue.options[flexiValue.selectedIndex].value;
+
+        //Choose what we want to set
+        var flexiFill;
+        switch(chosen){
+            case 'none': flexiFill = 0;
+            break;
+            case 'days': flexiFill = 1;
+            break;
+            case 'weeks': flexiFill = 2;
+            break;
+            default: flexiFill = 0;
+            break;
+        }
+        //Set the value of the slider element
+        document.getElementById('flexibility').value = flexiFill;
     }
 </script>
 </head>
@@ -46,9 +71,15 @@
                         <span  >Contact No* </span><input   required type="tel" name="phone" pattern = "[0-9 +\(\)\-]+" placeholder="03 12345678"/>
                         <span  >Event Date* </span> <input   required input type="date" name="eventdate" /> 
                         <span  >Event Time* </span> <input   required input type="time" name="eventtime" /> 
-                        <span  >Flexibility </span> <div class="flex-row flexibility-text"><p>Inflexible (No time variation)</p><p>Flexible (Same Day Variation)</p><p>Very Flexible (Multi-Day Variation)</p></div>
-                        <input id="flexibility"  onmouseleave="fillFlexibility()" required input type="range" min="0" max="2" step="1" list name="eventflexibility" />
-                        <input id="flexibilityactual" type="text" name="eventflexibility" value="same day" hidden/>
+                        <span  >Flexibility </span> <div class="flex-row flexibility-text"><p>Inflexible (No time variation)</p><p>Flexible (Couple of Day Variation)</p><p>Very Flexible (Week Variation)</p></div>
+        
+                        <input id="flexibility"  onchange="fillFlexibilityField()" required input type="range" min="0" max="2" step="1" value="0" name="eventflexibility" />
+    
+                        <select id="flexibilityactual" onchange="fillFlexibilitySlider()" name="eventflexibility"> 
+                                    <option value= 'none' >Inflexible</option>
+                                    <option value= 'days' >Flexible</option>
+                                    <option value= 'weeks'> Very Flexible</option>
+                                    </select>
                         <span  >Event Location </span> <textarea class="form-1" type="text" name="eventlocation" pattern = "[A-Za-z0-9 .\-]+" required placeholder="1 Bourke St Melbourne Victoria Australia"></textarea> 
                         <span  >Event Description </span><textarea class="form-1" type="text" name="eventdescription" pattern = "[A-Za-z .\-']+" required placeholder="MC for award ceremony"></textarea>
                         <span  >Performance Required </span><select name='performance'> 
