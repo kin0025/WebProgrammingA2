@@ -59,7 +59,7 @@
                     </div>
                     <div class="home-box">
                         <h3>I'm a comedian</h3>
-                        <p>I have performed at several comedy festivals, and </p>
+                        <p>I have performed at several comedy festivals, and was the youngest winner of the Melbourne International Comedy Festival's RAW Comedy Award in 2005. I was was selected to perform in The Comedy Zone in 2006. I have appeared in international comedy festivals in Edinburgh and Montreal.</p>
 
                         <!-- Original inage below sourced for educational purposes: https://play.google.com/store/tv/show/Please_Like_Me?id=RtnabrwLBEs -->
                         <img class="promo-shot" src="resources/images/pleaselikeme.jpg" alt="Josh thomas standing next to the name of the show with the cast in the background" />

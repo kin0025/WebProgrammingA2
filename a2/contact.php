@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Contact Us</title>
+    <title>Contact Me</title>
     <?php include 'resources/head.php';?>
         <link rel="stylesheet" type=text/css href="resources/styles/contact.css">
 <script>
@@ -60,7 +60,7 @@
         <div class="flex-magicbs">
             <article class="column-9">
                 <div class="flex-row">
-                    <h2 class="pagetitle">Contact Me Here</h2>
+                    <h2 class="pagetitle">Book now!</h2>
                 </div>
                 <div class="flex-responsive">
                     <form id="contact-form" class="column-9 flex-column" method="post" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php">
@@ -73,7 +73,7 @@
                         <span  >Event Time* </span> <input   required input type="time" name="eventtime" /> 
                         <span  >Flexibility </span> <div class="flex-row flexibility-text"><p>Inflexible (No time variation)</p><p>Flexible (Couple of Day Variation)</p><p>Very Flexible (Week Variation)</p></div>
         
-                        <input id="flexibility"  onchange="fillFlexibilityField()" required input type="range" min="0" max="2" step="1" value="0" name="eventflexibility" />
+                        <input id="flexibility"  oninput="fillFlexibilityField()" required input type="range" min="0" max="2" step="1" value="0" name="eventflexibility" />
     
                         <select id="flexibilityactual" onchange="fillFlexibilitySlider()" name="eventflexibility"> 
                                     <option value= 'none' >Inflexible</option>
