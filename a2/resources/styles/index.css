@@ -3,10 +3,16 @@
 
 .home-box {
   margin: 3px;
-  border-bottom: 1px solid #1E1E1E; }
+  border-bottom: 1px solid #1E1E1E;
+  margin-bottom: 5px; }
 
 .border-lr {
   border-style: solid;
   border-width: 0 2px; }
+
+@media only screen and (min-width: 1000px) {
+  .border-lr {
+    border-style: solid;
+    border-width: 0; } }
 
 /*# sourceMappingURL=index.css.map */
