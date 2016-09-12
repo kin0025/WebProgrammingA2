@@ -30,6 +30,8 @@
 include 'resources/header.php';
 ?>
         <main class="drop-shadow-left-right flex-responsive">
+                    <!-- I knew why this is needed, but for some reason stuff needs a double flex enclosure to work -->
+
             <div class="flex-magicbs">
                 <article class="column-9 flex-responsive">
 

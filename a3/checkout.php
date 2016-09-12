@@ -21,6 +21,7 @@
                         <div class="flex-row">
                             <?php 
                             while(true){
+                                /*
                             <div class="shop-item column-6">
                                 <h3>Please Like Me: Season 1</h3>
                                 <div class="swap-container">
@@ -46,7 +47,7 @@
                                     </div>
                                 </div>
                             </div>
-                            }
+                            }*/
                             ?>
                         </div>
                         <select name='shipping'> 
@@ -71,3 +72,4 @@
 
     <?php include 'resources/footer.php'; ?>
 </body>
+</htmll>

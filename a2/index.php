@@ -19,6 +19,7 @@
 
                 <!-- Top 3 Boxes -->
                 <div class="flex-responsive outer-highlight-box">
+                    <!-- These have borders on the botton, but same colour as background so invisible -->
                     <div class="home-box column-4">
                         <h3>I do events</h3>
                         <!-- Original image below sourced for educational purposes: http://junkee.com/we-talked-to-josh-thomas-about-pop-culture-it-didnt-go-very-well/67297 -->

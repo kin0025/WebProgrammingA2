@@ -2,16 +2,7 @@
 /* Colours for the background gradient magic */
 /* Colour derivations  */
 /* Shop page specific css, used for styling shop elements and the fancy transitions */
-.swap-container {
-  display: -webkit-flex;
-  -webkit-flex-direction: column-reverse;
-  display: flex;
-  flex-direction: column-reverse; }
-
-.swap-container p {
-  margin: 0;
-  padding: 0; }
-
+/* Basic visual styling for shop-item, nothing fancy */
 .shop-item {
   display: flex;
   flex-direction: column;
@@ -19,7 +10,7 @@
   min-width: 98%;
   flex: 1;
   background: #b3ecef;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-sizing: border-box;
   margin: 1%;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
@@ -27,20 +18,22 @@
 .shop-item div {
   flex: 1 0 auto; }
 
-.shop-item details {
+.shop-item .details {
   width: 90%;
   color: black;
+  /* adds scroll bars if it is too tall */
   overflow: auto;
   max-height: 250px;
-  background: #34cbd5;
+  border: #34cbd5 2px solid;
+  /* Keep it on top of the other items */
   z-index: 10;
   display: block;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: auto; }
 
-.shop-item details summary {
-  cursor: pointer; }
+.shop-item details h4 {
+  margin: 0; }
 
 .shop-item h4 {
   margin-bottom: 0.25em;
@@ -60,6 +53,17 @@
   font-size: 3em;
   font-weight: bold; }
 
+.swap-container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column-reverse;
+  display: flex;
+  flex-direction: column-reverse; }
+
+.swap-container p, .swap-container span {
+  margin: 0;
+  margin-left: 10px;
+  padding: 0; }
+
 .swap-container ul {
   list-style-position: inside; }
 
@@ -70,7 +74,9 @@
   transition: visibility 0s, opacity 0.2s linear;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
+  /* Put it on top of the back element */
   z-index: 2;
+  /* Keep it on top of the other back element as it is displayed first */
   margin-top: -30vh;
   padding-left: 1em; }
 
@@ -91,12 +97,14 @@
   flex-direction: column;
   padding-left: 1em; }
 
+/* When the swap container is hovered over set it's child front element to hidden and transparent and below everything */
 .swap-container:hover > .front,
 .moreinfo:active + .front {
   visibility: hidden;
   opacity: 0;
   z-index: 0; }
 
+/* When the swap container is hovered over set it's child front element to visible and opaque and above the front element */
 .swap-container:hover > .back,
 .moreinfo:active + .back {
   visibility: visible;
@@ -109,14 +117,20 @@
   height: 30vh; }
 
 .moreinfo {
-  z-index: 5; }
+  z-index: 5;
+  margin-bottom: 10px;
+  padding-left: 20px; }
 
 #shop-form {
   width: 100%; }
 
 .shop-item img {
+  margin-top: 0;
+  margin-bottom: auto;
+  margin-right: 5px;
   min-width: 100px;
   width: auto;
-  max-height: calc(30vh - 5em); }
+  /* Set the maximum inage height to the height of the box minus 5em */
+  max-height: calc(30vh - 2em); }
 
 /*# sourceMappingURL=shop.css.map */

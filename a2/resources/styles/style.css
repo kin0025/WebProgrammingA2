@@ -11,8 +11,12 @@ ol {
   margin: 0;
   padding: 0; }
 
-article h1, article h2, article h3, article h4, article h5, article h6 {
-  font-family: 'Roboto', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gloria Hallelujah', cursive;
+  /*font for the headers */ }
+
+a, button {
+  font-family: 'Gloria Hallelujah', cursive;
   /*font for the headers */ }
 
 aside h4 {
@@ -55,9 +59,11 @@ main {
 
 a {
   color: black;
-  font-family: 'Roboto', sans-serif;
+  /*  font-family: 'Gloria Hallelujah', cursive;
+  */
   font-weight: 500; }
 
+/* font of content */
 /* Header Stuff Here */
 header {
   background-color: #1E1E1E;
@@ -72,6 +78,7 @@ header div div {
   display: -ms-flexbox;
   display: flex; }
 
+/* Flex box for the header area */
 header,
 header > div {
   display: -webkit-box;
@@ -91,45 +98,58 @@ header > div {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
+/* Header area font set up */
 header h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Gloria Hallelujah', cursive;
   color: #5ED6DE;
   text-shadow: #1c8187 0px 1px 0px, #1c8187 0px 2px 0px; }
 
+/* setting size min and max */
 header #header-logo {
   max-height: 100px;
   min-height: 7vh;
   width: auto;
   margin-right: 10px; }
 
+/* creating a flex box for bav div */
 header div nav {
+  /* Wow a flexbox */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 header div nav ul {
+  /* Removes the list disks */
   list-style-type: none;
+  /*another flexbox */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* Sets the flexbox to a LTR horizontal box */
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row; }
 
 header div nav ul li {
-  list-style-type: none;
+  /* Same as above */
   margin-left: 0; }
 
 header div nav ul li a {
+  /* Set the font and background styliong */
   font-weight: 700;
   color: #5ED6DE;
   background-color: #1E1E1E;
+  /* Some cool button padding */
   padding: 20px 18px;
+  /* Remove underlines*/
   text-decoration: none;
+  font-family: 'Gloria Hallelujah', cursive;
+  /* For the cool animations */
   -webkit-transition-duration: 1s;
   transition-duration: 1s; }
 
+/* Fancy nav button animations - transitions to swap[ping colours and adds a box shadow */
 header div nav ul li a:hover,
 header div nav ul li a:active {
   background-color: #5ED6DE;
@@ -137,6 +157,7 @@ header div nav ul li a:active {
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
 
 /* Per Page Highlighting */
+/* Sets a different button style based on the current page body id */
 #home nav .menu-home a {
   background-color: #5ED6DE;
   color: #1E1E1E; }
@@ -149,6 +170,7 @@ header div nav ul li a:active {
   background-color: #5ED6DE;
   color: #1E1E1E; }
 
+/* Box shadows only on selected ones */
 #home nav .menu-home a:hover,
 #home nav .menu-home a:active {
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
@@ -162,30 +184,39 @@ header div nav ul li a:active {
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
 
 /*** MAIN ***/
+/* creating a margin for page title */
 h2.pagetitle {
   margin-bottom: 5px; }
 
 h3 {
   margin: 5px; }
 
+/* creates black boxes */
 aside.outer-highlight-box, div.outer-highlight-box {
+  /* creates a background color */
   background-color: #1E1E1E;
+  /* sets up a shadow */
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  padding: 10px;
-  margin: 10px 0 auto 0;
+  padding: 0 10px;
+  margin: 10px 0 auto 5px;
+  /* Content won't wrap lines if content is too large - forces content to be smaller*/
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  color: #5ED6DE; }
+  color: #5ED6DE;
+  border-radius: 10px; }
 
+/* creates blue boxes within the black box in the aside bar */
 .inner-highlight-box {
-  background-color: #5ED6DE;
+  background-color: #b3ecef;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 10px;
   margin: 10px 0;
-  color: #1E1E1E; }
+  color: #1E1E1E;
+  border-radius: 5px; }
 
 .inner-highlight-box a {
   /* Original css below sourced for educational purposes: https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/*/
+  /* Wraps the link if they are too long to fit inside the container (had trouble with email adresses in thew sidebar)*/
   overflow-wrap: break-word;
   word-wrap: break-word;
   -ms-word-break: break-all;
@@ -193,36 +224,45 @@ aside.outer-highlight-box, div.outer-highlight-box {
   word-break: break-word;
   color: #1E1E1E; }
 
+/* style for the button */
 .button {
+  /* Set the colours and padding */
   background-color: #1E1E1E;
   padding: 10px;
   color: #5ED6DE;
   margin: 5px;
+  /* Make the cursor look like it is a button */
   cursor: pointer;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   border: 0px;
   height: auto;
   text-decoration: none; }
 
+/* Special button colours when the background colour is different */
 .outer-highlight-box .button {
   background-color: #5ED6DE;
   color: #1E1E1E; }
 
 /** Footer ****/
-footer div {
-  padding: 15px 15px; }
-
+/* sets up flex boxes for the footer along with backgroud colour and box shadows */
 footer {
   background-color: #71c5cb;
   z-index: 2;
-  content: "";
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  /* Minumun 10% height - total minimum height of 100% */
   min-height: 10vh;
   width: 100%;
   box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.75); }
+
+/* Padding for the footer */
+footer div {
+  padding: 15px 15px; }
+
+footer ul {
+  margin-left: 5px; }
 
 #footer-wrapper {
   box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75), -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
@@ -237,8 +277,5 @@ footer {
 
 #footer-links ul {
   list-style-position: inside; }
-
-footer ul {
-  margin-left: 5px; }
 
 /*# sourceMappingURL=style.css.map */

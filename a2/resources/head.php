@@ -8,7 +8,7 @@
 <link rel="shortcut icon" type="image/png" href="favicon.png" />
 <meta charset="UTF-8">
 <!-- Original stylesheet below sourced for educational purposes: https://www.google.com/fonts -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:400,500" rel="stylesheet"><!--[if IE]>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Gloria+Hallelujah" rel="stylesheet"><!--[if IE]>
     <link rel="stylesheet" type=text/css href="resources/styles/ie.css">
 <![endif]-->
 

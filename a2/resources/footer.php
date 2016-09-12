@@ -9,7 +9,7 @@
         <div class="column-1 "><a href="#top">Top</a></div>
         <!-- Standard copyright, should show 2016- year but who cares -->
         <div class="column-6">
-            &copy; 2016 - All rights reserved Alex Kinross-Smith and Mukund Boni 
+            &copy; 2016 - All rights reserved Alex Kinross-Smith (s3603437) and Mukund Boni (s3600893)
         </div>
     </div>
     

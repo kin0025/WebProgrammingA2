@@ -4,20 +4,27 @@
 #contact-form span {
   margin-bottom: 5px; }
 
+#contact-form p {
+  margin-top: 0.5em;
+  margin-bottom: 0; }
+
 #contact-form input,
 #contact-form select {
   height: auto;
   min-height: 30px; }
 
+/* When an input is invalid, give it a red box shadow and background */
 #contact-form input:focus:invalid,
 #contact_form textarea:focus:invalid {
   background: rgba(255, 0, 0, 0.25);
   box-shadow: 0 0 5px #d45252;
   border-color: #b03535; }
 
+/* No horizontal resizement */
 textarea {
   resize: vertical; }
 
+/* Set the colour of things */
 input,
 textarea {
   background: #fff;
@@ -27,6 +34,7 @@ textarea {
   width: 100%;
   height: 5em; }
 
+/* Make the text wrap and justify properly */
 .flexibility-text {
   justify-content: space-between;
   -moz-box-wrap: nowrap;
@@ -37,6 +45,7 @@ textarea {
 .flexibility-text p {
   margin: 0 0 3px 0; }
 
+/* Style the flexibility slider properly */
 input#flexibility {
   -webkit-appearance: none;
   width: 100%;
@@ -46,6 +55,7 @@ input#flexibility {
 input#flexibility:focus {
   outline: none; }
 
+/* Set then colour of the slider track */
 input#flexibility::-webkit-slider-runnable-track {
   width: 100%;
   height: 10px;
@@ -53,6 +63,7 @@ input#flexibility::-webkit-slider-runnable-track {
   background: #5ED6DE;
   border: 0; }
 
+/* Set the slider movement styles */
 input[type=range]::-webkit-slider-thumb {
   box-shadow: 0.9px 0.9px 1px #000031, 0px 0px 0.9px #00004b;
   height: 16px;

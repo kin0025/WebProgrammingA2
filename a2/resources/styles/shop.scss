@@ -1,4 +1,3 @@
-
 //Contrast test
 $colour2: #5ED6DE;
 $colour3: #1E1E1E;
@@ -6,32 +5,24 @@ $colour1:#22435c;
 $colour4: #e6e6e6;
 
 /* Footer Colours */
+
 $footersides: desaturate($colour2, 20%);
 $footermiddle: $colour3;
 $footer-text: lighten($colour2, 10%);
 
 /* Colours for the background gradient magic */
+
 $background: lighten($colour2, 20%);
 $backgroundlighten: darken($colour2, 10%);
 
 /* Colour derivations  */
+
 $link-colour: darken($colour3, 20%);
 $header-shadow: darken($colour2, 30%);
 
 /* Shop page specific css, used for styling shop elements and the fancy transitions */
 
-.swap-container {
-  display: -webkit-flex;
-  -webkit-flex-direction: column-reverse;
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.swap-container p {
-  margin: 0;
-  padding: 0;
-}
-
+/* Basic visual styling for shop-item, nothing fancy */
 .shop-item {
   display: flex;
   flex-direction: column;
@@ -39,50 +30,50 @@ $header-shadow: darken($colour2, 30%);
   min-width: 98%;
   flex: 1;
   background: $background;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-sizing: border-box;
   margin: 1%;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
-
 }
-
-.shop-item div {
-  flex: 1 0 auto;
-}
-
-.shop-item details {
-  width: 90%;
-  color: $link-colour;
-  overflow: auto;
-  max-height: 250px;
-  background: $backgroundlighten;
- // margin-left:1em;
-  z-index: 10;
-  display: block;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom:auto;
   
-}
-
-.shop-item details summary {
-  cursor: pointer;
-}
-
-.shop-item h4 {
-  margin-bottom: 0.25em;
-  margin-top: 0.5em;
-}
-
-.shop-item .front {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.shop-item img {
-  align-self: center;
-}
+  .shop-item div {
+    flex: 1 0 auto;
+  }
+  
+  .shop-item .details {
+    width: 90%;
+    color: $link-colour;
+    /* adds scroll bars if it is too tall */
+    overflow: auto;
+    max-height: 250px;
+    border: $backgroundlighten 2px solid;
+    // margin-left:1em;
+    /* Keep it on top of the other items */
+    z-index: 10;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: auto;
+  }
+  
+  .shop-item details h4 {
+    margin:0;
+  }
+  
+  .shop-item h4 {
+    margin-bottom: 0.25em;
+    margin-top: 0.5em;
+  }
+  
+  .shop-item .front {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .shop-item img {
+    align-self: center;
+  }
 
 .checkout {
   width: 100%;
@@ -91,9 +82,24 @@ $header-shadow: darken($colour2, 30%);
   font-weight: bold;
 }
 
-.swap-container ul {
-  list-style-position: inside;
+.swap-container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column-reverse;
+  display: flex;
+  flex-direction: column-reverse;
 }
+
+  .swap-container p,.swap-container span {
+    margin:0;
+    margin-left: 10px;
+    padding: 0;
+  }
+  
+  
+  .swap-container ul {
+    list-style-position: inside;
+  }
+  
 
 .front {
   position: relative;
@@ -102,9 +108,11 @@ $header-shadow: darken($colour2, 30%);
   transition: visibility 0s, opacity 0.2s linear;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
+  /* Put it on top of the back element */
   z-index: 2;
+  /* Keep it on top of the other back element as it is displayed first */
   margin-top: -30vh;
-  padding-left:1em;
+  padding-left: 1em;
 }
 
 .back {
@@ -115,25 +123,27 @@ $header-shadow: darken($colour2, 30%);
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
   z-index: 0;
-   display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-      padding-left:1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 1em;
 }
 
-.swap-container:hover> .front,
-.moreinfo:active+ .front {
+/* When the swap container is hovered over set it's child front element to hidden and transparent and below everything */
+.swap-container:hover>.front,
+.moreinfo:active+.front {
   visibility: hidden;
   opacity: 0;
   z-index: 0;
 }
 
-.swap-container:hover> .back,
-.moreinfo:active+ .back {
+/* When the swap container is hovered over set it's child front element to visible and opaque and above the front element */
+.swap-container:hover>.back,
+.moreinfo:active+.back {
   visibility: visible;
   opacity: 1;
   z-index: 2;
@@ -147,6 +157,8 @@ $header-shadow: darken($colour2, 30%);
 
 .moreinfo {
   z-index: 5;
+  margin-bottom:10px;
+  padding-left:20px;
 }
 
 #shop-form {
@@ -154,7 +166,11 @@ $header-shadow: darken($colour2, 30%);
 }
 
 .shop-item img {
+  margin-top:0;
+  margin-bottom:auto;
+  margin-right:5px;
   min-width: 100px;
   width: auto;
-  max-height: calc(30vh - 5em);
+  /* Set the maximum inage height to the height of the box minus 5em */
+  max-height: calc(30vh - 2em);
 }

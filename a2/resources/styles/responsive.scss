@@ -17,7 +17,7 @@ $link-colour: darken($colour3, 20%);
 $header-shadow: darken($colour2, 30%);
 
 
-
+/* Sets the element as a flexbox with a horizontal layout wrapping if child elements too large */
 .flex-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,6 +26,7 @@ $header-shadow: darken($colour2, 30%);
   flex-flow: row wrap;
 }
 
+/* Sets the element as a flexbnox witrh a vertical layout. Wrapping is not very functional as the size of the element does not expand, but is there (dodgy flexbox implementation?) - this is a reason multiple wrapper elements are used in some cases*/
 .flex-column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,6 +35,7 @@ $header-shadow: darken($colour2, 30%);
   flex-flow: column wrap;
 }
 
+/* Sets an element with this class to a flex-start aligned element -  child elements are filled from the satrt of the element  */
 .flex-start {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -44,6 +46,7 @@ $header-shadow: darken($colour2, 30%);
   align-items: flex-start;
 }
 
+/* Sets an element with this class to align in the centre*/
 .flex-center {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -54,6 +57,7 @@ $header-shadow: darken($colour2, 30%);
   align-items: center;
 }
 
+/* This element changes based on screen size- is aligned to the start and column based when viewed on mobile, but row based on desktop */
 .flex-responsive {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,12 +68,14 @@ $header-shadow: darken($colour2, 30%);
   align-content: flex-start;
 }
 
+/* Displays as a block on mobile */
 .flex-magicbs {
   display: block;
 }
 
 
 /** Responsive Stuff */
+/* Sets all columns to 100% width on mobile, gives requisite padding */
 .column-1 {
   padding: 5px;
   width: 100%;
@@ -166,7 +172,9 @@ $header-shadow: darken($colour2, 30%);
   flex: 1;
   box-sizing: border-box;
 }
-@media only screen and (min-width: 900px) {
+
+@media only screen and (min-width: 1000px) {
+  /* On desktop resolutions makes widths as relative - each number is 1/12 of the page, but as flexbox it represents a ratio in any configuration*/
   .column-1 {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -251,12 +259,14 @@ $header-shadow: darken($colour2, 30%);
     width: 100%;
   }
   
+  
   main,
   #footer-wrapper {
     width: 80%;
     max-width: 1600px;
   }
   
+  /* Padding on the left and right of the header is 10%. */
   header {
     padding: 0 10%;
     box-sizing: border-box;
@@ -266,6 +276,7 @@ $header-shadow: darken($colour2, 30%);
     min-height: 10vh;
   }
   
+  /* Article width is 80% */
   article {
     -ms-flex-preferred-size: 80%;
     flex-basis: 80%;
@@ -278,6 +289,7 @@ $header-shadow: darken($colour2, 30%);
     flex-direction: row;
   }
   
+  /* Side bar is in a 1:4 ratio with the article. Column organisation*/
   aside {
     -ms-flex-preferred-size: 20%;
     flex-basis: 20%;
@@ -291,6 +303,7 @@ $header-shadow: darken($colour2, 30%);
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    min-width: 200px;
   }
   
   div.shop-item {
