@@ -1,3 +1,9 @@
+.outer-highlight-box .promo-shot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px; }
+
 .promo-shot {
   width: 100%; }
 
@@ -6,11 +12,14 @@
   border-bottom: 1px solid #1E1E1E;
   margin-bottom: 5px; }
 
+.home-box p {
+  margin-bottom: 5px; }
+
 .border-lr {
   border-style: solid;
   border-width: 0 2px; }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .border-lr {
     border-style: solid;
     border-width: 0; } }

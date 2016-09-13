@@ -241,7 +241,8 @@ aside.outer-highlight-box, div.outer-highlight-box {
 /* Special button colours when the background colour is different */
 .outer-highlight-box .button {
   background-color: #5ED6DE;
-  color: #1E1E1E; }
+  color: #1E1E1E;
+  display: block; }
 
 /** Footer ****/
 /* sets up flex boxes for the footer along with backgroud colour and box shadows */
