@@ -4,11 +4,7 @@
 /* Shop page specific css, used for styling shop elements and the fancy transitions */
 /* Basic visual styling for shop-item, nothing fancy */
 .shop-item {
-  display: flex;
-  flex-direction: column;
   padding: 1em;
-  min-width: 98%;
-  flex: 1;
   background: #b3ecef;
   /* border-radius: 10px; */
   box-sizing: border-box;
@@ -119,7 +115,9 @@
 .moreinfo {
   z-index: 5;
   margin-bottom: 10px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  text-align: start;
+  font-weight: 500; }
 
 #shop-form {
   width: 100%; }

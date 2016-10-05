@@ -73,6 +73,11 @@ $header-shadow: darken($colour2, 30%);
   display: block;
 }
 
+.shop-item{
+    display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 
 /** Responsive Stuff */
 /* Sets all columns to 100% width on mobile, gives requisite padding */
@@ -174,7 +179,74 @@ $header-shadow: darken($colour2, 30%);
 }
 
 @media only screen and (min-width: 1000px) {
-  /* On desktop resolutions makes widths as relative - each number is 1/12 of the page, but as flexbox it represents a ratio in any configuration*/
+ 
+  main,
+  #footer-wrapper {
+    width: 80%;
+    max-width: 1600px;
+  }
+  
+  /* Padding on the left and right of the header is 10%. */
+  header {
+    padding: 0 10%;
+    box-sizing: border-box;
+  }
+  
+  #footer-wrapper {
+    min-height: 10vh;
+  }
+  
+  /* Article width is 80% */
+  article {
+    -ms-flex-preferred-size: 80%;
+    flex-basis: 80%;
+    -webkit-box-flex: 4;
+    -ms-flex-positive: 4;
+    flex-grow: 4;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  
+  /* Side bar is in a 1:4 ratio with the article. Column organisation*/
+  aside {
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 200px;
+  }
+  
+  #shop div.shop-item {
+    min-width: 48%;
+  }
+  
+  .flex-responsive {
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+  
+  .flex-magicbs {
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    width: 100%;
+  }
+  
+   /* On desktop resolutions makes widths as relative - each number is 1/12 of the page, but as flexbox it represents a ratio in any configuration*/
   .column-1 {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -200,14 +272,14 @@ $header-shadow: darken($colour2, 30%);
     -webkit-box-flex: 4;
     -ms-flex: 4;
     flex: 4;
-    width: 25%;
+    width: 33.3%;
   }
   
   .column-5 {
     -webkit-box-flex: 5;
     -ms-flex: 5;
     flex: 5;
-    width: 25%;
+    width: 41.67%;
   }
   
   .column-6 {
@@ -260,71 +332,6 @@ $header-shadow: darken($colour2, 30%);
   }
   
   
-  main,
-  #footer-wrapper {
-    width: 80%;
-    max-width: 1600px;
-  }
-  
-  /* Padding on the left and right of the header is 10%. */
-  header {
-    padding: 0 10%;
-    box-sizing: border-box;
-  }
-  
-  #footer-wrapper {
-    min-height: 10vh;
-  }
-  
-  /* Article width is 80% */
-  article {
-    -ms-flex-preferred-size: 80%;
-    flex-basis: 80%;
-    -webkit-box-flex: 4;
-    -ms-flex-positive: 4;
-    flex-grow: 4;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-  
-  /* Side bar is in a 1:4 ratio with the article. Column organisation*/
-  aside {
-    -ms-flex-preferred-size: 20%;
-    flex-basis: 20%;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 200px;
-  }
-  
-  div.shop-item {
-    min-width: 48%;
-  }
-  
-  .flex-responsive {
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-  }
-  
-  .flex-magicbs {
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-line-pack: start;
-    align-content: flex-start;
-    width: 100%;
-  }
 }
 @media only screen and (max-width: 1100px) {
   aside#sidebar-content {
@@ -334,7 +341,7 @@ $header-shadow: darken($colour2, 30%);
     flex: 5;
   }
   
-  div.shop-item {
+  #shop div.shop-item {
     min-width: 98%;
   }
 

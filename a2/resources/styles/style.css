@@ -25,13 +25,13 @@ aside h4 {
 /* Original css below sourced for educational purposes: http://lea.verou.me/css3patterns/#weave (Note- modified to make more dense, change colours and pattern slightly) */
 /* Body background, page font set here. Also some flex box :(*/
 body {
-  color: #22435c;
+  color: #253237;
   font-family: 'Open Sans', sans-serif;
-  background: -webkit-linear-gradient(315deg, #b3ecef 11px, #34cbd5 11px, #34cbd5 12px, transparent 12px, transparent 33.5px, #34cbd5 33.5px, #34cbd5 34px, transparent 34px), -webkit-linear-gradient(225deg, #b3ecef 11px, #34cbd5 11px, #34cbd5 12px, transparent 12px, transparent 33.5px, #34cbd5 33.5px, #34cbd5 34px, transparent 34px) 0 32px;
-  background: linear-gradient(135deg, #b3ecef 11px, #34cbd5 11px, #34cbd5 12px, transparent 12px, transparent 33.5px, #34cbd5 33.5px, #34cbd5 34px, transparent 34px), linear-gradient(225deg, #b3ecef 11px, #34cbd5 11px, #34cbd5 12px, transparent 12px, transparent 33.5px, #34cbd5 33.5px, #34cbd5 34px, transparent 34px) 0 32px;
-  background: -webkit-linear-gradient(135deg, #b3ecef 11px, #34cbd5 11px, #34cbd5 12px, transparent 12px, transparent 33.5px, #34cbd5 33.5px, #34cbd5 34px, transparent 34px), -webkit-linear-gradient(225deg, #b3ecef 11px, #34cbd5 11px, #34cbd5 12px, transparent 12px, transparent 33.5px, #34cbd5 33.5px, #34cbd5 34px, transparent 34px) 0 32px;
-  background: -o-linear-gradient(135deg, #b3ecef 11px, #34cbd5 11px, #34cbd5 12px, transparent 12px, transparent 33.5px, #34cbd5 33.5px, #34cbd5 34px, transparent 34px), -o-linear-gradient(225deg, #b3ecef 11px, #34cbd5 11px, #34cbd5 12px, transparent 12px, transparent 33.5px, #34cbd5 33.5px, #34cbd5 34px, transparent 34px) 0 32px;
-  background-color: #b3ecef;
+  background: -webkit-linear-gradient(315deg, #fcfcfc 11px, #e3e3e3 11px, #e3e3e3 12px, transparent 12px, transparent 33.5px, #e3e3e3 33.5px, #e3e3e3 34px, transparent 34px), -webkit-linear-gradient(225deg, #fcfcfc 11px, #e3e3e3 11px, #e3e3e3 12px, transparent 12px, transparent 33.5px, #e3e3e3 33.5px, #e3e3e3 34px, transparent 34px) 0 32px;
+  background: linear-gradient(135deg, #fcfcfc 11px, #e3e3e3 11px, #e3e3e3 12px, transparent 12px, transparent 33.5px, #e3e3e3 33.5px, #e3e3e3 34px, transparent 34px), linear-gradient(225deg, #fcfcfc 11px, #e3e3e3 11px, #e3e3e3 12px, transparent 12px, transparent 33.5px, #e3e3e3 33.5px, #e3e3e3 34px, transparent 34px) 0 32px;
+  background: -webkit-linear-gradient(135deg, #fcfcfc 11px, #e3e3e3 11px, #e3e3e3 12px, transparent 12px, transparent 33.5px, #e3e3e3 33.5px, #e3e3e3 34px, transparent 34px), -webkit-linear-gradient(225deg, #fcfcfc 11px, #e3e3e3 11px, #e3e3e3 12px, transparent 12px, transparent 33.5px, #e3e3e3 33.5px, #e3e3e3 34px, transparent 34px) 0 32px;
+  background: -o-linear-gradient(135deg, #fcfcfc 11px, #e3e3e3 11px, #e3e3e3 12px, transparent 12px, transparent 33.5px, #e3e3e3 33.5px, #e3e3e3 34px, transparent 34px), -o-linear-gradient(225deg, #fcfcfc 11px, #e3e3e3 11px, #e3e3e3 12px, transparent 12px, transparent 33.5px, #e3e3e3 33.5px, #e3e3e3 34px, transparent 34px) 0 32px;
+  background-color: #fcfcfc;
   background-size: 32px 64px;
   background-position: 16px 16px;
   display: -webkit-box;
@@ -48,7 +48,7 @@ body {
 
 /*setting main min height, colour, a box shadow*/
 main {
-  background-color: #e6e6e6;
+  background-color: #E2E2E2;
   min-height: 83vh;
   /* Website should be fully reponsive below 800px, but assignment spec */
   min-width: 800px;
@@ -58,7 +58,7 @@ main {
   box-sizing: border-box; }
 
 a {
-  color: black;
+  color: #2f363a;
   /*  font-family: 'Gloria Hallelujah', cursive;
   */
   font-weight: 500; }
@@ -66,7 +66,7 @@ a {
 /* font of content */
 /* Header Stuff Here */
 header {
-  background-color: #1E1E1E;
+  background-color: #5C6B73;
   z-index: 2;
   min-height: 7vh;
   padding-bottom: 20px;
@@ -101,8 +101,8 @@ header > div {
 /* Header area font set up */
 header h1 {
   font-family: 'Gloria Hallelujah', cursive;
-  color: #5ED6DE;
-  text-shadow: #1c8187 0px 1px 0px, #1c8187 0px 2px 0px; }
+  color: #FCFCFC;
+  text-shadow: #b0b0b0 0px 1px 0px, #b0b0b0 0px 2px 0px; }
 
 /* setting size min and max */
 header #header-logo {
@@ -138,8 +138,8 @@ header div nav ul li {
 header div nav ul li a {
   /* Set the font and background styliong */
   font-weight: 700;
-  color: #5ED6DE;
-  background-color: #1E1E1E;
+  color: #FCFCFC;
+  background-color: #5C6B73;
   /* Some cool button padding */
   padding: 20px 18px;
   /* Remove underlines*/
@@ -152,23 +152,23 @@ header div nav ul li a {
 /* Fancy nav button animations - transitions to swap[ping colours and adds a box shadow */
 header div nav ul li a:hover,
 header div nav ul li a:active {
-  background-color: #5ED6DE;
-  color: #1E1E1E;
+  background-color: #FCFCFC;
+  color: #5C6B73;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
 
 /* Per Page Highlighting */
 /* Sets a different button style based on the current page body id */
 #home nav .menu-home a {
-  background-color: #5ED6DE;
-  color: #1E1E1E; }
+  background-color: #FCFCFC;
+  color: #5C6B73; }
 
 #contact nav .menu-contact a {
-  background-color: #5ED6DE;
-  color: #1E1E1E; }
+  background-color: #FCFCFC;
+  color: #5C6B73; }
 
 #shop nav .menu-shop a {
-  background-color: #5ED6DE;
-  color: #1E1E1E; }
+  background-color: #FCFCFC;
+  color: #5C6B73; }
 
 /* Box shadows only on selected ones */
 #home nav .menu-home a:hover,
@@ -194,7 +194,7 @@ h3 {
 /* creates black boxes */
 aside.outer-highlight-box, div.outer-highlight-box {
   /* creates a background color */
-  background-color: #1E1E1E;
+  background-color: #5C6B73;
   /* sets up a shadow */
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 0 10px;
@@ -202,16 +202,16 @@ aside.outer-highlight-box, div.outer-highlight-box {
   /* Content won't wrap lines if content is too large - forces content to be smaller*/
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  color: #5ED6DE;
+  color: #FCFCFC;
   border-radius: 10px; }
 
 /* creates blue boxes within the black box in the aside bar */
 .inner-highlight-box {
-  background-color: #b3ecef;
+  background-color: #fcfcfc;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 10px;
   margin: 10px 0;
-  color: #1E1E1E;
+  color: #5C6B73;
   border-radius: 5px; }
 
 .inner-highlight-box a {
@@ -222,14 +222,14 @@ aside.outer-highlight-box, div.outer-highlight-box {
   -ms-word-break: break-all;
   word-break: break-all;
   word-break: break-word;
-  color: #1E1E1E; }
+  color: #5C6B73; }
 
 /* style for the button */
 .button {
   /* Set the colours and padding */
-  background-color: #1E1E1E;
+  background-color: #5C6B73;
   padding: 10px;
-  color: #5ED6DE;
+  color: #FCFCFC;
   margin: 5px;
   /* Make the cursor look like it is a button */
   cursor: pointer;
@@ -240,14 +240,14 @@ aside.outer-highlight-box, div.outer-highlight-box {
 
 /* Special button colours when the background colour is different */
 .outer-highlight-box .button {
-  background-color: #5ED6DE;
-  color: #1E1E1E;
+  background-color: #FCFCFC;
+  color: #5C6B73;
   display: block; }
 
 /** Footer ****/
 /* sets up flex boxes for the footer along with backgroud colour and box shadows */
 footer {
-  background-color: #71c5cb;
+  background-color: #fcfcfc;
   z-index: 2;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -273,8 +273,8 @@ footer ul {
 
 #footer-wrapper,
 #footer-wrapper a {
-  background-color: #1E1E1E;
-  color: #88e1e7; }
+  background-color: #5C6B73;
+  color: white; }
 
 #footer-links ul {
   list-style-position: inside; }

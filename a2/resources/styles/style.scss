@@ -5,12 +5,20 @@ $colour1:#22435c;
 $colour4: #e6e6e6;
 $colour5: #ff5815;
 
+//Contrast test
+$colour2: #FCFCFC;
+$colour3: #5C6B73;
+$colour1:#253237;
+$colour4: #E2E2E2;
+$colour5: #9DB4C0;
+
+
 // Footer Colours 
 $footersides: desaturate($colour2, 20%);
 $footermiddle: $colour3;
 $footer-text: lighten($colour2, 10%);
 // Colours for the background gradient magic 
-$background: lighten($colour2, 20%);
+$background: desaturate($colour2, 20%);
 $backgroundlighten: darken($colour2, 10%);
 // Colour derivations  
 $link-colour: darken($colour3, 20%);

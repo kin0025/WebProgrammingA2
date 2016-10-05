@@ -1,5 +1,7 @@
 <header>
     <!-- A container div for the header elements. Used to provide flexbox implementation while keeping inside header- padding -->
+    
+        <noscript><h1>Your browser does not appear to support javascript. Some functionality will be limited.</h1></noscript>
     <div>
         <!-- A container element for left-justified elements in the header -->
         <div>

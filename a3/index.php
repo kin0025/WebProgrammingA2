@@ -41,7 +41,7 @@
                         <!-- Original inage below sourced for educational purposes: https://www.facebook.com/pleaselikemeABC2/photos/pb.332602973457380.-2207520000.1471870875./1188918787825790/?type=3&theater -->
                         <img class="promo-shot" src="resources/images/plmpromo.jpg" alt="A clay model of the cast of the show sitting on a red chair" />
                         <p>If you want to purchase a copy of the previous seasons, check on the store for more information</p>
-                        <a class="button" alt="Store Page" href="store.php">Shop Now</a>
+                        <a class="button" alt="Store Page" href="shop.php">Shop Now</a>
 
                     </div>
                 </div>

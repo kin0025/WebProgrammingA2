@@ -59,6 +59,11 @@
             //Set the value of the slider element
             document.getElementById('flexibility').value = flexiFill;
         }
+        
+        function checkPhoneNumber(element){
+                element.value = element.value.replace(/[\ ]/g, "");
+
+        }
     </script>
 </head>
 
@@ -83,7 +88,7 @@
                         <!-- Email. Uses browser based requirements system, -->
                         <p>Email Address:*</p><input required type="email" name="email" placeholder="name@example.com" />
                         <!-- Phone number. Numbers 0-9, +, Brackets and hyphens -->
-                        <p>Contact No*:</p><input type="tel" name="phone" pattern="[0-9\+\ \(\)\-]{1,20}" placeholder="+613 12345678" />
+                        <p>Contact No*:</p><input type="tel" oninput="checkPhoneNumber(this)" name="phone" pattern="^(\+|\(|\(\+|\+\(|){0,1}(\d){0,3}(\)){0,1}([ ]){0,1}([\d]){1,12}" placeholder="+613 12345678" />
                         <!-- Event Name -->
                         <p>Event Date*: </p><input required input type="date" name="eventdate" />
                         <p>Event Time*:</p> <input required input type="time" name="eventtime" />
