@@ -242,7 +242,9 @@ h3{
   margin:5px;
 }
 
-
+.left-indent{
+  margin-left:20px;
+}
 /* creates black boxes */
 aside.outer-highlight-box, div.outer-highlight-box{
   /* creates a background color */
@@ -297,6 +299,7 @@ aside.outer-highlight-box, div.outer-highlight-box{
   border: 0px;
   height:auto;
   text-decoration: none;
+  border-radius:6px;
 }
 
 /* Special button colours when the background colour is different */

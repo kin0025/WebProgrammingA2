@@ -21,37 +21,37 @@ $header-shadow: darken($colour2, 30%);
   flex-wrap: nowrap;
 }
 
-#contact-form span {
+form span {
   margin-bottom: 5px;
 }
 
-#contact-form p {
+form p {
   margin-top: 0.5em;
   margin-bottom: 0;
 }
 
-#contact-form input,
-#contact-form select {
+input,
+select {
   height: auto;
   min-height: 30px;
 }
 
 /* When an input is invalid, give it a red box shadow and background */
-#contact-form input:focus:invalid,
-#contact_form textarea:focus:invalid {
+input:focus:invalid,
+textarea:focus:invalid {
   background: rgba(255, 0, 0, 0.25);
   box-shadow: 0 0 5px #d45252;
   border-color: #b03535
 }
 
 /* No horizontal resizement */
-textarea {
+form textarea {
   resize: vertical;
 }
 
 /* Set the colour of things */
-input,
-textarea {
+form input,
+form textarea {
   background: $colour5;
   border: $colour3 solid 1px;
 }
@@ -62,7 +62,7 @@ textarea {
 }
 
 /* Make the text wrap and justify properly */
-.flexibility-text {
+form .flexibility-text {
   justify-content: space-between;
   -moz-box-wrap: nowrap;
   -webkit-box-wrap: nowrap;
@@ -70,25 +70,25 @@ textarea {
   flex-wrap: nowrap;
 }
 
-.flexibility-text p {
+form .flexibility-text p {
   margin: 0 0 3px 0;
 }
 
 
 /* Style the flexibility slider properly */
-input#flexibility {
+form input#flexibility {
   -webkit-appearance: none;
   width: 100%;
   min-height: auto;
   margin: 3px 0;
 }
 
-input#flexibility:focus {
+form input#flexibility:focus {
   outline: none;
 }
 
 /* Set then colour of the slider track */
-input#flexibility::-webkit-slider-runnable-track {
+form input#flexibility::-webkit-slider-runnable-track {
   width: 100%;
   height: 10px;
   cursor: pointer;
@@ -96,10 +96,10 @@ input#flexibility::-webkit-slider-runnable-track {
   border: 0;
 }
 
-input#flexibility::-moz-range-track {}
+form input#flexibility::-moz-range-track {}
 
 /* Set the slider movement styles */
-input[type=range]::-webkit-slider-thumb {
+form input[type=range]::-webkit-slider-thumb {
   box-shadow: 0.9px 0.9px 1px #000031, 0px 0px 0.9px #00004b;
   height: 16px;
   width: 16px;
@@ -111,7 +111,7 @@ input[type=range]::-webkit-slider-thumb {
   border: 0;
 }
 
-input#flexibility::-moz-range-thumb {
+form input#flexibility::-moz-range-thumb {
   height: 16px;
   width: 16px;
   border-radius: 8px;
@@ -120,7 +120,7 @@ input#flexibility::-moz-range-thumb {
   border: 0;
 }
 
-input#flexibility::-ms-track {
+form input#flexibility::-ms-track {
   width: 100%;
   height: 11.4px;
   cursor: pointer;

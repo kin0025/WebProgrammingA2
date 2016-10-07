@@ -1,4 +1,3 @@
-    document.onload = loadCart();
     /* global localStorage */
         function itemModified(element,cost){
             calculateTotal();
@@ -12,9 +11,16 @@
         }
         function loadCart(){
             if(typeof(Storage) !== "undefined"){
+                if(localStorage.s1amount != null){
                 document.getElementById('s1amount').value = Number(localStorage.s1amount);
+                }
+                if(localStorage.s2amount != null){
                 document.getElementById('s2amount').value = Number(localStorage.s2amount);
+                }
+                if(localStorage.s3amount != null){
                 document.getElementById('s3amount').value = Number(localStorage.s3amount);
+                }
+                
             }
         }
         function calculateTotal() {

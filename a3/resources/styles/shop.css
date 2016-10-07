@@ -8,8 +8,16 @@
   background: #b3ecef;
   /* border-radius: 10px; */
   box-sizing: border-box;
-  margin: 1%;
+  margin: 10px;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.confirm.shop-item {
+  flex-direction: row; }
+
+.confirm.shop-item img {
+  align-self: flex-start;
+  height: 150px;
+  width: auto; }
 
 .shop-item div {
   flex: 1 0 auto; }
@@ -130,6 +138,20 @@
   width: auto;
   /* Set the maximum inage height to the height of the box minus 5em */
   max-height: calc(30vh - 2.5em); }
+
+.error {
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  background: #f45f42;
+  background: -moz-repeating-linear-gradient(-70deg, #f45f42 0px, #f45f42 15px, #f47742 15px, #f47742 30px);
+  background: -webkit-repeating-linear-gradient(-70deg, #f45f42 0px, #f45f42 15px, #f47742 15px, #f47742 30px);
+  background: -o-repeating-linear-gradient(-70deg, #f45f42 0px, #f45f42 15px, #f47742 15px, #f47742 30px);
+  background: -ms-repeating-linear-gradient(-70deg, #f45f42 0px, #f45f42 15px, #f47742 15px, #f47742 30px);
+  background: repeating-linear-gradient(110deg, #f45f42 0px, #f45f42 15px, #f47742 15px, #f47742 30px); }
 
 .total {
   width: auto; }

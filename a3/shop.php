@@ -30,7 +30,7 @@
                                    
                                     <span>Subtotal:<input type="text" id="s1total" class="total" size="7" readonly/></span>
                                     <p>$17.00</p>
-                                    <span>Add to cart: <input id="s1amount" oninput="calculateTotal();calculateSubTotal(this,17);saveCart(this)" type="number" name="plm[s1]" min="0" max="5" value="0"></span>
+                                    <span>Add to cart: <input id="s1amount"  oninput="calculateTotal();calculateSubTotal(this,17);saveCart(this)" type="number" name="plm[s1]" min="0" max="5" value="0"></span>
                                     <a class="button moreinfo" href="#">More Info</a>
                                     <div class="front">
                                         <div class="flex-row">
@@ -232,6 +232,7 @@
 
     </main>
 <script src="resources/script/shop.js"></script>
-
+<script>    document.onload = loadCart(),calculateTotal(),calculateSubTotal(document.getElementById('s1amount'),17),calculateSubTotal(document.getElementById('s2amount'),22.5),calculateSubTotal(document.getElementById('s3amount'),26.75);
+</script>
     <?php include 'resources/footer.php'; ?>
 </body>

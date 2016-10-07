@@ -1,0 +1,66 @@
+//Contrast test
+$colour2: #fff;
+$colour3: #fff;
+$colour1:#000;
+$colour4: #fff;
+$colour5: #fff;
+
+// Footer Colours 
+$footersides: desaturate($colour2, 20%);
+$footermiddle: $colour3;
+$footer-text: lighten($colour2, 10%);
+// Colours for the background gradient magic 
+$background: lighten($colour2, 20%);
+$backgroundlighten: darken($colour2, 10%);
+// Colour derivations  
+$link-colour: darken($colour3, 20%);
+$header-shadow: darken($colour2, 30%);
+$heading-shadow: darken($colour5,30%);
+/** Semi-reset stuff */
+
+html,
+body {
+  height: auto;
+  min-height: 100%;
+}
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body background, page font set here. Also some flex box :(*/
+
+body {
+  color: $colour1;
+  font-family: 'Open Sans', sans-serif !important;
+  background: #fff;
+  background-color: $background;
+  min-width: 800px;    
+  box-shadow: none!important;
+}
+
+main,header,footer{
+    box-shadow: none!important;
+}
+/*setting main min height, colour, a box shadow*/
+main {
+  //background: -webkit-linear-gradient(left,rgba(0,0,0,0) 0%,$colour4 5%,$colour4 95%,rgba(0,0,0,0) 100%);
+  min-height: 100vh;
+  /* Website should be fully reponsive below 800px, but assignment spec */
+  min-width: 800px;
+  z-index: 1;
+  padding: 0 15px;
+  box-sizing: border-box;
+
+}
+
+img{
+  display:none!important;
+}
+header > nav , footer ul, footer a ,footer div#footer-links{
+  display:none;
+}

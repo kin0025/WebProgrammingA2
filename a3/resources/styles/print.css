@@ -1,0 +1,41 @@
+/** Semi-reset stuff */
+html,
+body {
+  height: auto;
+  min-height: 100%; }
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+/* Body background, page font set here. Also some flex box :(*/
+body {
+  color: #000;
+  font-family: 'Open Sans', sans-serif !important;
+  background: #fff;
+  background-color: white;
+  min-width: 800px;
+  box-shadow: none !important; }
+
+main, header, footer {
+  box-shadow: none !important; }
+
+/*setting main min height, colour, a box shadow*/
+main {
+  min-height: 100vh;
+  /* Website should be fully reponsive below 800px, but assignment spec */
+  min-width: 800px;
+  z-index: 1;
+  padding: 0 15px;
+  box-sizing: border-box; }
+
+img {
+  display: none !important; }
+
+header > nav, footer ul, footer a, footer div#footer-links {
+  display: none; }
+
+/*# sourceMappingURL=print.css.map */
