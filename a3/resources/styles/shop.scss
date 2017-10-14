@@ -198,3 +198,18 @@ background: repeating-linear-gradient(110deg, #f45f42 0px, #f45f42 15px, #f47742
 .total{
   width:auto;
 }
+
+#checkout input{
+  width:100%;
+}
+#checkout #credit-wrapper input{
+  width:auto;
+}
+
+#checkout #credit-wrapper p{
+  margin-left:5px;
+}
+#checkout #remember-me{
+  height:30;
+  width:30px;
+}

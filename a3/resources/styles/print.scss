@@ -1,7 +1,7 @@
 //Contrast test
 $colour2: #fff;
 $colour3: #fff;
-$colour1:#000;
+$colour1: #000;
 $colour4: #fff;
 $colour5: #fff;
 
@@ -32,13 +32,10 @@ ol {
   padding: 0;
 }
 
-/* Body background, page font set here. Also some flex box :(*/
 
 body {
   color: $colour1;
   font-family: 'Open Sans', sans-serif !important;
-  background: #fff;
-  background-color: $background;
   min-width: 800px;    
   box-shadow: none!important;
 }
@@ -48,7 +45,6 @@ main,header,footer{
 }
 /*setting main min height, colour, a box shadow*/
 main {
-  //background: -webkit-linear-gradient(left,rgba(0,0,0,0) 0%,$colour4 5%,$colour4 95%,rgba(0,0,0,0) 100%);
   min-height: 100vh;
   /* Website should be fully reponsive below 800px, but assignment spec */
   min-width: 800px;
@@ -61,6 +57,35 @@ main {
 img{
   display:none!important;
 }
-header > nav , footer ul, footer a ,footer div#footer-links{
+nav , footer ul, footer a ,footer div#footer-links{
+  display:none !important;
+}
+
+table{
+      border-spacing: 5px;
+        border-collapse: collapse;
+  
+
+}
+.block td, .block{
+    border-top: 1px solid black;
+}
+a{
   display:none;
+}
+
+.shop-item, table{
+  margin: 5px 0;
+  border-bottom: 1px solid grey;
+
+}
+
+
+th{
+  text-align:start;
+  border-bottom: 1px solid black;
+}
+
+th,td{
+  padding:5px;
 }

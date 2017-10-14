@@ -38,7 +38,7 @@ font-family: 'Gloria Hallelujah', cursive;
 }
 
 
-a,button{
+a,button,.checkout{
 font-family: 'Gloria Hallelujah', cursive;
   /*font for the headers */
 }
@@ -244,6 +244,10 @@ h3{
 
 .left-indent{
   margin-left:20px;
+}
+
+.bold{
+  font-weight:bold;
 }
 /* creates black boxes */
 aside.outer-highlight-box, div.outer-highlight-box{

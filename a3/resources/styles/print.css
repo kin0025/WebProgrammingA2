@@ -11,12 +11,9 @@ ol {
   margin: 0;
   padding: 0; }
 
-/* Body background, page font set here. Also some flex box :(*/
 body {
   color: #000;
   font-family: 'Open Sans', sans-serif !important;
-  background: #fff;
-  background-color: white;
   min-width: 800px;
   box-shadow: none !important; }
 
@@ -35,7 +32,28 @@ main {
 img {
   display: none !important; }
 
-header > nav, footer ul, footer a, footer div#footer-links {
+nav, footer ul, footer a, footer div#footer-links {
+  display: none !important; }
+
+table {
+  border-spacing: 5px;
+  border-collapse: collapse; }
+
+.block td, .block {
+  border-top: 1px solid black; }
+
+a {
   display: none; }
+
+.shop-item, table {
+  margin: 5px 0;
+  border-bottom: 1px solid grey; }
+
+th {
+  text-align: start;
+  border-bottom: 1px solid black; }
+
+th, td {
+  padding: 5px; }
 
 /*# sourceMappingURL=print.css.map */

@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Gloria Hallelujah', cursive;
   /*font for the headers */ }
 
-a, button {
+a, button, .checkout {
   font-family: 'Gloria Hallelujah', cursive;
   /*font for the headers */ }
 
@@ -193,6 +193,9 @@ h3 {
 
 .left-indent {
   margin-left: 20px; }
+
+.bold {
+  font-weight: bold; }
 
 /* creates black boxes */
 aside.outer-highlight-box, div.outer-highlight-box {

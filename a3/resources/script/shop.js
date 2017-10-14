@@ -32,7 +32,7 @@
 
             var total = (counts1 * 17) + (counts2 * 22.5) + (counts3 * 26.75);
 
-            totalElement.value = "$" + total;
+            totalElement.value = "$" + total.toFixed(2);
         }
 
         function calculateSubTotal(element, cost) {
